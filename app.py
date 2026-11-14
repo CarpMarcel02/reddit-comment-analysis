@@ -27,8 +27,10 @@ def main():
     args = ap.parse_args()
 
     if not os.path.isdir(DATA_DIR):
-        print(f"Archive folder not found: {DATA_DIR}")
-        return
+        # e.g. right after `git clone`: the archives aren't in Git, so the folder doesn't exist yet
+        os.makedirs(DATA_DIR, exist_ok=True)
+        print(f"Created an empty archive folder: {DATA_DIR}")
+        print("Put the .zst files from the subreddits24 torrent there (the home page shows which ones you need).")
 
     server = create_server(args.port)
     url = f"http://127.0.0.1:{args.port}"

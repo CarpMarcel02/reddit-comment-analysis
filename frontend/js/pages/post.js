@@ -36,6 +36,19 @@ function sortTree(list, cmp) {
   list.forEach(c => sortTree(c.kids, cmp));
 }
 
+/** Teammates' labels for this post: Map comment_id → [annotations by others]. */
+async function loadOthers(postId) {
+  const me = getAnnotator().trim().toLowerCase();
+  const map = new Map();
+  const list = await api(`/api/annotations?link=${enc(postId)}&all=1`);
+  for (const a of list) {
+    if ((a.annotator || '').trim().toLowerCase() === me) continue;
+    if (!map.has(a.comment_id)) map.set(a.comment_id, []);
+    map.get(a.comment_id).push(a);
+  }
+  return map;
+}
+
 /** The current annotator's labels for the comments of this post. */
 async function loadAnnotations(postId) {
   const who = getAnnotator();
@@ -58,9 +71,13 @@ export async function viewPost(sub, id) {
     return new Map();
   });
 
-  let data, annotations;
+  let data, annotations, others;
   try {
-    [data, annotations] = await Promise.all([api(`/api/post?sub=${enc(sub)}&id=${enc(id)}`), annotPromise]);
+    [data, annotations, others] = await Promise.all([
+      api(`/api/post?sub=${enc(sub)}&id=${enc(id)}`),
+      annotPromise,
+      loadOthers(id).catch(() => new Map()),
+    ]);
   } catch (e) {
     app.replaceChildren(h('div', { class: 'card empty error' }, e.message));
     return;
@@ -77,11 +94,13 @@ export async function viewPost(sub, id) {
 
   const ctx = {
     sub, post, annotations,
+    others,              // teammates' labels (shown only when the toggle is on)
+    showOthers: false,
     highlight: false,
     sort: 'best',
     onAnnotated: updateRatedInfo,
-    onAnnotatorChange: async () => {          // annotator changed → reload their labels
-      ctx.annotations = await loadAnnotations(id);
+    onAnnotatorChange: async () => {          // annotator changed → reload their labels (and who counts as "others")
+      [ctx.annotations, ctx.others] = await Promise.all([loadAnnotations(id), loadOthers(id).catch(() => new Map())]);
       renderTree();
       updateRatedInfo();
     },
@@ -112,6 +131,15 @@ export async function viewPost(sub, id) {
     h('option', { value: 'old' }, 'Sort: oldest'),
     h('option', { value: 'new' }, 'Sort: newest'));
   const highlight = h('input', { type: 'checkbox', onchange: e => { ctx.highlight = e.target.checked; renderTree(); } });
+  const othersCount = [...others.values()].reduce((n, list) => n + list.length, 0);
+  const othersToggle = othersCount
+    ? h('label', {
+        class: 'small others-toggle',
+        title: 'For Cohen\'s Kappa you must label independently: turn this on only AFTER you have labelled this thread.',
+      },
+        h('input', { type: 'checkbox', onchange: e => { ctx.showOthers = e.target.checked; renderTree(); } }),
+        ` show teammates' labels (${othersCount}) ⚠`)
+    : null;
 
   renderTree();
   updateRatedInfo();
@@ -122,6 +150,7 @@ export async function viewPost(sub, id) {
         ratedInfo,
         h('label', { class: 'small', title: 'not deleted, not a bot, 25–300 words (excluding quotes)' },
           highlight, ` highlight usable for the project (${usableCount})`),
+        othersToggle,
         sortSelect),
       tree));
 }

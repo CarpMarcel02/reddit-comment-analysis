@@ -16,6 +16,8 @@ Routes:
   POST   /api/labels/seed                add the proposed label set
 
   GET    /api/annotations?link=&annotator=          one annotator's labels for a post
+  GET    /api/annotations?link=&all=1               everyone's labels for a post
+  GET    /api/annotations/coverage                  which subreddits/threads were labelled + what's missing locally
   GET    /api/annotations?annotator=&label=&page=   list of annotations
   PUT    /api/annotations                           save     {sub, comment_id, annotator, label_id, unsure, note}
   DELETE /api/annotations?comment_id=&annotator=    delete
@@ -148,8 +150,10 @@ class Handler(BaseHTTPRequestHandler):
 
             # --- annotations
             ("GET", "/api/annotations"): lambda: (
-                annotations.annotations_for_post(q["link"], q.get("annotator", ""))
+                (annotations.post_annotations_all(q["link"]) if q.get("all") == "1"
+                 else annotations.annotations_for_post(q["link"], q.get("annotator", "")))
                 if "link" in q else annotations.list_annotations(q)),
+            ("GET", "/api/annotations/coverage"): self.coverage,
             ("PUT", "/api/annotations"): lambda: self.save_annotation(),
             ("DELETE", "/api/annotations"): lambda: annotations.delete_annotation(
                 q.get("comment_id", ""), q.get("annotator", "")),
@@ -163,6 +167,17 @@ class Handler(BaseHTTPRequestHandler):
         sub = checked_sub(q.get("sub", ""))
         indexer.start_index(sub)
         return indexer.status(sub)
+
+    def coverage(self):
+        """Annotation coverage + whether this computer has the archives / index needed to open them."""
+        local = indexer.list_subreddits()
+        items = annotations.coverage()
+        for it in items:
+            have = local.get(it["subreddit"], {})
+            it["missing_files"] = [f for kind, f in it["files"].items() if kind not in have]
+            it["indexed"] = bool(have) and os.path.exists(indexer.db_path(it["subreddit"]))
+            it["status"] = indexer.status(it["subreddit"]) if have else None
+        return items
 
     def save_annotation(self):
         data = self.read_json()

@@ -471,6 +471,46 @@ def annotations_for_post(link_id, annotator):
         return [_view(r) for r in recs if r.get("link_id") == link_id]
 
 
+def post_annotations_all(link_id):
+    """Every annotator's labels for the comments of a post."""
+    with _lock:
+        _refresh()
+        return [_view(r) for r in _all_records() if r.get("link_id") == link_id]
+
+
+def coverage():
+    """What the annotations in the repo refer to: per subreddit, who labelled how much, and in which threads."""
+    with _lock:
+        _refresh()
+        subs = {}
+        for r in _all_records():
+            name = r.get("subreddit") or "?"
+            who = r.get("annotator") or "?"
+            s = subs.setdefault(name, {"count": 0, "annotators": {}, "posts": {}})
+            s["count"] += 1
+            s["annotators"][who] = s["annotators"].get(who, 0) + 1
+            p = s["posts"].setdefault(r.get("link_id") or "?", {
+                "link_id": r.get("link_id"), "title": r.get("post_title") or "", "count": 0, "annotators": {}})
+            p["count"] += 1
+            p["annotators"][who] = p["annotators"].get(who, 0) + 1
+
+    def as_list(counts):
+        return [{"annotator": a, "count": n} for a, n in sorted(counts.items(), key=lambda x: -x[1])]
+
+    out = []
+    for name, s in sorted(subs.items(), key=lambda x: -x[1]["count"]):
+        posts = sorted(s["posts"].values(), key=lambda p: -p["count"])
+        out.append({
+            "subreddit": name,
+            "count": s["count"],
+            "annotators": as_list(s["annotators"]),
+            "posts": [{**p, "annotators": as_list(p["annotators"])} for p in posts[:10]],
+            "more_posts": max(0, len(posts) - 10),
+            "files": {"comments": f"{name}_comments.zst", "submissions": f"{name}_submissions.zst"},
+        })
+    return out
+
+
 def _filtered(annotator="", label="", unsure=""):
     slug = slugify(annotator) if annotator else None
     label_id = to_int(label, -1) if label else None

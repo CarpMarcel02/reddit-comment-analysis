@@ -9,6 +9,8 @@ The repository includes a local web app (**Archive Viewer**) for browsing the Pu
 
 1. Clone the repository.
 2. Put the `.zst` archives (the *subreddits24* torrent) in the `subreddits24/` folder. They are **not** in Git (~16 GB).
+   Not sure which ones you need? Start the app: the home page lists the subreddits your teammates labelled
+   and the exact files missing on your computer.
 3. Create a virtual environment and install the dependencies:
    ```
    py -m venv .venv

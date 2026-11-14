@@ -37,6 +37,14 @@
   background: var(--ok-bg); border-left: 3px solid var(--ok-border); padding: 2px 8px; border-radius: 0 4px 4px 0;
 }
 
+/* teammates' labels */
+.comment .others { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.other-chip {
+  display: inline-flex; align-items: center; gap: 5px; font-size: 11px; font-weight: 700;
+  border: 1px dashed var(--label-color); border-radius: 12px; padding: 1px 8px; color: var(--text);
+  background: color-mix(in srgb, var(--label-color) 10%, transparent);
+}
+
 /* collapsed thread */
 .comment.collapsed > .rail .line,
 .comment.collapsed > .body-wrap > :not(.chead) { display: none; }

@@ -1,0 +1,29 @@
+{
+  "next_id": 5,
+  "labels": [
+    {
+      "id": 1,
+      "name": "Name Calling / Ad Hominem",
+      "description": "Atacă persoana sau grupul în loc de argument; etichete disprețuitoare; „noi vs. ei”.",
+      "color": "#e5484d"
+    },
+    {
+      "id": 2,
+      "name": "Apel la frică / Catastrofizare",
+      "description": "Induce panică, scenarii apocaliptice sau urgență exagerată.",
+      "color": "#f76b15"
+    },
+    {
+      "id": 3,
+      "name": "Whataboutism / Distragere",
+      "description": "Schimbă subiectul arătând spre alții („dar ce zici de X?”) sau sădește îndoială fără dovezi.",
+      "color": "#8e4ec6"
+    },
+    {
+      "id": 4,
+      "name": "Neutru / Non-propagandă",
+      "description": "Informație, opinie argumentată, întrebare sinceră, glumă fără atac.",
+      "color": "#30a46c"
+    }
+  ]
+}

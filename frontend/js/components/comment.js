@@ -62,11 +62,20 @@ export function renderComment(c, ctx) {
     h('span', { title: 'parent_id' }, isRoot ? '↳ reply to the post' : '↳ reply to ' + (c.parent || '').slice(3)),
     h('button', { onclick: rawToggle(ctx.sub, 'comment', c.id, rawMount) }, '{ } JSON'));
 
+  // teammates' labels (only when "show teammates' labels" is on)
+  const otherList = ctx.showOthers ? ctx.others?.get(c.id) : null;
+  const others = otherList?.length
+    ? h('div', { class: 'others' },
+        ...otherList.map(a => h('span', {
+          class: 'other-chip', style: `--label-color:${a.color}`, title: a.note ? 'Note: ' + a.note : '',
+        }, h('span', { class: 'label-dot' }), `${a.annotator}: ${a.label_name}`, a.unsure ? ' ?' : '')))
+    : null;
+
   // replies (recursive)
   const kids = h('div', {}, ...c.kids.map(k => renderComment(k, ctx)));
 
   el.append(
     h('div', { class: 'rail' }, avatar(c), h('button', { class: 'line', title: 'Collapse thread', onclick: collapse })),
-    h('div', { class: 'body-wrap' }, head, body, foot, rawMount, kids));
+    h('div', { class: 'body-wrap' }, ...[head, body, foot, others, rawMount, kids].filter(Boolean)));
   return el;
 }
