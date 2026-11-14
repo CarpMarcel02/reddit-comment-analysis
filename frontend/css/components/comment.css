@@ -1,0 +1,47 @@
+/* comment.css — one comment in the tree (avatar, thread line, text, footer) */
+
+.comment { display: flex; margin-top: 10px; }
+
+/* left column: avatar + the thread's vertical line */
+.comment .rail { width: 24px; flex: none; display: flex; flex-direction: column; align-items: center; }
+.comment .avatar {
+  width: 24px; height: 24px; border-radius: 50%; color: #fff; display: grid; place-items: center;
+  font-size: 11px; font-weight: 700; flex: none;
+}
+.comment .line { flex: 1; width: 12px; border: 0; background: none; padding: 0; margin-top: 4px; position: relative; }
+.comment .line::before {
+  content: ""; position: absolute; left: 50%; top: 0; bottom: 0; width: 2px; margin-left: -1px; background: var(--line);
+}
+.comment .line:hover::before { background: var(--line-hover); }
+
+.comment .body-wrap { flex: 1; min-width: 0; padding-left: 8px; }
+
+/* header: author, points, date */
+.comment .chead { font-size: 12px; display: flex; flex-wrap: wrap; gap: 4px; align-items: center; min-height: 24px; cursor: pointer; }
+.comment .chead .author { font-weight: 700; color: var(--text); }
+.comment .chead .op { color: var(--link); font-weight: 700; }
+.comment .chead .mod { color: #46d160; font-weight: 700; }
+.comment .toggle { color: var(--link); font-weight: 700; }
+
+/* text */
+.comment .cbody { margin: 2px 0; word-wrap: break-word; }
+.cbody.deleted { color: var(--deleted); font-style: italic; }
+
+/* footer: words, id, JSON */
+.comment .cfoot { display: flex; flex-wrap: wrap; gap: 8px; font-size: 12px; color: var(--muted); font-weight: 700; align-items: center; }
+.comment .cfoot button, .comment .cfoot a { background: none; border: 0; color: var(--muted); font-weight: 700; font-size: 12px; padding: 2px 4px; }
+.comment .cfoot button:hover, .comment .cfoot a:hover { background: var(--chip); text-decoration: none; }
+
+/* highlight: comment usable for the project (25–300 words etc.) */
+.comment.ok > .body-wrap > .cbody {
+  background: var(--ok-bg); border-left: 3px solid var(--ok-border); padding: 2px 8px; border-radius: 0 4px 4px 0;
+}
+
+/* collapsed thread */
+.comment.collapsed > .rail .line,
+.comment.collapsed > .body-wrap > :not(.chead) { display: none; }
+
+@media (max-width: 600px) {
+  .comment .rail { width: 18px; }
+  .comment .avatar { width: 18px; height: 18px; font-size: 9px; }
+}

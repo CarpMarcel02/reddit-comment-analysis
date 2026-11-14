@@ -1,0 +1,10 @@
+# Text files are stored with LF everywhere (Windows / Linux / macOS),
+# so annotation files don't show up as "modified" just because of line endings.
+* text=auto
+*.jsonl text eol=lf
+*.json  text eol=lf
+*.md    text eol=lf
+*.py    text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf

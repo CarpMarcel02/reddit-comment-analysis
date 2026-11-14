@@ -1,0 +1,9 @@
+/* post.css — post page: the comments box */
+
+.comments-box { padding: 12px 16px 16px; margin-top: 10px; }
+.comments-head {
+  display: flex; flex-wrap: wrap; gap: 10px; align-items: center; justify-content: space-between;
+  border-bottom: 1px solid var(--border); padding-bottom: 8px; margin-bottom: 8px;
+}
+.comments-head select { background: var(--chip); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 4px; }
+.orphans-title { margin-top: 16px; }

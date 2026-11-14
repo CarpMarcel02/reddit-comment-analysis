@@ -1,0 +1,18 @@
+/* annotations.css — "Annotations" page: statistics + list of labelled comments */
+
+.stats-total { font-size: 14px; margin-bottom: 8px; }
+.files-info { margin-top: 10px; line-height: 1.8; }
+.files-info code { background: var(--code); border-radius: 3px; padding: 1px 5px; font-size: 11px; }
+.stats-total b { font-size: 22px; }
+.stats-bar { display: flex; height: 14px; border-radius: 7px; overflow: hidden; background: var(--chip); margin-bottom: 10px; gap: 2px; }
+.stats-bar > div { height: 100%; }
+.stats-legend { display: flex; flex-direction: column; gap: 4px; }
+.stats-item { display: flex; align-items: center; gap: 8px; font-size: 13px; }
+.stats-item b { margin-left: auto; font-variant-numeric: tabular-nums; }
+.stats-item .muted:not(.small) { width: 40px; text-align: right; font-variant-numeric: tabular-nums; }
+
+.annot-row { padding: 10px 14px; margin-bottom: 8px; }
+.annot-head { display: flex; align-items: center; gap: 10px; margin-bottom: 4px; }
+.annot-post { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--muted); }
+.annot-text { word-wrap: break-word; }
+.annot-meta { margin-top: 2px; }

@@ -1,0 +1,24 @@
+# --- large data: NOT in Git (everyone downloads it from the torrent) ---
+subreddits24/
+*.zst
+*.parts
+
+# --- generated automatically (rebuilt with "Index" in the app) ---
+cache/
+
+# --- annotations: only labels.json + annotators/*.jsonl + annotators/*.md go into Git ---
+annotations/*.sqlite*
+annotations/**/*.tmp
+
+# --- Python / Jupyter ---
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# --- editor / OS ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

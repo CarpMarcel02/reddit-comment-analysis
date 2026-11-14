@@ -1,0 +1,5 @@
+# Install with:  pip install -r requirements.txt
+# Keep this list to what the project actually imports (don't paste a global `pip freeze`).
+
+# reading the Pushshift .zst archives (app + notebook)
+zstandard==0.25.0
