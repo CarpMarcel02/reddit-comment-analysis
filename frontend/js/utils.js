@@ -118,7 +118,21 @@ export function rawToggle(sub, kind, id, mount) {
   };
 }
 
-/* ---------- polling (one active timer, stopped when the page changes) ---------- */
-let pollTimer = null;
-export function startPolling(fn, ms = 1000) { stopPolling(); pollTimer = setInterval(fn, ms); }
-export function stopPolling() { clearInterval(pollTimer); pollTimer = null; }
+/* ---------- polling (one timer per key; all stopped when the page changes) ---------- */
+const timers = new Map();
+export function startPolling(key, fn, ms = 1000) { stopPolling(key); timers.set(key, setInterval(fn, ms)); }
+export function stopPolling(key) {
+  if (key === undefined) { timers.forEach(clearInterval); timers.clear(); return; }
+  clearInterval(timers.get(key));
+  timers.delete(key);
+}
+
+/* ---------- navigation token: a page that finishes loading after you navigated away must not render ---------- */
+let navToken = 0;
+export function newNav() { return ++navToken; }
+export function currentNav() { return navToken; }
+
+/* ---------- page cleanup (e.g. keyboard shortcuts), run by the router on navigation ---------- */
+const cleanups = [];
+export function onLeave(fn) { cleanups.push(fn); }
+export function runCleanups() { while (cleanups.length) cleanups.pop()(); }

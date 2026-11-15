@@ -4,25 +4,25 @@
     {
       "id": 1,
       "name": "Name Calling / Ad Hominem",
-      "description": "Atacă persoana sau grupul în loc de argument; etichete disprețuitoare; „noi vs. ei”.",
+      "description": "Attacks the person or group instead of the argument; derogatory labels; \"us vs. them\".",
       "color": "#e5484d"
     },
     {
       "id": 2,
-      "name": "Apel la frică / Catastrofizare",
-      "description": "Induce panică, scenarii apocaliptice sau urgență exagerată.",
+      "name": "Appeal to Fear / Catastrophizing",
+      "description": "Induces panic, apocalyptic scenarios or exaggerated urgency.",
       "color": "#f76b15"
     },
     {
       "id": 3,
-      "name": "Whataboutism / Distragere",
-      "description": "Schimbă subiectul arătând spre alții („dar ce zici de X?”) sau sădește îndoială fără dovezi.",
+      "name": "Whataboutism / Distraction",
+      "description": "Changes the subject by pointing at others (\"but what about X?\") or sows doubt without evidence.",
       "color": "#8e4ec6"
     },
     {
       "id": 4,
-      "name": "Neutru / Non-propagandă",
-      "description": "Informație, opinie argumentată, întrebare sinceră, glumă fără atac.",
+      "name": "Neutral / Non-propaganda",
+      "description": "Information, reasoned opinion, sincere question, joke without an attack.",
       "color": "#30a46c"
     }
   ]

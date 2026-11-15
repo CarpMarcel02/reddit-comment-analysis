@@ -6,14 +6,16 @@
 //   #/r/<sub>/p/<id>     → pages/post.js         (post + comments, with the "Rate" button)
 //   #/labels             → pages/labels.js       (dropdown labels + annotator name)
 //   #/annotations        → pages/annotations.js  (what you labelled, statistics, CSV export)
+//   #/sample             → pages/sample.js       (random annotation sample + your labelling queue)
 
-import { stopPolling } from './utils.js';
+import { stopPolling, runCleanups, newNav } from './utils.js';
 import { getAnnotator } from './store.js';
 import { viewHome } from './pages/home.js';
 import { viewSub } from './pages/subreddit.js';
 import { viewPost } from './pages/post.js';
 import { viewLabels } from './pages/labels.js';
 import { viewAnnotations } from './pages/annotations.js';
+import { viewSample } from './pages/sample.js';
 
 function setActiveNav(name) {
   document.querySelectorAll('[data-nav]').forEach(a => a.classList.toggle('active', a.dataset.nav === name));
@@ -21,8 +23,11 @@ function setActiveNav(name) {
 
 function route() {
   stopPolling();
+  runCleanups();
+  newNav();
   window.scrollTo(0, 0);
   const p = location.hash.replace(/^#\/?/, '').split('/').filter(Boolean).map(decodeURIComponent);
+  if (p[0] === 'sample') { setActiveNav('sample'); return viewSample(); }
   if (p[0] === 'labels') { setActiveNav('labels'); return viewLabels(); }
   if (p[0] === 'annotations') { setActiveNav('annotations'); return viewAnnotations(); }
   setActiveNav('home');

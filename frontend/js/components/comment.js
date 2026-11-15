@@ -10,6 +10,28 @@ export function countAll(c) {
   return 1 + c.kids.reduce((s, k) => s + countAll(k), 0);
 }
 
+// Megathreads can have 70,000+ comments: drawing them all freezes the browser.
+// Each render pass draws at most RENDER_BUDGET comments; the rest become "Show more" buttons.
+export const RENDER_BUDGET = 200;
+
+/** Render a list of sibling comments into `container`, within ctx.budget; the rest load on click. */
+export function renderList(list, container, ctx, what = 'replies') {
+  let i = 0;
+  for (; i < list.length && ctx.budget > 0; i++) container.append(renderComment(list[i], ctx));
+  if (i < list.length) {
+    const rest = list.slice(i);
+    const total = rest.reduce((s, k) => s + countAll(k), 0);
+    const btn = h('button', {
+      type: 'button',
+      class: 'more-btn',
+      onclick: () => { btn.remove(); ctx.budget = RENDER_BUDGET; renderList(rest, container, ctx, what); },
+    }, rest.length === 1 && total === 1
+      ? `＋ Show 1 more ${what === 'comments' ? 'comment' : 'reply'}`
+      : `＋ Show ${fmtNum(rest.length)} more ${what} (${fmtNum(total)} comments in total)`);
+    container.append(btn);
+  }
+}
+
 function avatar(c) {
   const gone = c.author === '[deleted]';
   const letter = (c.author || '?').replace(/^\W+/, '')[0]?.toUpperCase() || '?';
@@ -24,6 +46,19 @@ export function renderComment(c, ctx) {
   const isOP = ctx.post && !ctx.post.missing && c.author && c.author !== '[deleted]' && c.author === ctx.post.author;
   const isRoot = (c.parent || '').startsWith('t3_');
 
+  // hidden by the "Hide bots" / "Hide deleted" toggles:
+  // no replies → nothing at all; with replies → a one-line placeholder so the thread stays connected
+  if ((ctx.hideBots && bot) || (ctx.hideDeleted && deleted)) {
+    if (!c.kids.length) return document.createComment('hidden comment ' + c.id);
+    const hiddenKids = h('div', { class: 'hidden-kids' });
+    renderList(c.kids, hiddenKids, ctx);
+    return h('div', { class: 'comment hidden-comment' },
+      h('div', { class: 'hidden-note small muted' },
+        bot ? `🤖 bot comment hidden (u/${c.author})` : `${c.body || '[deleted]'} comment hidden`),
+      hiddenKids);
+  }
+
+  ctx.budget--;
   const el = h('div', { class: 'comment' + (ctx.highlight && usable ? ' ok' : '') });
   const toggle = h('span', { class: 'toggle' });
   const rawMount = h('div', {});
@@ -71,8 +106,9 @@ export function renderComment(c, ctx) {
         }, h('span', { class: 'label-dot' }), `${a.annotator}: ${a.label_name}`, a.unsure ? ' ?' : '')))
     : null;
 
-  // replies (recursive)
-  const kids = h('div', {}, ...c.kids.map(k => renderComment(k, ctx)));
+  // replies (recursive, within the render budget)
+  const kids = h('div', {});
+  renderList(c.kids, kids, ctx);
 
   el.append(
     h('div', { class: 'rail' }, avatar(c), h('button', { class: 'line', title: 'Collapse thread', onclick: collapse })),

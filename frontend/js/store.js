@@ -5,6 +5,13 @@
 import { api } from './utils.js';
 
 let labelsPromise = null;
+let configPromise = null;
+
+/** Defaults from the server: study period + event date. */
+export function getConfig() {
+  configPromise ||= api('/api/config').catch(e => { configPromise = null; throw e; });
+  return configPromise;
+}
 
 /** The list of labels. force = true → reload from the server. */
 export function getLabels(force = false) {

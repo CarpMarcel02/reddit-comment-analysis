@@ -3,7 +3,7 @@
 //      and whether this computer has the archives / index needed to open those threads
 //   2. all subreddits found locally in subreddits24/
 
-import { app, crumb, h, api, enc, fmtSize } from '../utils.js';
+import { app, crumb, h, api, enc, fmtSize, currentNav } from '../utils.js';
 import { getAnnotator } from '../store.js';
 import { indexPanel } from '../components/indexPanel.js';
 
@@ -57,6 +57,7 @@ function coverageSection(cov, me) {
 }
 
 export async function viewHome() {
+  const nav = currentNav();
   crumb.textContent = '';
   app.replaceChildren(h('div', { class: 'empty' }, 'Loading…'));
 
@@ -64,6 +65,7 @@ export async function viewHome() {
     api('/api/subreddits'),
     api('/api/annotations/coverage').catch(() => []),
   ]);
+  if (nav !== currentNav()) return;      // navigated away while loading
   const me = getAnnotator();
 
   const grid = h('div', { class: 'grid' });

@@ -3,6 +3,8 @@
 We classify Reddit comments by propaganda technique (inspired by SemEval-2020 Task 11):
 **Name Calling / Ad Hominem**, **Appeal to Fear / Catastrophizing**, **Whataboutism / Distraction**, **Neutral**.
 
+**Full project context** (assignment, data, method, decisions, next steps): [`docs/PROJECT_CONTEXT.md`](docs/PROJECT_CONTEXT.md).
+
 The repository includes a local web app (**Archive Viewer**) for browsing the Pushshift archives and for manually annotating comments.
 
 ## Setup

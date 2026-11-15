@@ -1,9 +1,10 @@
 """HTTP server: API routes (/api/...) + static files from frontend/.
 
 Routes:
+  GET    /api/config                     default study period / event date
   GET    /api/subreddits                 all subreddits + index state
   GET    /api/status?sub=                indexing state of one subreddit
-  POST   /api/index?sub=                 start indexing
+  POST   /api/index?sub=&start=&end=&raw=   start indexing (optional period, raw JSON of comments)
   GET    /api/posts?sub=&sort=&q=&...    list of posts
   GET    /api/post?sub=&id=              one post + its comments
   GET    /api/raw?sub=&kind=&id=         original JSON
@@ -23,6 +24,9 @@ Routes:
   DELETE /api/annotations?comment_id=&annotator=    delete
   GET    /api/annotations/stats?annotator=          per-label statistics
   GET    /api/annotations/export.csv?annotator=     CSV export
+
+  GET    /api/sample?annotator=          the shared annotation sample + progress (+ that annotator's labels), or null
+  POST   /api/sample?force=              generate it     {subreddits, per_subreddit, shared, pilot, seed, annotators, filters}
 """
 
 import json
@@ -31,7 +35,7 @@ import re
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from urllib.parse import parse_qs, urlparse
 
-from . import annotations, indexer, queries
+from . import annotations, config, indexer, queries, sampling
 from .annotations import Conflict
 from .config import FRONTEND_DIR
 from .zst_reader import to_int
@@ -129,6 +133,17 @@ class Handler(BaseHTTPRequestHandler):
     def routes(self, method, q):
         """(method, path) → function returning the result."""
         return {
+            # --- settings
+            ("GET", "/api/config"): lambda: {
+                "period_start": config.DEFAULT_PERIOD_START,
+                "period_end": config.DEFAULT_PERIOD_END,
+                "event_date": config.DEFAULT_EVENT_DATE,
+            },
+
+            # --- annotation sample
+            ("GET", "/api/sample"): lambda: sampling.get_sample(q.get("annotator", "")),
+            ("POST", "/api/sample"): lambda: sampling.create_sample(self.read_json(), q.get("force") == "1"),
+
             # --- Reddit data
             ("GET", "/api/subreddits"): lambda: [
                 {"name": n, "sizes": s, **indexer.status(n)}
@@ -165,7 +180,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def start_index(self, q):
         sub = checked_sub(q.get("sub", ""))
-        indexer.start_index(sub)
+        indexer.start_index(sub, q.get("start") or None, q.get("end") or None, q.get("raw") == "1")
         return indexer.status(sub)
 
     def coverage(self):

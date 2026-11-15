@@ -6,7 +6,7 @@ import sqlite3
 import zlib
 
 from .config import PAGE_SIZE
-from .indexer import db_path
+from .indexer import db_path, parse_date
 from .zst_reader import to_int
 
 POST_COLS = ("id, author, title, selftext, url, domain, permalink, created, score, ratio, "
@@ -35,9 +35,17 @@ def get_posts(sub, q):
         args.append(f"%{q['q']}%")
     if q.get("self") == "1":
         where.append("is_self = 1 AND selftext NOT IN ('', '[deleted]', '[removed]')")
-    w = " AND ".join(where)
     con = connect(sub)
     try:
+        if q.get("period") == "1":         # only posts created inside the index's study period
+            meta = dict(con.execute("SELECT k, v FROM meta").fetchall())
+            if meta.get("period_start"):
+                where.append("created >= ?")
+                args.append(parse_date(meta["period_start"]))
+            if meta.get("period_end"):
+                where.append("created < ?")
+                args.append(parse_date(meta["period_end"]))
+        w = " AND ".join(where)
         total = con.execute(f"SELECT COUNT(*) FROM posts WHERE {w}", args).fetchone()[0]
         rows = con.execute(f"SELECT {POST_COLS} FROM posts WHERE {w} ORDER BY {sort} LIMIT ? OFFSET ?",
                            args + [PAGE_SIZE, page * PAGE_SIZE]).fetchall()
@@ -69,6 +77,9 @@ def get_raw(sub, kind, oid):
         row = con.execute(f"SELECT raw FROM {table} WHERE id = ?", (oid,)).fetchone()
         if row is None:
             raise LookupError("Object not found.")
+        if row["raw"] is None:
+            raise LookupError("The raw JSON of comments wasn't kept for this index "
+                              "(re-index with \"keep raw JSON of comments\" to see it).")
         return json.loads(zlib.decompress(row["raw"]).decode("utf-8"))
     finally:
         con.close()

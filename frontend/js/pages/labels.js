@@ -3,7 +3,7 @@
 //   2. the labels shown in the "Rate" dropdown: add / edit / delete / reorder
 //   3. a button that loads the proposed label set (the 4 classes from the project brief)
 
-import { app, crumb, h, send } from '../utils.js';
+import { app, crumb, h, send, currentNav } from '../utils.js';
 import { getLabels, setLabels, getAnnotator, setAnnotator } from '../store.js';
 
 const PALETTE = ['#e5484d', '#f76b15', '#ffb224', '#30a46c', '#12a594', '#0090ff', '#8e4ec6', '#d6409f', '#6f6e77'];
@@ -46,6 +46,7 @@ function labelForm({ initial = {}, submitText, onSubmit, onCancel }) {
 }
 
 export async function viewLabels() {
+  const nav = currentNav();
   crumb.textContent = '/ Labels';
   app.replaceChildren(h('div', { class: 'empty' }, 'Loading…'));
 
@@ -158,9 +159,11 @@ export async function viewLabels() {
   try {
     labels = await getLabels(true);
   } catch (e) {
+    if (nav !== currentNav()) return;
     app.replaceChildren(h('div', { class: 'card empty error' }, e.message));
     return;
   }
+  if (nav !== currentNav()) return;
   renderList();
   app.replaceChildren(annotatorCard, labelsCard, addCard);
 }

@@ -1,10 +1,11 @@
 // post.js — post page (#/r/<sub>/p/<id>): the post on top, the comment tree below.
 // Each comment has the "Rate" button on its right (components/rateMenu.js).
 
-import { app, crumb, h, api, enc, isUsable } from '../utils.js';
+import { app, crumb, h, api, enc, isUsable, isBot, isDeleted, currentNav } from '../utils.js';
 import { getAnnotator } from '../store.js';
 import { postCard } from '../components/postCard.js';
-import { renderComment } from '../components/comment.js';
+import { renderList, RENDER_BUDGET } from '../components/comment.js';
+import { toggleChip } from '../components/toggleChip.js';
 
 const SORTERS = {
   best: (a, b) => b.score - a.score,
@@ -60,6 +61,7 @@ async function loadAnnotations(postId) {
 }
 
 export async function viewPost(sub, id) {
+  const nav = currentNav();
   crumb.replaceChildren('/ ', h('a', { href: `#/r/${enc(sub)}` }, 'r/' + sub), ' / ' + id);
   app.replaceChildren(h('div', { class: 'empty' }, 'Loading…'));
 
@@ -79,9 +81,10 @@ export async function viewPost(sub, id) {
       loadOthers(id).catch(() => new Map()),
     ]);
   } catch (e) {
-    app.replaceChildren(h('div', { class: 'card empty error' }, e.message));
+    if (nav === currentNav()) app.replaceChildren(h('div', { class: 'card empty error' }, e.message));
     return;
   }
+  if (nav !== currentNav()) return;      // navigated away while loading
 
   const post = data.post;
   const top = post.missing
@@ -97,6 +100,8 @@ export async function viewPost(sub, id) {
     others,              // teammates' labels (shown only when the toggle is on)
     showOthers: false,
     highlight: false,
+    hideBots: true,      // on by default: bot comments collapse to a one-line placeholder
+    hideDeleted: true,   // on by default: [deleted] / [removed] too
     sort: 'best',
     onAnnotated: updateRatedInfo,
     onAnnotatorChange: async () => {          // annotator changed → reload their labels (and who counts as "others")
@@ -116,11 +121,16 @@ export async function viewPost(sub, id) {
   function renderTree() {
     sortTree(roots, SORTERS[ctx.sort]);
     sortTree(orphans, SORTERS[ctx.sort]);
-    tree.replaceChildren(...roots.map(c => renderComment(c, ctx)));
+    tree.replaceChildren();
+    ctx.budget = RENDER_BUDGET;               // draw at most ~200 comments now; the rest on "Show more"
+    renderList(roots, tree, ctx, 'comments');
     if (orphans.length) {
+      const box = h('div', {});
       tree.append(
         h('div', { class: 'small muted orphans-title' }, `Comments whose parent is missing from the archive (${orphans.length}):`),
-        ...orphans.map(c => renderComment(c, ctx)));
+        box);
+      ctx.budget = RENDER_BUDGET;
+      renderList(orphans, box, ctx, 'comments');
     }
     if (!data.comments.length) tree.append(h('div', { class: 'empty' }, 'No comments in the archive.'));
   }
@@ -130,15 +140,16 @@ export async function viewPost(sub, id) {
     h('option', { value: 'best' }, 'Sort: score'),
     h('option', { value: 'old' }, 'Sort: oldest'),
     h('option', { value: 'new' }, 'Sort: newest'));
-  const highlight = h('input', { type: 'checkbox', onchange: e => { ctx.highlight = e.target.checked; renderTree(); } });
+  const botCount = data.comments.filter(c => isBot(c.author)).length;
+  const deletedCount = data.comments.filter(c => isDeleted(c.body)).length;
+  const hideBots = toggleChip(`Hide bots (${botCount})`, true, on => { ctx.hideBots = on; renderTree(); });
+  const hideDeleted = toggleChip(`Hide deleted (${deletedCount})`, true, on => { ctx.hideDeleted = on; renderTree(); });
+  const highlight = toggleChip(`Highlight usable (${usableCount})`, false, on => { ctx.highlight = on; renderTree(); },
+    'Not deleted, not a bot, 25–300 words (excluding quotes)');
   const othersCount = [...others.values()].reduce((n, list) => n + list.length, 0);
   const othersToggle = othersCount
-    ? h('label', {
-        class: 'small others-toggle',
-        title: 'For Cohen\'s Kappa you must label independently: turn this on only AFTER you have labelled this thread.',
-      },
-        h('input', { type: 'checkbox', onchange: e => { ctx.showOthers = e.target.checked; renderTree(); } }),
-        ` show teammates' labels (${othersCount}) ⚠`)
+    ? toggleChip(`Teammates' labels (${othersCount}) ⚠`, false, on => { ctx.showOthers = on; renderTree(); },
+        'For Cohen\'s Kappa you must label independently: turn this on only AFTER you have labelled this thread.')
     : null;
 
   renderTree();
@@ -148,9 +159,7 @@ export async function viewPost(sub, id) {
       h('div', { class: 'comments-head' },
         h('b', {}, `${data.comments.length} comments`),
         ratedInfo,
-        h('label', { class: 'small', title: 'not deleted, not a bot, 25–300 words (excluding quotes)' },
-          highlight, ` highlight usable for the project (${usableCount})`),
-        othersToggle,
         sortSelect),
+      h('div', { class: 'chip-row comments-filters' }, hideBots, hideDeleted, highlight, othersToggle),
       tree));
 }

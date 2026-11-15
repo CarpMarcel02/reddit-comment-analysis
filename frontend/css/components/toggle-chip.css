@@ -1,0 +1,23 @@
+/* toggle-chip.css — on/off buttons ("chips"), e.g. [✓ No bots] */
+
+.toggle-chip {
+  display: inline-flex; align-items: center; gap: 6px; white-space: nowrap;
+  border: 1px solid var(--border); background: var(--card); color: var(--muted);
+  border-radius: 16px; padding: 4px 12px 4px 6px; font-size: 12px; font-weight: 700;
+}
+.toggle-chip:hover { border-color: var(--link); }
+.toggle-chip .tc-box {
+  width: 16px; height: 16px; border-radius: 50%; border: 1px solid var(--border);
+  display: grid; place-items: center; font-size: 10px; line-height: 1;
+}
+.toggle-chip.on { border-color: var(--link); color: var(--text); background: color-mix(in srgb, var(--link) 12%, var(--card)); }
+.toggle-chip.on .tc-box { background: var(--link); border-color: var(--link); color: #fff; }
+.toggle-chip:disabled { opacity: .5; cursor: default; }
+
+/* a row of chips with optional inputs next to them */
+.chip-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.chip-row input[type=date], .chip-row input[type=number], .chip-row input[type=text] {
+  background: var(--chip); color: var(--text); border: 1px solid var(--border);
+  border-radius: 4px; padding: 4px 6px; font: inherit; font-size: 12px;
+}
+.chip-row input[type=number] { width: 70px; }

@@ -13,7 +13,8 @@ function unavailable(what, url) {
   return e => e.target.replaceWith(h('div', { class: 'small muted' }, `${what} is no longer available: ${url}`));
 }
 
-function mediaBlock(p) {
+/** The post's video / image / link box (also used on the Sample page). */
+export function mediaBlock(p) {
   const out = [];
   if (p.video) {
     out.push(h('video', { class: 'media', src: p.video, controls: true, preload: 'metadata', onerror: unavailable('The video', p.video) }));

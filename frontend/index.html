@@ -1,7 +1,7 @@
 <!doctype html>
 <!--
   Page skeleton. The content (#app) is rendered by JavaScript based on the
-  URL hash (#/, #/r/<sub>, #/r/<sub>/p/<id>, #/labels, #/annotations) — see js/main.js.
+  URL hash (#/, #/r/<sub>, #/r/<sub>/p/<id>, #/sample, #/labels, #/annotations) — see js/main.js.
 -->
 <html lang="en">
 <head>
@@ -15,6 +15,8 @@
 <link rel="stylesheet" href="/css/components/post-card.css">
 <link rel="stylesheet" href="/css/components/comment.css">
 <link rel="stylesheet" href="/css/components/rate-menu.css">
+<link rel="stylesheet" href="/css/components/toggle-chip.css">
+<link rel="stylesheet" href="/css/pages/sample.css">
 <link rel="stylesheet" href="/css/pages/home.css">
 <link rel="stylesheet" href="/css/pages/subreddit.css">
 <link rel="stylesheet" href="/css/pages/post.css">
@@ -31,6 +33,7 @@
   <span class="crumb" id="crumb"></span>
   <nav class="nav">
     <a href="#/" data-nav="home">Subreddits</a>
+    <a href="#/sample" data-nav="sample">Sample</a>
     <a href="#/labels" data-nav="labels">Labels</a>
     <a href="#/annotations" data-nav="annotations">Annotations</a>
   </nav>

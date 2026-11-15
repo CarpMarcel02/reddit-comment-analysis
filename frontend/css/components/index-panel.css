@@ -1,4 +1,7 @@
-/* index-panel.css — progress bar for indexing a subreddit */
+/* index-panel.css — indexing a subreddit: options form + progress bar */
+
+.index-panel { display: flex; flex-direction: column; gap: 4px; }
+.ip-form { display: flex; flex-direction: column; gap: 8px; padding: 8px; border: 1px dashed var(--border); border-radius: 6px; }
 
 .progress { height: 6px; background: var(--chip); border-radius: 3px; overflow: hidden; }
 .progress > div { height: 100%; background: var(--accent); transition: width .3s; }

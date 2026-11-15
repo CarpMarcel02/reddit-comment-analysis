@@ -45,6 +45,18 @@
   background: color-mix(in srgb, var(--label-color) 10%, transparent);
 }
 
+/* "Show N more replies" (big threads are drawn in chunks) */
+.more-btn {
+  display: block; margin: 8px 0 4px; background: none; border: 0; padding: 4px 6px;
+  color: var(--link); font-size: 12px; font-weight: 700; border-radius: 4px;
+}
+.more-btn:hover { background: var(--chip); }
+
+/* hidden by the "Hide bots" / "Hide deleted" toggles */
+.hidden-comment { display: block; margin-top: 8px; }
+.hidden-note { font-style: italic; padding-left: 4px; }
+.hidden-kids { margin-left: 11px; padding-left: 12px; border-left: 2px dashed var(--line); }
+
 /* collapsed thread */
 .comment.collapsed > .rail .line,
 .comment.collapsed > .body-wrap > :not(.chead) { display: none; }

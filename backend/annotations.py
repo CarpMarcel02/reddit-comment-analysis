@@ -12,8 +12,6 @@ Why this layout:
   • every annotation keeps the comment text + the source .zst file, so teammates can
     see your annotations without having (or reading) that archive;
   • the server notices when files change on disk (e.g. after `git pull`) and reloads them.
-
-Note: the proposed label set (DEFAULT_LABELS) and the generated .md summaries are in Romanian.
 """
 
 import csv
@@ -47,13 +45,13 @@ RECORD_KEYS = ["comment_id", "annotator", "label_id", "label", "unsure", "note",
 # the label set proposed in the project brief (inspired by SemEval-2020 Task 11)
 DEFAULT_LABELS = [
     ("Name Calling / Ad Hominem",
-     "Atacă persoana sau grupul în loc de argument; etichete disprețuitoare; „noi vs. ei”.", "#e5484d"),
-    ("Apel la frică / Catastrofizare",
-     "Induce panică, scenarii apocaliptice sau urgență exagerată.", "#f76b15"),
-    ("Whataboutism / Distragere",
-     "Schimbă subiectul arătând spre alții („dar ce zici de X?”) sau sădește îndoială fără dovezi.", "#8e4ec6"),
-    ("Neutru / Non-propagandă",
-     "Informație, opinie argumentată, întrebare sinceră, glumă fără atac.", "#30a46c"),
+     "Attacks the person or group instead of the argument; derogatory labels; \"us vs. them\".", "#e5484d"),
+    ("Appeal to Fear / Catastrophizing",
+     "Induces panic, apocalyptic scenarios or exaggerated urgency.", "#f76b15"),
+    ("Whataboutism / Distraction",
+     "Changes the subject by pointing at others (\"but what about X?\") or sows doubt without evidence.", "#8e4ec6"),
+    ("Neutral / Non-propaganda",
+     "Information, reasoned opinion, sincere question, joke without an attack.", "#30a46c"),
 ]
 
 # ============================================================ in-memory state
@@ -204,7 +202,7 @@ def _save_annotator(slug):
     _write_summary(slug)
 
 
-# ============================================================ .md summary (content in Romanian)
+# ============================================================ .md summary
 
 def _md(value, limit=None):
     s = " ".join(str(value if value is not None else "").split())
@@ -233,17 +231,17 @@ def _write_summary(slug):
     used_ids = [l["id"] for l in labels] + sorted({r.get("label_id") for r in recs} - {l["id"] for l in labels})
 
     out = [
-        f"# Adnotările lui {_md(name)}",
+        f"# Annotations by {_md(name)}",
         "",
-        f"> Generat automat de `app.py` la fiecare etichetare — nu edita manual. "
-        f"Datele brute: [`{slug}.jsonl`]({slug}.jsonl).",
+        f"> Generated automatically by `app.py` on every label — don't edit by hand. "
+        f"Raw data: [`{slug}.jsonl`]({slug}.jsonl).",
         "",
-        f"**{total}** comentarii etichetate · **{unsure}** nesigure · **{posts}** postări · "
-        f"ultima modificare: {_fmt_ts(last)}",
+        f"**{total}** labelled comments · **{unsure}** unsure · **{posts}** posts · "
+        f"last updated: {_fmt_ts(last)}",
         "",
-        "## Pe ce fișiere .zst am lucrat",
+        "## Source .zst files",
         "",
-        "| Fișier sursă | Subreddit | Comentarii | " + " | ".join(_md(lab_name(i)) for i in used_ids) + " | Nesigure |",
+        "| Source file | Subreddit | Comments | " + " | ".join(_md(lab_name(i)) for i in used_ids) + " | Unsure |",
         "|---|---|---:|" + "---:|" * len(used_ids) + "---:|",
     ]
     by_file = {}
@@ -254,13 +252,13 @@ def _write_summary(slug):
         out.append(f"| `{_md(src)}` | r/{_md(sub)} | {len(rs)} | " + " | ".join(map(str, counts))
                    + f" | {sum(1 for r in rs if r.get('unsure'))} |")
 
-    out += ["", "## Pe categorie", "", "| Categorie | Comentarii | % |", "|---|---:|---:|"]
+    out += ["", "## By label", "", "| Label | Comments | % |", "|---|---:|---:|"]
     for i in used_ids:
         n = sum(1 for r in recs if r.get("label_id") == i)
         out.append(f"| {_md(lab_name(i))} | {n} | {100 * n / total:.0f}% |")
 
-    out += ["", "## Ultimele 30 de etichete", "",
-            "| Data | Subreddit | Comentariu | Etichetă | Nesigur | Notă |", "|---|---|---|---|:-:|---|"]
+    out += ["", "## Last 30 labels", "",
+            "| Date | Subreddit | Comment | Label | Unsure | Note |", "|---|---|---|---|:-:|---|"]
     for r in sorted(recs, key=lambda r: r.get("updated") or 0, reverse=True)[:30]:
         out.append(f"| {_fmt_ts(r.get('updated'))[:10]} | r/{_md(r.get('subreddit'))} | "
                    f"{_md(r.get('text'), 90)} | {_md(lab_name(r.get('label_id')))} | "
@@ -403,20 +401,40 @@ def _clean_annotator(value):
 
 
 def _comment_context(sub, comment_id):
-    """Get the comment text + the post title from the subreddit's index."""
+    """Get the comment text + the post title from the subreddit's index,
+    or from the shared sample (so you can label sample items without indexing the subreddit)."""
     path = db_path(sub)
-    if not os.path.exists(path):
-        raise LookupError("This subreddit hasn't been indexed.")
-    con = sqlite3.connect(path)
-    try:
-        row = con.execute(
-            "SELECT c.link, c.author, c.body, p.title FROM comments c "
-            "LEFT JOIN posts p ON p.id = c.link WHERE c.id = ?", (comment_id,)).fetchone()
-    finally:
-        con.close()
+    row = None
+    if os.path.exists(path):
+        con = sqlite3.connect(path)
+        try:
+            row = con.execute(
+                "SELECT c.link, c.author, c.body, p.title FROM comments c "
+                "LEFT JOIN posts p ON p.id = c.link WHERE c.id = ?", (comment_id,)).fetchone()
+        finally:
+            con.close()
     if row is None:
-        raise LookupError("Comment not found in the index.")
+        from .sampling import find_item          # local import: sampling imports this module
+        it = find_item(comment_id)
+        if it and it["subreddit"] == sub:
+            return it["link_id"], it["author"], it["text"], it["post_title"]
+        raise LookupError("Comment not found (index this subreddit first)." if os.path.exists(path)
+                          else "This subreddit hasn't been indexed.")
     return row
+
+
+def labelled_ids(annotator):
+    """Set of comment ids an annotator has labelled."""
+    with _lock:
+        _refresh()
+        return set(_ann.get(slugify(annotator), {}).keys())
+
+
+def views_for(annotator):
+    """{comment_id: annotation (with label name/color)} for one annotator."""
+    with _lock:
+        _refresh()
+        return {cid: _view(r) for cid, r in _ann.get(slugify(annotator), {}).items()}
 
 
 def save_annotation(sub, data):

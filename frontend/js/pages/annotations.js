@@ -1,7 +1,7 @@
 // annotations.js — the "Annotations" page (#/annotations):
 //   per-label statistics, list of labelled comments, CSV export.
 
-import { app, crumb, h, api, enc, md, fmtDate, fmtNum } from '../utils.js';
+import { app, crumb, h, api, enc, md, fmtDate, fmtNum, currentNav } from '../utils.js';
 import { getLabels, getAnnotator } from '../store.js';
 import { rateButton } from '../components/rateMenu.js';
 
@@ -29,6 +29,7 @@ function statsBlock(s) {
 }
 
 export async function viewAnnotations() {
+  const nav = currentNav();
   crumb.textContent = '/ Annotations';
   app.replaceChildren(h('div', { class: 'empty' }, 'Loading…'));
 
@@ -37,7 +38,7 @@ export async function viewAnnotations() {
   const F = filters;
 
   let labels;
-  try { labels = await getLabels(true); }
+  try { labels = await getLabels(true); if (nav !== currentNav()) return; }
   catch (e) { app.replaceChildren(h('div', { class: 'card empty error' }, e.message)); return; }
 
   const statsBox = h('div', { class: 'card section' });
@@ -59,6 +60,7 @@ export async function viewAnnotations() {
 
   async function loadStats() {
     const s = await api(`/api/annotations/stats?annotator=${enc(F.annotator)}`);
+    if (nav !== currentNav()) return;
     statsBox.replaceChildren(
       ...s.errors.map(msg => h('div', { class: 'notice small error' }, '⚠ ' + msg)),
       h('h2', {}, 'Class distribution'),
@@ -111,6 +113,7 @@ export async function viewAnnotations() {
   async function loadList() {
     listBox.replaceChildren(h('div', { class: 'empty' }, 'Loading…'));
     const d = await api(`/api/annotations?annotator=${enc(F.annotator)}&label=${F.label}&unsure=${F.unsure ? 1 : 0}&page=${F.page}`);
+    if (nav !== currentNav()) return;
     info.textContent = `${fmtNum(d.total)} results`;
     listBox.replaceChildren(...d.items.map(row));
     if (!d.items.length) {

@@ -7,3 +7,4 @@
 }
 .comments-head select { background: var(--chip); color: var(--text); border: 1px solid var(--border); border-radius: 4px; padding: 4px; }
 .orphans-title { margin-top: 16px; }
+.comments-filters { margin-bottom: 6px; }
