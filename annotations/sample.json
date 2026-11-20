@@ -1,13 +1,16 @@
 {
  "version": 1,
- "created": 1795170343,
+ "created": 1795170931,
  "settings": {
   "subreddits": [
    "AskARussian",
    "CredibleDefense",
    "geopolitics",
+   "NonCredibleDefense",
    "russia",
-   "ukraine"
+   "ukraine",
+   "UkraineRussiaReport",
+   "UkrainianConflict"
   ],
   "per_subreddit": 25,
   "shared": 50,
@@ -31,41 +34,38 @@
    "event_date": "2022-02-24"
   }
  },
- "warnings": [],
+ "warnings": [
+  "r/UkraineRussiaReport (before): only 0 valid comments, wanted 15."
+ ],
  "items": [
   {
-   "comment_id": "hyuizjt",
-   "subreddit": "russia",
-   "source_file": "russia_comments.zst",
-   "link_id": "t3sik9",
-   "post_title": "This community (Россия Реддит -- Россия) is quarantined: This Community contains a high volume of information not supported by credible sources.",
+   "comment_id": "j5dum4j",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "10huqjr",
+   "post_title": "ua pov: Ukrainian soldiers during fighting around Bakhmut",
    "post_text": null,
    "post_media": {
-    "url": "https://i.redd.it/hnxy8xokmnk81.png",
-    "domain": "i.redd.it",
-    "image": "https://i.redd.it/hnxy8xokmnk81.png",
-    "video": null,
-    "thumb": null,
+    "url": "https://v.redd.it/9e2z0sob8fda1",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/9e2z0sob8fda1/DASH_480.mp4?source=fallback",
+    "thumb": "https://a.thumbs.redditmedia.com/5bHU9k21cr_8q1qVqNj-P48qMIFSa39e-QJY_TMssY8.jpg",
     "is_self": 0
    },
-   "parent_id": "t1_hyudf8t",
+   "parent_id": "t1_j5bgdpp",
    "context": [
     {
-     "id": "hyucgct",
-     "author": "Fiyanggu",
-     "text": "Big Brother doesn't allow wrongthink. So much for freedom of expression."
-    },
-    {
-     "id": "hyudf8t",
-     "author": "nprivate",
-     "text": "They have been planning this for a very very long time. But not simply quarantining r/russia The framework for \"all of this\" begin with the Communications Decency Act in 1996.\n\n Look at most user accounts on Reddit, people have been \"banned for life\" for a variety of reasons, and that is to accustom everyone that this is \"normal\"."
+     "id": "j5bgdpp",
+     "author": "TomTheTinker",
+     "text": "Doesn’t green mean they are foreign?"
     }
    ],
-   "author": "Saward420",
-   "text": "You guys are sounding an awful lot like conspiracy theorists. Maybe it’s because all your opinions and Q’s are both spoon fed by the kremlin?",
-   "score": -7,
-   "controversiality": 1,
-   "created": 1646093289,
+   "author": "ManyArmedGod",
+   "text": "Good question, Im not sure but many times I’ve seen the foreign units using blue tape like the rest. Maybe they switch it up intentionally from time to time or use what’s available?",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1674371753,
    "period": "after",
    "group": "pilot",
    "order": 0
@@ -358,6 +358,32 @@
    "order": 6
   },
   {
+   "comment_id": "hwf81fi",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "spczdt",
+   "post_title": "How noncredible is this thread from r/todayilearned? Unserious answers only.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/1mutz1i5r1h81.png",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/1mutz1i5r1h81.png",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/YTX24P9SZWaEZuS_fsaPb5MW0VGZdpDaF0GDHjivCRo.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t3_spczdt",
+   "context": [],
+   "author": "RamTank",
+   "text": "S-500 is \\*checks notes\\* a strategic missile defence system. Russiaboos seem to always bring it up, despite being largely unrelated to what they're talking about.\n\nAlthough pitting the USAF vs VVS in a conversation about air defences is definitely a bit misleading. The VVS was never on par, which is why they developed all those SAMs to compensate.",
+   "score": 22,
+   "controversiality": 0,
+   "created": 1644528417,
+   "period": "before",
+   "group": "pilot",
+   "order": 7
+  },
+  {
    "comment_id": "gxh9pts",
    "subreddit": "geopolitics",
    "source_file": "geopolitics_comments.zst",
@@ -417,7 +443,7 @@
    "created": 1620549697,
    "period": "before",
    "group": "pilot",
-   "order": 7
+   "order": 8
   },
   {
    "comment_id": "hz40340",
@@ -459,7 +485,7 @@
    "created": 1646261449,
    "period": "after",
    "group": "pilot",
-   "order": 8
+   "order": 9
   },
   {
    "comment_id": "ikvraqp",
@@ -501,7 +527,7 @@
    "created": 1660875747,
    "period": "after",
    "group": "pilot",
-   "order": 9
+   "order": 10
   },
   {
    "comment_id": "h78h6oa",
@@ -618,39 +644,106 @@
    "created": 1627760461,
    "period": "before",
    "group": "pilot",
-   "order": 10
+   "order": 11
   },
   {
-   "comment_id": "hyc36w1",
-   "subreddit": "ukraine",
-   "source_file": "ukraine_comments.zst",
-   "link_id": "t0dn18",
-   "post_title": "[deleted by user]",
+   "comment_id": "j8ay9vg",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "110sosz",
+   "post_title": "Reports that Kremlin has banned the mention of Prigozhin and WagnerPMC on all Russian propaganda TV channels.",
    "post_text": null,
    "post_media": {
-    "url": "https://www.reddit.com/r/ukraine/comments/t0dn18/deleted_by_user/",
-    "domain": "self.ukraine",
+    "url": "https://twitter.com/Tendar/status/1624857148898398208?s=20&amp;t=ruQiirY15oA8BVlfD7-dpQ",
+    "domain": "twitter.com",
     "image": null,
     "video": null,
-    "thumb": null,
-    "is_self": 1
+    "thumb": "https://b.thumbs.redditmedia.com/gSPpfqpxF8AIA6s2sQvQRPYHsO_lEpzrRvAzvmSymNI.jpg",
+    "is_self": 0
    },
-   "parent_id": "t1_hy928nv",
+   "parent_id": "t1_j8awycg",
    "context": [
     {
-     "id": "hy928nv",
-     "author": "3vi1face",
-     "text": "How the fuck have we ended up here? Why don't we ever learn and keep letting these fucking greedy pigs send us to kill and die for them"
+     "id": "j8aslgl",
+     "author": "theold777",
+     "text": "Night of the long knives approaching?"
+    },
+    {
+     "id": "j8asyow",
+     "author": "JaB675",
+     "text": "Night of the long sledgehammers."
+    },
+    {
+     "id": "j8awkqg",
+     "author": "MethanyJones",
+     "text": "Or on any of the higher floors night of the open windows."
+    },
+    {
+     "id": "j8awycg",
+     "author": "brooksram",
+     "text": "The first story windows seem to be just as efficient.  The self administered bullet wounds to the back of the cranium seem to always help finish the job."
     }
    ],
-   "author": "tsundokume",
-   "text": "Do you want an actual answer? \n\nWhen the Soviet Union collapsed and Russia rose from its ashes, all of the communist bureaucrats scrambled to amass fortunes and privatize corporations. They were the first ones in their respective industries and, since they also held political power, institutionalized their businesses into monopolies, effectively making them barons and oligarchs. \n\nThe West largely shrugged its shoulders and said “whatever as long as you’re not communist and you won’t nuke us”. The only time we semi gave a fuck was the Bosnian War in the late 90s. But even then, Russia was nowhere near the threat it poses today due to how limited their economy was. A man named Vladimir Putin was handpicked by Boris Yeltsin to be his successor and the west collectively said “huh he’s KGB, that’s weird but whatever.” We just ignored Russia for two decades and got surprise pikachu face when it devolved into the authoritarian kleptocracy that it is today. \n\nWe ignored the largest country on planet earth for well over 20 years and let them ingress on the nations around them because we don’t culturally identify with Slavs as a whole. And that led to this.",
-   "score": 1,
+   "author": "LilLebowskiAchiever",
+   "text": "Or polonium tea. \n\nOr poisoned underpants.  \n\nOr a poisoned umbrella.  \n\nMore likely, a well aimed cassis belli explosion under his feet in Donbas.  Blame Ukraine, integrate Wagner into Russian forces, Putin’s family reaps all the profits.  Prighozhin gets diefied as a warlord Saint, gets posthumous awards.  His family gets $10million, a guarded villa in Sochi, and a stern warning to STFU forever.",
+   "score": 11,
    "controversiality": 0,
-   "created": 1645760025,
+   "created": 1676245412,
    "period": "after",
    "group": "pilot",
-   "order": 11
+   "order": 12
+  },
+  {
+   "comment_id": "i1gi8wb",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "tisiqq",
+   "post_title": "Another Classic from the old days of the sub",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/iksg6r0d9lo81",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/iksg6r0d9lo81/DASH_480.mp4?source=fallback",
+    "thumb": "https://b.thumbs.redditmedia.com/xW4p4aziGIwDXo02hyZvcvdAe2NRo4OIZI8k3AiRaFA.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_i1g0z6u",
+   "context": [
+    {
+     "id": "i1ftlu0",
+     "author": "deleuzian_fuckup",
+     "text": "\"Love to see Margaret Thatcher\" said no one ever"
+    },
+    {
+     "id": "i1fxwkc",
+     "author": "Frosh_4",
+     "text": "Except for a lot of the core of this sub that’s NeoLiberals\n\nBased Maggy"
+    },
+    {
+     "id": "i1fyd7d",
+     "author": "2WordsBunchOfNumbers",
+     "text": "> Anglo\n\n> Based\n\nPick one"
+    },
+    {
+     "id": "i1fyi7o",
+     "author": "Frosh_4",
+     "text": "An “Anglo” went went to the moon and will be the first person on mars.\n\nThere is no getting more based than that. Galactic imperialism here we come."
+    },
+    {
+     "id": "i1g0z6u",
+     "author": "ThatGuyNicho",
+     "text": "United Space Kingdom coming soon"
+    }
+   ],
+   "author": "Thewaltham",
+   "text": "The UK does a lot of cool stuff with satellites tbh. Shame the Beagle 2 didn't unfold, that thing was ahead of its time. Glad it was at least found though, solved that mystery.",
+   "score": 9,
+   "controversiality": 0,
+   "created": 1647814600,
+   "period": "after",
+   "group": "pilot",
+   "order": 13
   },
   {
    "comment_id": "hhl6ukc",
@@ -682,44 +775,33 @@
    "created": 1634882148,
    "period": "before",
    "group": "pilot",
-   "order": 12
+   "order": 14
   },
   {
-   "comment_id": "j8119eq",
-   "subreddit": "CredibleDefense",
-   "source_file": "CredibleDefense_comments.zst",
-   "link_id": "10yrdzs",
-   "post_title": "CredibleDefense Daily MegaThread February 10, 2023",
-   "post_text": "Comment guidelines:\n\n​\n\nPlease do:\n\n​\n\n\\* Be curious not judgmental,\n\n\\* Be polite and civil,\n\n\\* Use the original title of the work you are linking to,\n\n\\* Use capitalization,\n\n\\* Link to the article or source of information that you are referring to,\n\n\\* Make it clear what is your opinion and from what the source actually says. Please minimize editorializing, please make your opinions clearly distinct from the content of the article or source, please do *not* cherry pick facts to support a preferred narrative,\n\n\\* Read the articles before you comment, and comment on the content of the articles,\n\n\\* Post only credible, well-sourced information\n\n\\* Leave a submission statement that justifies the legitimacy or importance of what you are submitting,\n\n\\* Ask questions in the megathread, and not as a self post,\n\n\\* Contribute to the forum by finding and submitting your own credible articles,\n\n\\* Submit articles that will be relevant 5-10 years from now, and not ephemeral news stories\n\n​\n\nPlease do not:\n\n​\n\n\\* Use memes, or emojis, excessive swearing, foul imagery,\n\n\\* Use acronyms like LOL, LMAO, WTF, /s, etc,\n\n\\* Start fights with other commenters,\n\n\\* Make it personal, \n\n\\* Try to out someone,\n\n\\* Try to push narratives, or fight for a cause in the comment section, or try to 'win the war,'\n\n\\* Answer or respond directly to the title of an article,\n\n\\* Submit news updates, or procurement events/sales of defense equipment.\n\n\\* Engage in baseless speculation, fear mongering, or an…",
+   "comment_id": "hy49ozt",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "szllsc",
+   "post_title": "Why didn’t Russia just start its military build up during the Biden administration rather than the Trump administration?",
+   "post_text": "Obviously this has been going on since 2014, but why did Putin start his military build up along the border during the Biden Administration then the Trump Administration?\n\nEdit: Here’s a Wikipedia link, make your own judgments\n\nhttps://en.m.wikipedia.org/wiki/Russo-Ukrainian_War\n\nAlso edit: the title doesn’t make sense 😂",
    "post_media": {
-    "url": "https://www.reddit.com/r/CredibleDefense/comments/10yrdzs/credibledefense_daily_megathread_february_10_2023/",
-    "domain": "self.CredibleDefense",
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/szllsc/why_didnt_russia_just_start_its_military_build_up/",
+    "domain": "self.UkrainianConflict",
     "image": null,
     "video": null,
     "thumb": null,
     "is_self": 1
    },
-   "parent_id": "t1_j8107ur",
-   "context": [
-    {
-     "id": "j80ugfc",
-     "author": "jrex035",
-     "text": "This post is about a week old, so apologies if it's been discussed already, but [LPR volunteer and milblogger Murz](https://twitter.com/wartranslated/status/1621645246298832903?s=20) says that LDPR forces have been fighting for months now on other fronts of the Donbas such as Avdiivka and Marinka in support of the battle for Bakhmut, with the idea being that they were tying down UA forces that could've been sent as reinforcements to Bakhmut. \n\nThat's not exactly news. What's surprising though is that he claims the fighting conducted by LDPR forces elsewhere in the Donbas in support of the push to take Bakhmut have been as costly as the previous battles for Mariupol and Volnovakha, which caused huge losses for separatist forces. He also suggests that LDPR units (outside of artillery and command) have been chewed to hell and reconstituted repeatedly by mobiks from the separatist regions with no training and terrible equipment, in some units as many as 4 times already, and that as a result their combat effectiveness is \"below the floor.\" Working vehicles are also supposedly very rare in these units at this point. \n\nIf this is true (and it does seem very plausible), it suggests that the Russian strategy is highly unsustainable as the losses among ground units are enormous and their replacements are far less capable than the men being lost. It would also suggest that once Russia really does run out of expendable \"meat\" like LDPR and Wagner convicts, that these tactics won't work a…"
-    },
-    {
-     "id": "j8107ur",
-     "author": "CommandoDude",
-     "text": "This is why I'm inclined to believe Ukrainians are not exaggerating their loss claims to an extraordinary degree. All the tactics Russia has been using suggests they are losing massive amounts of infantry to avoid hemorrhaging equipment."
-    }
-   ],
-   "author": "jrex035",
-   "text": "Yeah same here. I'm increasingly convinced Russia and it's proxies really have suffered 200k casualties already, less than a year into this madness. That the Russians have been trying to replace iron with blood and they're *still* seeing so many vehicle losses on a daily basis makes me think that recent Ukrainian claims of ~800 Russian casualties a day aren't that far-fetched. \n\nThe videos from the recent attacks really highlight a major issue for Russia too imo, their replacements seem wholly incapable of offensive actions. Their troops are stumbling all over each other, bunching up when they shouldn't, driving one after another into minefields, etc. If that's the standard quality of the new mobiks Russia has raised, it doesn't bode well for future offensives let alone the current one. What should be especially worrying for the Russians is that naval infantry, some of Russia's best preforming units early in the war, are spearheading the attack on Vuhledar and performing so poorly. Makes me think once the VDV are ground down to a nub Russia will be all but out of offensive potential altogether.",
-   "score": 31,
-   "controversiality": 0,
-   "created": 1676062625,
-   "period": "after",
+   "parent_id": "t3_szllsc",
+   "context": [],
+   "author": "YellowAntz",
+   "text": "Because Putin hoped that Trump would successfully seize power. Trump is the same as Putin only that Putin is more successful. Both are old men who are absolutely blinded and only have the promotion of elites on their minds.",
+   "score": 3,
+   "controversiality": 1,
+   "created": 1645634609,
+   "period": "before",
    "group": "pilot",
-   "order": 13
+   "order": 15
   },
   {
    "comment_id": "hxsrhw0",
@@ -771,7 +853,7 @@
    "created": 1645420996,
    "period": "before",
    "group": "pilot",
-   "order": 14
+   "order": 16
   },
   {
    "comment_id": "hdkj8pn",
@@ -808,7 +890,69 @@
    "created": 1632128230,
    "period": "before",
    "group": "pilot",
-   "order": 15
+   "order": 17
+  },
+  {
+   "comment_id": "hks3tpi",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "qu36ba",
+   "post_title": "Authoritarian Cope",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/y96fv3ozhnz71.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/y96fv3ozhnz71.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/XngviTLZclvA4rUbzeBncw_-XwUytTxdU13YrvfLA1c.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hkq9pk4",
+   "context": [
+    {
+     "id": "hkoi54r",
+     "author": "yakult_on_tiddy",
+     "text": "Unpopular Non-credible opinion: any small scale skirmish will end up with NATO forces being slightly caught off guard by China and leaving with a black eye. \n\nChina will stage videos like they did on the Indian border to make western losses look worse, the west will try and control the narrative with Hollywood movies and CNN/BBC propaganda. \n\nThe fight will not escalate because everyone still needs cheap gifts next Christmas."
+    },
+    {
+     "id": "hkonpye",
+     "author": "innocentbabies",
+     "text": "Honestly it depends on a whole lot of factors.\n\nAssuming the most likely scenario, which is an invasion of Taiwan, the PRC's missile bases pose a credible threat to a US carrier group. But the US also has like 11 of them, so it's basically a question of how committed the US is to Taiwan, assuming China pushes the issue in the first place.\n\nThe US easily can win any realistic engagement with China. It's just a question of the political calculus involved, since the US is famously loss-averse."
+    },
+    {
+     "id": "hkow9mv",
+     "author": "NaturallyExasperated",
+     "text": "The US tends to be loss averse in insurgencies and unconventional war. In traditional war (Korea would be the most recent example) they can bleed a lot."
+    },
+    {
+     "id": "hkp93u5",
+     "author": "Psychicumbreon",
+     "text": "I'd more push the Gulf War to be a modern traditional example over Korea"
+    },
+    {
+     "id": "hkpmd5f",
+     "author": "XxSWCC-DaddyYOLOxX",
+     "text": "Not sure a 5 day operation where the enemy didn't fight back is gonna be a real helpful example"
+    },
+    {
+     "id": "hkpmy5r",
+     "author": "McFlyParadox",
+     "text": "Well, their armored divisions tried to fight back - the Soviets had previously outfitted them with some pretty capable tanks - they just got completely fucked by essentially trying to use their armor as artillery pieces instead of, you know, tanks. All the US had to do was drive their Abrams around the Iraqi tanks (not exactly tricky in a big fucking desert when you have GPS), and then hit them from the sides and behind."
+    },
+    {
+     "id": "hkq9pk4",
+     "author": "alphacsgotrading",
+     "text": "T-72Ms are not what I would call \"capable\" in 1991"
+    }
+   ],
+   "author": "historygunguy",
+   "text": "Definitely not, although they could have done a hell of a lot better if they had modern ammunition instead of the type that IIRC the Soviets were barely even using for training purposes by that point.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1637016804,
+   "period": "before",
+   "group": "pilot",
+   "order": 18
   },
   {
    "comment_id": "it45nj7",
@@ -898,126 +1042,6 @@
    "score": -4,
    "controversiality": 0,
    "created": 1666296922,
-   "period": "after",
-   "group": "pilot",
-   "order": 16
-  },
-  {
-   "comment_id": "h5793qr",
-   "subreddit": "AskARussian",
-   "source_file": "AskARussian_comments.zst",
-   "link_id": "okcv5m",
-   "post_title": "How is the winterwar and other smaller wars taught in Russia?",
-   "post_text": "Or are The smaller parts of ww2 just overlooked?",
-   "post_media": {
-    "url": "https://www.reddit.com/r/AskARussian/comments/okcv5m/how_is_the_winterwar_and_other_smaller_wars/",
-    "domain": "self.AskARussian",
-    "image": null,
-    "video": null,
-    "thumb": null,
-    "is_self": 1
-   },
-   "parent_id": "t1_h577cle",
-   "context": [
-    {
-     "id": "h5753yy",
-     "author": "nikshdev",
-     "text": "I was taught about the Winter War (using this exact term) in school history course in mid-2000s. It was not overlooked completely, but it occupied 2 or less pages in the textbook."
-    },
-    {
-     "id": "h575fi7",
-     "author": "the_mighty_platypus",
-     "text": "What was The tone behind it?\n\nWas it taught as an embarrassment to The red army or was it taught as another instance of The USSR steamrolling a small country?"
-    },
-    {
-     "id": "h577cle",
-     "author": "nikshdev",
-     "text": "I can't vouch for my memory (it's been long since), but as far as I remember, the narrative was like this:\n\n\"It had no reasonable justification behind it and USSR was expelled from the League of Nations for leading a war of aggression. The real purpose was to move away the border from Leningrad to avoid its quick surrender in case of a big war.\n\nThough the aim was achieved, USSR's losses exceeded expectations by far, and the war showed the Red Army is unprepared for a big one. \""
-    }
-   ],
-   "author": "the_mighty_platypus",
-   "text": "Oh wow. That seems surprisingly kind.\n\nI was expecting a sort of American style response to vietnam of \"those damn terrorists are murdering innocent soldiers for no reason\" thing.",
-   "score": -4,
-   "controversiality": 0,
-   "created": 1626297907,
-   "period": "before",
-   "group": "pilot",
-   "order": 17
-  },
-  {
-   "comment_id": "igebr48",
-   "subreddit": "AskARussian",
-   "source_file": "AskARussian_comments.zst",
-   "link_id": "vzzgfd",
-   "post_title": "What is your views on the West calling Russia a terrorist state?",
-   "post_text": "Either you believe this to be pushed by American, British, polish or NATO or even Ukrainian who side against Russia?",
-   "post_media": {
-    "url": "https://www.reddit.com/r/AskARussian/comments/vzzgfd/what_is_your_views_on_the_west_calling_russia_a/",
-    "domain": "self.AskARussian",
-    "image": null,
-    "video": null,
-    "thumb": null,
-    "is_self": 1
-   },
-   "parent_id": "t1_ige9aid",
-   "context": [
-    {
-     "id": "igcdfqk",
-     "author": "ColbySalamanca",
-     "text": "Terrorism is the unlawful use of violence and intimidation, especially against civilians, in the pursuit of political aims. This fits Russia to a “T”."
-    },
-    {
-     "id": "igchtg9",
-     "author": "Human-No-1",
-     "text": "Russia is disabling only military facilities of Ukraine. If your media talk about terrorism from Russia, it's fake!"
-    },
-    {
-     "id": "ige3gsm",
-     "author": "Sensitive-Database51",
-     "text": "Killing my 75-year old father on his way to dialysis was disabling military facilities?"
-    },
-    {
-     "id": "ige8uai",
-     "author": "Human-No-1",
-     "text": "Evidence? If you are watching this video from a Ukrainian account, then everything is rigged there. Ukrainians often post fake videos on social networks like \"Russians fired at a school in Lugansk.\" Don't believe them. It's better to look at our media with English subtitles, there are no fakes there."
-    },
-    {
-     "id": "ige9aid",
-     "author": "Sensitive-Database51",
-     "text": "You need evidence of my father’s dead body? WTF???? Will you also ask for DNA test of the corpse?\n\nEdit: I’m not a proficient redditor and will need to learn how to upload photos for proof."
-    }
-   ],
-   "author": "Human-No-1",
-   "text": "Reddit does not allow attaching photos to comments. You can upload a photo to a file sharing service (for example zippyshare.com ) and send the linkReddit does not allow attaching photos to comments. You can upload photos to a file sharing service (for example zippyshare.com ) and send the link.",
-   "score": 1,
-   "controversiality": 0,
-   "created": 1657981361,
-   "period": "after",
-   "group": "pilot",
-   "order": 18
-  },
-  {
-   "comment_id": "icbyiak",
-   "subreddit": "geopolitics",
-   "source_file": "geopolitics_comments.zst",
-   "link_id": "vb7sit",
-   "post_title": "Putin dreams of repeating the past",
-   "post_text": null,
-   "post_media": {
-    "url": "https://www.reddit.com/r/geopolitics/comments/vb7sit/putin_dreams_of_repeating_the_past/",
-    "domain": "self.geopolitics",
-    "image": null,
-    "video": null,
-    "thumb": null,
-    "is_self": 1
-   },
-   "parent_id": "t3_vb7sit",
-   "context": [],
-   "author": "TypingMonkey59",
-   "text": ">It's no secret that the majority of the world's population is enthusiastically watching the activities of Elon Musk, Jeff Bezos and other visionaries. They conquered the heights within the market economy, and now they are developing the latest technologies that allow all of humanity to take steps beyond new limits.\n\nThese people you mention are oligarchs as bad as any they have in Russia. They don't even care about their workers, and they certainly don't care about improving the lot of humanity.",
-   "score": 7,
-   "controversiality": 0,
-   "created": 1655216471,
    "period": "after",
    "group": "pilot",
    "order": 19
@@ -1139,6 +1163,43 @@
    "order": 22
   },
   {
+   "comment_id": "gyoel3s",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "n4kb9s",
+   "post_title": "congress wants to keep the A-10, here's how",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/a7bunzxjq2x61.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/a7bunzxjq2x61.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/vsxhsPYVnGhMqFmT7bleh8YF-4z4jeu0djHd93aC23E.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_gx4cl8g",
+   "context": [
+    {
+     "id": "gx448c3",
+     "author": "Kamiyoda",
+     "text": "Whats funny is Star Wars already has an A-10 Equivalent.\n\nThe K-Wing\n\nhttps://www.google.com/amp/s/aminoapps.com/c/warfare-roleplay/amp/item/btl-s8-k-wing/MBkr_q5S0IgWqBGe3QZGnKrKVpMnWEmEZK"
+    },
+    {
+     "id": "gx4cl8g",
+     "author": "igoryst",
+     "text": "I know about K wing, Y wing would be something like Su-34/F-15 strike Eagle"
+    }
+   ],
+   "author": "AwkwardDrummer7629",
+   "text": "The Y-wing is more the B-52; it’s the best at what it does, no one’s really come up with a good replacement, ant it’ll be in service for at least a hundred years.",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1621417698,
+   "period": "before",
+   "group": "shared",
+   "order": 23
+  },
+  {
    "comment_id": "hsp5tv9",
    "subreddit": "russia",
    "source_file": "russia_comments.zst",
@@ -1162,7 +1223,7 @@
    "created": 1642204658,
    "period": "before",
    "group": "shared",
-   "order": 23
+   "order": 24
   },
   {
    "comment_id": "hx6oegu",
@@ -1194,7 +1255,96 @@
    "created": 1645026576,
    "period": "before",
    "group": "shared",
-   "order": 24
+   "order": 25
+  },
+  {
+   "comment_id": "iw3h9ma",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "ytbr9d",
+   "post_title": "ru POV March \"To Washington\" in the center of Moscow (November 4th) 🤮",
+   "post_text": null,
+   "post_media": {
+    "url": "",
+    "domain": "",
+    "image": null,
+    "video": "https://v.redd.it/3b6ab7oqqjz91/DASH_1080.mp4?source=fallback",
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t1_iw3eeei",
+   "context": [
+    {
+     "id": "iw3bur2",
+     "author": "knappis",
+     "text": "Are they protesting for their right to suffer under a dictatorship without freedom of speech or human rights? Or are they just protesting their urge to wage war?"
+    },
+    {
+     "id": "iw3eeei",
+     "author": "ProNuclearWar",
+     "text": ">Are they protesting for their right to suffer under a dictatorship without freedom of speech or human rights? \n\nThey don't seem to be suffering. And yes they have a right to protest to keep their way of life. Free from liberalism and western degeneracy.\n\n>Or are they just protesting their urge to wage war?\n\nIn this case they are calling for a thermonuclear attack on major American cities, in particular, atomizing Washington with a Sarmat 28."
+    }
+   ],
+   "author": "knappis",
+   "text": ">\tAnd yes they have a right to protest to keep their way of life. \n\nThat’s a very dangerous western idea you have there. Yes, people in the west have a right to protest, people in Russia don’t. Russians only have a right to protest on matters Putin approve of. \n\nI think most people are fine with that. If Russians want to suffer under oppression like that, please go ahead. What we don’t approve of is trying to force that system onto others that clearly don’t want it, using military force.",
+   "score": 0,
+   "controversiality": 1,
+   "created": 1668275506,
+   "period": "after",
+   "group": "shared",
+   "order": 26
+  },
+  {
+   "comment_id": "iq7fdzy",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "xpjd9q",
+   "post_title": "⚡️ Relatives of the mobilised soldiers in the occupied districts of the Donetsk region complained to the \"head of the DNR\" Pushilin that the soldiers were raped by the \"Kadyrov\" regiment’ soldiers.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://twitter.com/Flash_news_ua/status/1574777745468440576",
+    "domain": "twitter.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/ev3u6994dgcEK0AU66RBTu9fWGGTCq2-ClC3oByjbYs.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_iq7ezg6",
+   "context": [
+    {
+     "id": "iq44z10",
+     "author": "waitWhoAm1",
+     "text": "Unfortunately, tyrannical leaders despise the weak, so they will have no compassion for the victim."
+    },
+    {
+     "id": "iq59ues",
+     "author": "Automatic_Pen6966",
+     "text": "Gonna suck for them when the tables turn and those “leaders” are being butt-fucked metaphorically. I obviously mean more hardcore than the current butt-fucking they’re taking, as they’re still able to shield the eyes of their subordinates and followers from seeing their current rape take place. And then under the circumstances the metaphorical rape becomes widely known publicly, then those “leaders” will likely  find themselves in a position of a public butt-fucking on a larger scale of metaphorical and possibly literal means as well as their public, sharing the same view on weakness, laughs at them for their “weakness” before the same travels in their direction as well. \n\nEdit: what looked to them as a pyramid of strength seemingly turned out to be a pyramid scheme of weakness and a quite vulnerable house of cards."
+    },
+    {
+     "id": "iq770tp",
+     "author": "watch-nerd",
+     "text": "those are definitely some words"
+    },
+    {
+     "id": "iq779j8",
+     "author": "Automatic_Pen6966",
+     "text": "I think all butt-fucking should be kept strictly metaphorical but I don’t make the rules."
+    },
+    {
+     "id": "iq7ezg6",
+     "author": "whatsgoing_on",
+     "text": "Consensual butt-fucking is cool too. If you’re into that kinda thing."
+    }
+   ],
+   "author": "Automatic_Pen6966",
+   "text": "I’m of the camp that words matter. And consensual must be simply called either butt secks or butt stuff. Perhaps even “the ole booty tickler. I just feel like being fucked ,in the metaphorical sphere, Is more of the booty bandit type but aggressively.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1664346635,
+   "period": "after",
+   "group": "shared",
+   "order": 27
   },
   {
    "comment_id": "hun11yz",
@@ -1236,7 +1386,7 @@
    "created": 1643406522,
    "period": "before",
    "group": "shared",
-   "order": 25
+   "order": 28
   },
   {
    "comment_id": "i35psh8",
@@ -1278,7 +1428,7 @@
    "created": 1648938091,
    "period": "after",
    "group": "shared",
-   "order": 26
+   "order": 29
   },
   {
    "comment_id": "i2rk55u",
@@ -1304,7 +1454,39 @@
    "created": 1648674369,
    "period": "after",
    "group": "shared",
-   "order": 27
+   "order": 30
+  },
+  {
+   "comment_id": "iyx4tp2",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "zbyr42",
+   "post_title": "No Rest for the Wicked",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/wdyn9vvurs3a1.png",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/wdyn9vvurs3a1.png",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/NeGp5rlGB-pfyu-ZdA_w8icup-QsgGvmkVXJkQI-ugg.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_iyuehwy",
+   "context": [
+    {
+     "id": "iyuehwy",
+     "author": "CeruleanDragon1",
+     "text": "In all fairness to the DoD. It really doesn’t make sense to replace the things until they literally can’t fly anymore. The ultra-long-range, Heavy, Strategic bomber is essentially a technological dead end. You could build a whole new generation of planes with new materials, new engines, new computers, reduced crew members, higher cruising speeds, and increased payload, but overall their probably not going to be better that much (at least as far as justifying their price) than the B-52."
+    }
+   ],
+   "author": "Prodigal_Moon",
+   "text": "Dumb question, but are we still flying the literal vehicles that were built back in the 50’s? Or is this more that we’re keeping the model alive and we replace individual planes with the same model along the way?",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1670187869,
+   "period": "after",
+   "group": "shared",
+   "order": 31
   },
   {
    "comment_id": "i9sfo06",
@@ -1330,7 +1512,7 @@
    "created": 1653386442,
    "period": "after",
    "group": "shared",
-   "order": 28
+   "order": 32
   },
   {
    "comment_id": "i0z7acf",
@@ -1362,7 +1544,76 @@
    "created": 1647489414,
    "period": "after",
    "group": "shared",
-   "order": 29
+   "order": 33
+  },
+  {
+   "comment_id": "iu8mm8o",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "ygg1gc",
+   "post_title": "UA pov - Ukranians collect russian dead. NSFW",
+   "post_text": null,
+   "post_media": {
+    "url": "",
+    "domain": "",
+    "image": null,
+    "video": "https://v.redd.it/krh2lvin0qw91/DASH_240.mp4?source=fallback",
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t1_iu8gj01",
+   "context": [
+    {
+     "id": "iu8gj01",
+     "author": "IL-2sturmovik",
+     "text": "Why are Ukrainians always disrespecting the dead."
+    }
+   ],
+   "author": "samfitnessthrowaway",
+   "text": "That's the same treatment both sides give their own - when you've got a dozen bodies to get onto a truck several times a day you just need to get the job done, and you have to stay positive. They bagged them with the correct parts reunited - What should they have done? Tenderly kissed each one on the lips and placed a coin in their eyes for the ferry man?",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1667046210,
+   "period": "after",
+   "group": "shared",
+   "order": 34
+  },
+  {
+   "comment_id": "ir5zcov",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "xw56la",
+   "post_title": "Miss Crimea fined for singing patriotic Ukrainian song",
+   "post_text": null,
+   "post_media": {
+    "url": "https://www.theguardian.com/world/2022/oct/04/miss-crimea-fined-for-singing-patriotic-ukrainian-song",
+    "domain": "theguardian.com",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t1_ir5hlnt",
+   "context": [
+    {
+     "id": "ir5ajaz",
+     "author": "CantaloupeMoney9906",
+     "text": "Ugh, why did that lip thing get so popular. It's so ugly and weird. \n\nNormal lips! Normal lips are 100% okay. Please stop."
+    },
+    {
+     "id": "ir5hlnt",
+     "author": "drama_rolyat",
+     "text": "Came here to find this comment. I often wonder what the person in the mirror sees."
+    }
+   ],
+   "author": "elFistoFucko",
+   "text": "This is the thing here I wonder as well.  Is it somehow aestechically pleasing to look like your face was inflated with a bicycle pump?  Or mental illness...",
+   "score": 4,
+   "controversiality": 0,
+   "created": 1664986351,
+   "period": "after",
+   "group": "shared",
+   "order": 35
   },
   {
    "comment_id": "hvetky5",
@@ -1388,7 +1639,7 @@
    "created": 1643891025,
    "period": "before",
    "group": "shared",
-   "order": 30
+   "order": 36
   },
   {
    "comment_id": "htl4m69",
@@ -1445,7 +1696,7 @@
    "created": 1642765063,
    "period": "before",
    "group": "shared",
-   "order": 31
+   "order": 37
   },
   {
    "comment_id": "i4nw8z6",
@@ -1502,7 +1753,89 @@
    "created": 1649911861,
    "period": "after",
    "group": "shared",
-   "order": 32
+   "order": 38
+  },
+  {
+   "comment_id": "j1i5m57",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "ztt86u",
+   "post_title": "The PLA Command Center looks like someone looked at the NATO Command post, didn't understand anything they were looking at, so they made it, but cleaner and symmetrical!",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/j2xjwshlup7a1.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/j2xjwshlup7a1.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/07vBRSaoLvDrGeLZ3GOAzzQanVFWsWSIFTzBpq53GOg.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_j1i2j4o",
+   "context": [
+    {
+     "id": "j1f8xn0",
+     "author": "DifferentTake01739",
+     "text": "Yeah Pretty much the most weirdest thing in here is **that giant raised map in the center,** like why not put it on a screen on the walls or something? Basically a waste of space!"
+    },
+    {
+     "id": "j1fbxns",
+     "author": "SamtheCossack",
+     "text": "I would argue that by far the weirdest thing about this is the fucking throne platform. For a country that allegedly believes in communist equality, this has the most painfully on the nose representation of social classes I have seen. \n\nThe whole room is laid out around this one dude, who has like 40 feet between himself and the nearest unwashed, smelly peasant. In exact opposition to something like say, the NASA Control Room, where the director doesn't even have his own desk, because he is supposed to be going around to everyone else's desks."
+    },
+    {
+     "id": "j1ff8ee",
+     "author": "UnsanctionedPartList",
+     "text": "More than communist, China, especially under Xi, is _authoritarian_."
+    },
+    {
+     "id": "j1gbidb",
+     "author": "TauntyRoK",
+     "text": "I don't think communism has ever actually been done. It's always \"yeah we're gonna take all the power for a second to prepare for communism\" and then they just forget the next step"
+    },
+    {
+     "id": "j1gc7oq",
+     "author": "Walrussealy",
+     "text": "For someone like me who doesn’t believe in Communism, I’ve always respected Marx on his focus on the plight of the working classes and oppressed peoples everywhere but what drugs was that man taking thinking a revolution would ever *not* lead to the biggest murderous bully claiming all the power?\n\nEdit: I just wanted to say everyone below me has made some great points pro and con"
+    },
+    {
+     "id": "j1gcxfw",
+     "author": "TauntyRoK",
+     "text": "Yeah communism is a beautiful idea that will never work"
+    },
+    {
+     "id": "j1gfvex",
+     "author": "m50d",
+     "text": "It might work if and when people vote for it democratically. It won't work under unaccountable leadership."
+    },
+    {
+     "id": "j1gkos5",
+     "author": "otuphlos",
+     "text": "It will never work because it ignores human nature.  In the thread on RT's stupid ad, somebody was arguing that Russians are so big on just making sure somebody else is worse off because that is the only way to get ahead under collectivization, and while they may not be correct, they do pull out that: a) humans try to advance, b) collectives prevent that, c) a + b will likely lead to a race to the bottom."
+    },
+    {
+     "id": "j1gs41y",
+     "author": "cowtow",
+     "text": "On the other hand, human nature is the very thing that allowed us to construct collaborative societies in the first place."
+    },
+    {
+     "id": "j1htaeh",
+     "author": "otuphlos",
+     "text": "True, however, most of those allow free movement in and out of them as well as through them and rewards based more or less on merit.  When those get restricted is when problems tend to happen and communism tends to do it on both in actual practice."
+    },
+    {
+     "id": "j1i2j4o",
+     "author": "GaryGiesel",
+     "text": "And that’s why medieval feudal society and serfdom was a short-lived and unstable form of government… oh wait no it endured for a thousand years"
+    }
+   ],
+   "author": "otuphlos",
+   "text": "Shockingly it matter if you have an example of a better system, and just because it is bad does not imply that it is easy to replace.",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1671896227,
+   "period": "after",
+   "group": "shared",
+   "order": 39
   },
   {
    "comment_id": "hp3nflg",
@@ -1534,7 +1867,7 @@
    "created": 1639867868,
    "period": "before",
    "group": "shared",
-   "order": 33
+   "order": 40
   },
   {
    "comment_id": "i156msw",
@@ -1560,7 +1893,81 @@
    "created": 1647605668,
    "period": "after",
    "group": "shared",
-   "order": 34
+   "order": 41
+  },
+  {
+   "comment_id": "iepkzg0",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "vpx0x4",
+   "post_title": "RU POV / A woman from Lisichansk barely holds back tears of joy when she meets Russian soldiers. He talks about the bullying of the Armed Forces of Ukraine.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/4yut4lb7z6991",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/4yut4lb7z6991/DASH_720.mp4?source=fallback",
+    "thumb": "https://b.thumbs.redditmedia.com/6DIAf29Z_YuQgSDN6jjuYTA9Xexq9kPEBsjEiqv7oEc.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_ieo3jql",
+   "context": [
+    {
+     "id": "iemdyab",
+     "author": "KlogereEndGrim",
+     "text": "Life is of course hard for a traitor."
+    },
+    {
+     "id": "iemwxs1",
+     "author": "Humble_Lychee5669",
+     "text": "How dare they to betray a traitor's state and be loyal to their actual nation"
+    },
+    {
+     "id": "ieo3jql",
+     "author": "KlogereEndGrim",
+     "text": "If they love russia so much they should have moved.\n\nBut don’t worry, I’ll be off to liberate Chechnya soon, and I expect your support."
+    }
+   ],
+   "author": "StraightHistorian689",
+   "text": "Half of Ukraine (East and South) were pro-Russian initially. All generations. At the same time, they have the same rights as Western Ukraine.And now I'm waiting for an explanation why the east and south should go to hell, because some guy thinks so on reddit.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1656864245,
+   "period": "after",
+   "group": "shared",
+   "order": 42
+  },
+  {
+   "comment_id": "hxgdopk",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "svj9mx",
+   "post_title": "🇷🇺🇺🇦⚡️AIR RAID SIRENS ACTIVATED IN DONETSK.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://twitter.com/UkrWarReport/status/1494678680441962502?s=20&amp;t=W6kkgZFcWKtzQEEGZhbO8g",
+    "domain": "twitter.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/QLzDeQhOarjeBMXQighydWa_8Jb93uXXNWqrg5vjSjA.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hxgas7k",
+   "context": [
+    {
+     "id": "hxgas7k",
+     "author": "MiningDiamonds1337",
+     "text": "Hearing the sirens makes this all seem oddly real."
+    }
+   ],
+   "author": "donotgogenlty",
+   "text": "But who put the sirens there?\n\nAlso, Russia wants the world to accept that part of Ukraine they stole is Russia - Yet Russia is now bombing itself and preparing airstrikes, exactly where it claims is \"Russia\" with 'Ethnic Russians' 🤦🤦🤦",
+   "score": 6,
+   "controversiality": 0,
+   "created": 1645197584,
+   "period": "before",
+   "group": "shared",
+   "order": 43
   },
   {
    "comment_id": "hctzg1r",
@@ -1602,7 +2009,7 @@
    "created": 1631634456,
    "period": "before",
    "group": "shared",
-   "order": 35
+   "order": 44
   },
   {
    "comment_id": "hep54tj",
@@ -1659,7 +2066,7 @@
    "created": 1632901593,
    "period": "before",
    "group": "shared",
-   "order": 36
+   "order": 45
   },
   {
    "comment_id": "hj17ow0",
@@ -1691,7 +2098,39 @@
    "created": 1635873101,
    "period": "before",
    "group": "shared",
-   "order": 37
+   "order": 46
+  },
+  {
+   "comment_id": "hd4s4ct",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "ppf94w",
+   "post_title": "Regarding the Swiss F-35 Acquisition",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/9fzode2dtvn71.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/9fzode2dtvn71.jpg",
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/0m91_r0fVTs_lpVOWVSbHLz0wBcr4HRBK8XDpizpjU0.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hd4nh8e",
+   "context": [
+    {
+     "id": "hd4nh8e",
+     "author": "yolodanstagueule",
+     "text": "Lmao i never realised how many muhricans were in this sub, i can almost hear a bald eagle trying to sell me f35 at my window"
+    }
+   ],
+   "author": "Frosh_4",
+   "text": "Wow a sub about military acquisition and related memes is dominated by the demographic most common not only on this site, but by the demographic belonging to the country with the most powerful military in the world. Who woulda guessed?",
+   "score": 37,
+   "controversiality": 0,
+   "created": 1631828893,
+   "period": "before",
+   "group": "shared",
+   "order": 47
   },
   {
    "comment_id": "hzh0j3j",
@@ -1818,7 +2257,7 @@
    "created": 1646500873,
    "period": "after",
    "group": "shared",
-   "order": 38
+   "order": 48
   },
   {
    "comment_id": "hkep1gz",
@@ -1860,7 +2299,110 @@
    "created": 1636768304,
    "period": "before",
    "group": "shared",
-   "order": 39
+   "order": 49
+  },
+  {
+   "comment_id": "j6kino8",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "10p9gwj",
+   "post_title": "UA POV - Russia Boosts China Trade to Counter Western Sanctions - The Wall Street Journal",
+   "post_text": null,
+   "post_media": {
+    "url": "",
+    "domain": "",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t1_j6khves",
+   "context": [
+    {
+     "id": "j6j2kaw",
+     "author": "Ceratisa",
+     "text": "The mere fact that they write that increased trade with China more than offsets the decline with western trade partners makes this hard to take seriously. Everyone has said clearly that the Russian economy shrank."
+    },
+    {
+     "id": "j6j2u0y",
+     "author": "[deleted]",
+     "text": "[deleted]"
+    },
+    {
+     "id": "j6jcjlm",
+     "author": "TrizzyG",
+     "text": "Making Russia dependent on China is one of the positive effects of sanctions in the eyes of Western nations. Obviously a full trade collapse may have been the maximalist goal but its unlikely Western leaders ever seriously considered that possible. It's more about leaving Russia at the mercy of countries like India and China.\n\nIt's beneficial for China to have a desperate Russia that is cut off from the wealthiest world markets because it means China can negotiate more beneficial terms for itself with Russia. It's also easier to pressure China against Russia because of their far larger reliance on Western trade. \n\nIt's not for no reason people have been talking up sanctions. The trade links Russia formed with Europe over decades have been severely curtailed and it doesn't seem like they will get back on the road to recovery for some time yet. People who were expecting Russian economy to totally collapse were coming in with totally unrealistic expectations but there are serious structural problems that Russia has brought on itself because of this invasion. Definitely a grave geopolitical miscalculation that will unfortunately leave people with a lower QoL."
+    },
+    {
+     "id": "j6k1m8m",
+     "author": "rusty2735",
+     "text": ">It's more about leaving Russia at the mercy of countries like India and China.\n\nThis is one of those worst case scenarios for the west. \n\n>Russia that is cut off from the wealthiest world markets\n\nThose countries take cheap raw resources from Russia, and make other goods that they can sell to the rest of the world. Europe's heavy industries are moving to the USA, due to cheaper energy and resources. Most of Europe is about to go into a recession with Germany not having a positive balance in long time. Russia is lead exporter of many raw resources, including the manufacturing of microchips. This is why Russia somehow is able to still get their hands one microchips. UK still imports russian oil and gas (through a loop hole), but has 0 imports from Russia directly. This is the case for a lot of other countries. \n\nRussia is regional issue, China is a global one. Moving Russia closer to China is a single most stupidest move done by the West. Mark my words, history books will right of this grave mistake"
+    },
+    {
+     "id": "j6k7q33",
+     "author": "TrizzyG",
+     "text": ">Moving Russia closer to China is a single most stupidest move done by the West. Mark my words, history books will right of this grave mistake\n\nNo, this will simply empower China at Russia's expense while simultaneously not changing the fact that China will never be able to achieve geopolitical parity with the West. It has too many demographic issues, no natural allies, is surrounded by rivals etc.\n\nA prosperous China is not a bad thing - it benefits the West too, and since there is no danger of China becoming a global threat to the West its pointless to treat it as such. It can be a strong competitor, but ultimately if we're talking about worst-case scenarios,  China has neither the nuclear deterrent nor the power projection to match the West. Any hot war would be on China's shores."
+    },
+    {
+     "id": "j6k9t1u",
+     "author": "scienceguy54",
+     "text": "China is currently on a nuclear weapons building spree. They have doubled their number in two years and plan to quadruple that number in the next 5-7 years."
+    },
+    {
+     "id": "j6ka1ul",
+     "author": "TrizzyG",
+     "text": "All the same, they're never going to be able to match the West."
+    },
+    {
+     "id": "j6kdui9",
+     "author": "deepbluemeanies",
+     "text": "By west, you mean the US. The UK, France...Germany are not in a position to do much in terms of force projection without the US. Can the US fight large scale conflicts in two theaters simultaneously? That's not so sure any more (RAND and others have discussed this for years). The US is very reliant on tech which may leave them vulnerable to asymmetric attacks."
+    },
+    {
+     "id": "j6kg9ao",
+     "author": "TrizzyG",
+     "text": "If you want to mention the difficulties other countries face with their militaries you should be fair and realize that countries like China and Russia also clearly have a lot of issues. The only difference is that Western militaries are able to be transparent about their problems because they know they're on top either way. Russia trumped up their military for decades and yet here we are, with them in a grinding attritional war performing poorly against Europe's...6th strongest rated military. China's military is completely untested. It could easily be an even bigger shit show and at best if we consider their paper strength at 100% capacity it's still not a match.\n\nBy West I also mean the Pacific Rim countries like Australia, Japan and SK who would all align with the US in the extremely unlikely scenario that there is a war with China. This is already in massive speculation territory so its rather pointless to discuss.\n\nI"
+    },
+    {
+     "id": "j6khves",
+     "author": "deepbluemeanies",
+     "text": ">China's military is completely untested.\n\nAustralia has only 59,000 regular military members...meanwhile, Japan and SK would not be able to send more than a token force anywhere as they have +1 million North Korean soldiers less than 50km from Seoul and a short trip to Japan. If this was to be the next big war, I would expect Iran to activate the ME (terror attacks, etc.), and North Korea to move into the South, while China moved on Taiwan. Can the US deal with this while grappling with a potentially much larger conflict in Europe. Who knows. They haven't been tested.The current conflict has a lot of rules we are not privy to which are keeping things from spiraling (...so far): e.g. Russia leaves the port of Odessa and the supply lines from Poland in-tact. In return, the west doesn't provide Ukraine with anything that could seriously threaten the Russian nation."
+    }
+   ],
+   "author": "TrizzyG",
+   "text": "There's a lot of assumptions being made and this is spiralling into crazy speculation. Point is simple. China's paper strength is not a match for US+allies, and this gap will widen as China continues to decline in population. China is generally pragmatic so a hot war with them wouldn't likely be on the cards. Talk of 59k troops is irrelevant because the point remains that China would be under a total naval blockade regardless of how many troops SK sends. That alone is enough to put China on a long term disadvantage. You're just picking little details apart in very particular what-if scenario whereas I'm just telling you that there are non-debatable aspects which solidify the West's dominance.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1675122168,
+   "period": "after",
+   "group": "shared",
+   "order": 50
+  },
+  {
+   "comment_id": "hxl1zgu",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "swc4jq",
+   "post_title": "What you may think of Putin but He has incredible pain threshold",
+   "post_text": null,
+   "post_media": {
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/swc4jq/what_you_may_think_of_putin_but_he_has_incredible/",
+    "domain": "self.UkrainianConflict",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t3_swc4jq",
+   "context": [],
+   "author": "Ok-Calligrapher-7517",
+   "text": "I always have a laugh when the announcement 'Vladimir Vladimirovich Putin' is made, and out from the largest doors you can imagine you expect to see some grand persona to appear, but instead this small, bald, gray mouse with a suit and tie appears.\n\nGets me every time. 😂😂",
+   "score": 15,
+   "controversiality": 0,
+   "created": 1645283640,
+   "period": "before",
+   "group": "shared",
+   "order": 51
   },
   {
    "comment_id": "h76oaf2",
@@ -1886,7 +2428,7 @@
    "created": 1627722738,
    "period": "before",
    "group": "shared",
-   "order": 40
+   "order": 52
   },
   {
    "comment_id": "gw7fzri",
@@ -1948,7 +2490,7 @@
    "created": 1619636934,
    "period": "before",
    "group": "shared",
-   "order": 41
+   "order": 53
   },
   {
    "comment_id": "hd9ek3l",
@@ -1985,7 +2527,39 @@
    "created": 1631916453,
    "period": "before",
    "group": "shared",
-   "order": 42
+   "order": 54
+  },
+  {
+   "comment_id": "ihxjxhz",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "w9so0n",
+   "post_title": "Imagine going to war without being forklift certified",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/zy6k0xdix6e91.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/zy6k0xdix6e91.jpg",
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/mG0BoyNj-wVi0kjOItWqoAt3QvEpuZDAP-0Ph-5wiq4.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_ihx4mjp",
+   "context": [
+    {
+     "id": "ihx4mjp",
+     "author": "Gloomy_Raspberry_880",
+     "text": "The American military is routinely mocked for the amount of ordinance they expend.  What people don't realize is that is merely proof of logistical prowess in supplying all of that ordinance to the front in the first place...."
+    }
+   ],
+   "author": "Chiluzzar",
+   "text": "No joke when I was in senior year  the recruiters they sent to my school were more interested that I had a forklift operators license more then the fact I could do 100 push ups",
+   "score": 1030,
+   "controversiality": 0,
+   "created": 1658970671,
+   "period": "after",
+   "group": "shared",
+   "order": 55
   },
   {
    "comment_id": "ij6v7jc",
@@ -2027,7 +2601,7 @@
    "created": 1659796920,
    "period": "after",
    "group": "shared",
-   "order": 43
+   "order": 56
   },
   {
    "comment_id": "hzky413",
@@ -2074,7 +2648,76 @@
    "created": 1646578878,
    "period": "after",
    "group": "shared",
-   "order": 44
+   "order": 57
+  },
+  {
+   "comment_id": "il4jkhs",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "wthxfb",
+   "post_title": "Ua pov A demonstration of the Revolver 860 armed drone passed from Taiwan to Ukraine. 800 examples were given and each one is capable of dropping Eight 60mm Mortar rounds onto enemy personnel, vehicles and equipment. Source in comments",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/zyfwo4umrxi91",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/zyfwo4umrxi91/DASH_360.mp4?source=fallback",
+    "thumb": "https://b.thumbs.redditmedia.com/p9nx_ofTMb57W151Gd9X4cHzM22meFcBrZwW6mu4iNs.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_il4fvvj",
+   "context": [
+    {
+     "id": "il4fauz",
+     "author": "Im_in_pain69",
+     "text": "Commercial Drones where so effektive because they where really hard to spot for Soliders and SPAA. This flying Microwave will be a very disappointing gift for Ukraine."
+    },
+    {
+     "id": "il4fvvj",
+     "author": "AcanthocephalaNo2818",
+     "text": "I love all the armchair Reddit generals that know better compared to whole militaries of either Taiwan or Ukraine"
+    }
+   ],
+   "author": "KingSnazz32",
+   "text": "To be fair, tons of this stuff has yet to be tested in warfare until now, which is why we're watching military equipment and tactics evolve before our eyes. This could turn out to be nothing, or it could turn out to be lethal. Time will tell.",
+   "score": 5,
+   "controversiality": 0,
+   "created": 1661036972,
+   "period": "after",
+   "group": "shared",
+   "order": 58
+  },
+  {
+   "comment_id": "i7cvxpn",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "uhzy5i",
+   "post_title": "'Including Crimea': Ukraine's Zelensky seeks full restoration of territory",
+   "post_text": null,
+   "post_media": {
+    "url": "https://www.hindustantimes.com/world-news/including-crimea-ukraine-s-zelensky-seeks-full-restoration-of-territory-101651633305375.html",
+    "domain": "hindustantimes.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/yIfqi16M83o7tv6KLOQw66awmYxZ-BTRoIHkBZlG0U4.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_i79ekpi",
+   "context": [
+    {
+     "id": "i79ekpi",
+     "author": "volvomad",
+     "text": "\"You've got a big enough country, give me back what you stole\"\nMoldova should get transnistria back too."
+    }
+   ],
+   "author": "AMythicEcho",
+   "text": "Maybe it would be a bridge too far, but it might behoove Ukraine to help Moldova with that, and get Russia out of the affairs of any neighbors... after Crimea.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1651706439,
+   "period": "after",
+   "group": "shared",
+   "order": 59
   },
   {
    "comment_id": "ihrilwb",
@@ -2121,7 +2764,7 @@
    "created": 1658868337,
    "period": "after",
    "group": "shared",
-   "order": 45
+   "order": 60
   },
   {
    "comment_id": "ho1lq0l",
@@ -2158,7 +2801,7 @@
    "created": 1639174899,
    "period": "before",
    "group": "shared",
-   "order": 46
+   "order": 61
   },
   {
    "comment_id": "hvltsj4",
@@ -2220,7 +2863,39 @@
    "created": 1644005279,
    "period": "before",
    "group": "shared",
-   "order": 47
+   "order": 62
+  },
+  {
+   "comment_id": "hbyz8lh",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "p5r06o",
+   "post_title": "How did the Taliban take over Afghanistan?",
+   "post_text": "I have looked over every propoganda photo I can find both from the “taliban” and any other source an I can definitively say that they do not have a single F-15 or nuke therefore they simply cannot have overthrown the Afghani government. All of the “footage” and “photos” of the “taliban” were all staged false flag. A consortium of Lockmark, Northrop and Raytheon bussed a bunch of Mexicans into the “training villages” built by the us army in the Mojave. Everything you see is fake. The US MCI was an excuse to intervene in Afghanistan. And Syria. And Venezuela. And C*nada too probably. Open your eyes! Aliens.",
+   "post_media": {
+    "url": "https://www.reddit.com/r/NonCredibleDefense/comments/p5r06o/how_did_the_taliban_take_over_afghanistan/",
+    "domain": "self.NonCredibleDefense",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_h98861k",
+   "context": [
+    {
+     "id": "h98861k",
+     "author": "Orzel36",
+     "text": "The afghan army refused to be trained"
+    }
+   ],
+   "author": "phoenixRISING31110",
+   "text": "Refused? Or not even offered? We have no idea what's actually going on over there. Everyone wants to sit and blame Biden for taking our troops out, but what the hell were they doing over there for the last 20 years if the Taliban could swoop in and take over in a matter of weeks after they leave?",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1631044519,
+   "period": "before",
+   "group": "shared",
+   "order": 63
   },
   {
    "comment_id": "i2d38h9",
@@ -2252,7 +2927,7 @@
    "created": 1648417560,
    "period": "after",
    "group": "shared",
-   "order": 48
+   "order": 64
   },
   {
    "comment_id": "hn5weq1",
@@ -2278,7 +2953,70 @@
    "created": 1638595946,
    "period": "before",
    "group": "shared",
-   "order": 49
+   "order": 65
+  },
+  {
+   "comment_id": "j4py70u",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "10e6uba",
+   "post_title": "UA POV Arestovich, Ukrainian intelligence officer, lieutenant colonel and National Security and Defence Advisor to the Head of the Office of the President of Ukraine continues to criticize Ukraine's official narrative and policy.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/n8zfeh42bkca1",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/n8zfeh42bkca1/DASH_360.mp4?source=fallback",
+    "thumb": "https://b.thumbs.redditmedia.com/-qoOQ8DjESQOxZZi_ynYfjHcVQXkFXxZ9GcmiD5Q04g.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_j4pxtvy",
+   "context": [
+    {
+     "id": "j4parhq",
+     "author": "ShikiFan21",
+     "text": "“Well let them go to Russia”\n\nSo this woman wants most of Crimea’s 2.4 million population to go to Russia?\nThis kind of narrative is why this war will not end anytime soon."
+    },
+    {
+     "id": "j4pxtvy",
+     "author": "ArchibaldBarisol",
+     "text": "Since annexation depending on whose count you believe 500 thousand to 1.6 million Russians have immigrated to Crimea, and 60-150  thousand Crimean's have fled to Ukraine.  It shouldn't be a big shock that the Ukrainian government wants those what they consider illegal Russian immigrants to return to Russia after the war and the Ukrainian refugees to return to their homes.\n\n[https://jamestown.org/program/demographic-transformation-of-crimea-forced-migration-as-part-of-russias-hybrid-strategy/](https://jamestown.org/program/demographic-transformation-of-crimea-forced-migration-as-part-of-russias-hybrid-strategy/)\n\n[https://eurasianet.org/russia-migration-helping-to-russify-crimea](https://eurasianet.org/russia-migration-helping-to-russify-crimea)"
+    }
+   ],
+   "author": "ShikiFan21",
+   "text": "Crimea was majority ethnic Russian even before 2014 so your point is moot\n\nLook at the 2001 Crimean census carried out by Ukraine.\nIt shows a clear ethnic Russian majority.",
+   "score": 5,
+   "controversiality": 0,
+   "created": 1673961580,
+   "period": "after",
+   "group": "shared",
+   "order": 66
+  },
+  {
+   "comment_id": "hx8a3wu",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "stxghj",
+   "post_title": "Does anyone else find it strange that Russia \"needs\" an entire country as a border because it can't behave itself?",
+   "post_text": "Besides, even if Russia did take over Ukraine, wouldn't that mean Russia is right next to NATO members now? The only logical end would be \"I guess I gotta keep taking countries over to give me breathing space 🤷\". If you need that much breathing space, maybe that's just evidence of how unstable you are. A lot of other countries don't need that much breathing space, why does Russia? How are we all supposed to be like \"oh well ya know they're right\", like no, that's just enabling bad behavior. Fix your shit in your own house so that you don't have to take over the neighbors just to contain the spread. That's just irresponsible. Just because you can \"justify\" bad behavior, doesn't mean it's correct. I can justify punching someone in the face if they insulted me but that would literally just be me admitting \"I can't control my own emotions, that is why I punched them\". If everyone is like \"oh well ya, ya know I get it\", that is just enabling them to punch people for saying words. The more people can get to help enable, the less reason they would have to not accept that as a valid reason. It's only a \"valid reason\" if people agree but at the end of the day, YOU are not controlling YOUR own emotions. That is the definition of escalation.",
+   "post_media": {
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/stxghj/does_anyone_else_find_it_strange_that_russia/",
+    "domain": "self.UkrainianConflict",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t3_stxghj",
+   "context": [],
+   "author": "FatOldRugbyDude",
+   "text": "It's total nonsense. Putin's mafia regime is plainly trying to fight the decline of Russian global influence to both the West and China on the East. Their gas exports are of declining strategic value as the world switches to renewables for transportation and heating, and their military doctrine of mass infantry and tank columns is outdated and endangered by relatively cheap drone systems that they don't yet have effective field counter measures for. Their Armenian clients got absolutely shitwhacked by relatively cheap Turkish TB2s, which suddenly started to appear on the Separatist battlefield in 2021, including against Russian/Soviet artillery support.\n\nFor the latter point, one of their objectives may be to try and force some treaty rules about the deployment of drones while they develop counter measures (similar to when one side or the other gets too far ahead in terms of nuclear capabilities).  \n\n**It's about re-establishing the Soviet empire, trying to secure hostage markets and extort something from a losing hand. And appeal to Russian nationalism because his corrupt crony goon state is trickling along on the last fumes of Soviet industrial infrastructure. Russia is dying, Putin is the tumor du jour, and it's options get worse as time goes on.**",
+   "score": 18,
+   "controversiality": 0,
+   "created": 1645049049,
+   "period": "before",
+   "group": "shared",
+   "order": 67
   },
   {
    "comment_id": "j5elr30",
@@ -2304,7 +3042,7 @@
    "created": 1674393203,
    "period": "after",
    "group": "shared",
-   "order": 50
+   "order": 68
   },
   {
    "comment_id": "iyeshjk",
@@ -2336,7 +3074,7 @@
    "created": 1669843315,
    "period": "after",
    "group": "shared",
-   "order": 51
+   "order": 69
   },
   {
    "comment_id": "ifpbn5z",
@@ -2361,8 +3099,55 @@
    "controversiality": 0,
    "created": 1657532184,
    "period": "after",
-   "group": "shared",
-   "order": 52
+   "group": "Marcel",
+   "order": 70
+  },
+  {
+   "comment_id": "hldfbzf",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "qvwhdf",
+   "post_title": "NonCredibleDefence has came into ownership of a Gerald R. Ford Class Supercarrier, what are they doing with it?",
+   "post_text": null,
+   "post_media": {
+    "url": "https://www.reddit.com/r/NonCredibleDefense/comments/qvwhdf/noncredibledefence_has_came_into_ownership_of_a/",
+    "domain": "self.NonCredibleDefense",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_hl8euos",
+   "context": [
+    {
+     "id": "hkzane7",
+     "author": "SemenDemon73",
+     "text": "Declare an independent nation state and ask for recognition by the UN. Our head of state will be the CO, with officers taking the place of elected representatives. Basically all our needs are taken care of. We have enough power for 30 years. We have water taken care of and lots of fish to eat. Internet can be organized through starlink. Goes without saying that defense is sorted. Were not declaring any land so we don't have to worry about taking sovereignty from other countries. We'll find a way to retard our way to maintain the planes and nuclear reactor, through as many sacrifices as needed."
+    },
+    {
+     "id": "hl4apt2",
+     "author": "Chernould",
+     "text": "If this were to happen irl, wouldn’t a nation declare war and try to capture it since it’s one of the most technologically advanced carriers available? Since it’s no longer aligned with the US and it’s military, that’s what I would do"
+    },
+    {
+     "id": "hl6gs1j",
+     "author": "SemenDemon73",
+     "text": "What nation has a navy powerful enough to chase us down the world's oceans but technologically weak enough to want to capture it."
+    },
+    {
+     "id": "hl8euos",
+     "author": "Guilty_Mulberry_2979",
+     "text": "China"
+    }
+   ],
+   "author": "SemenDemon73",
+   "text": "China doesn't have much in terms of power projection outside of it's neighborhood (yet). And it would be useless to just sink it with a sub. You have to capture it to get the good shit. So all we have to do is avoid the south china sea and the first island chain.",
+   "score": 3,
+   "controversiality": 0,
+   "created": 1637405181,
+   "period": "before",
+   "group": "Antonio",
+   "order": 71
   },
   {
    "comment_id": "gygyyrx",
@@ -2387,8 +3172,8 @@
    "controversiality": 0,
    "created": 1621273882,
    "period": "before",
-   "group": "shared",
-   "order": 53
+   "group": "Marcel",
+   "order": 72
   },
   {
    "comment_id": "i0l8hjq",
@@ -2413,8 +3198,112 @@
    "controversiality": 0,
    "created": 1647240726,
    "period": "after",
-   "group": "shared",
-   "order": 54
+   "group": "Antonio",
+   "order": 73
+  },
+  {
+   "comment_id": "imge4cv",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "x1tgoi",
+   "post_title": "RU POV: Offensive of the Armed Forces of Ukraine on Kherson: How soldiers of the Airborne Forces destroyed the columns and infantry of the Ukrainian Armed Forces",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/14ja7u6vtwk91",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/14ja7u6vtwk91/DASH_720.mp4?source=fallback",
+    "thumb": "https://b.thumbs.redditmedia.com/lLtmHHx3AFGAvhXHQrB6x_1_W7GEDx6RfpM48e0U_AQ.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_img32hm",
+   "context": [
+    {
+     "id": "imfn355",
+     "author": "N7_Destroyer",
+     "text": "Unless the Ukrainian side starts to show something, this counteroffensive was a complete failure, which is sad honestly.\n\nIn general all this mess is sad."
+    },
+    {
+     "id": "imfnc5q",
+     "author": "No_Rush5145",
+     "text": "Calm down, it hasn’t even been 2 days."
+    },
+    {
+     "id": "imfnotg",
+     "author": "NazikamSmert",
+     "text": "With quite a lot of footage showing Ukrianians being bombed out in the open."
+    },
+    {
+     "id": "imfou38",
+     "author": "SouthFox2663",
+     "text": "the russians suffered the same if not more  and still got 20% of ukraine .\n\nlets calm the spirito and wait a little bit more"
+    },
+    {
+     "id": "imfplqn",
+     "author": "N7_Destroyer",
+     "text": "There's no comparison.\n\nThe Russian military is simply superior, unless you include the Twitter army as part of the AFU."
+    },
+    {
+     "id": "imfw3wp",
+     "author": "Phuqued",
+     "text": ">The Russian military is simply superior, unless you include the Twitter army as part of the AFU.\n\nYes. NATO is shaking in their boots at the superiority of Russian weaponry, organization, tactics and strategy. So scared I think we are going to reject Sweden and Finland, just so we don't have to fear the awesome conventional might of the USSR / Russian Federation. \n\n;)"
+    },
+    {
+     "id": "img0j4b",
+     "author": "N7_Destroyer",
+     "text": "It's actually the opposite. They even say it out loud. They join NATO because they see Russia as a threat.\n\nZelenskyy has said many times that if Russia is not stopped in Ukraine then they could invade another country.\n\nThat kind of sounds like concern about Russia's military."
+    },
+    {
+     "id": "img2isx",
+     "author": "Phuqued",
+     "text": ">It's actually the opposite.\n\nI know that is the point of sarcasm. To mock that which isn't true. :) If NATO feared Russia, they wouldn't antagonize and provoke Russia by offering Sweden and Finland membership. If Sweden and Finland feared antagonizing and provoking Russia, they wouldn't accept that invitation. \n\nBut it doesn't seem like NATO, Finland or Sweden really care what Russia thinks nor do they care about the threats Russia makes about the \"consequences\" of adding new members.\n\n>They even say it out loud. They join NATO because they see Russia as a threat.\n\nThreat and \"Superiority\" are two different things. I assure you that NATO after seeing how well Russia has done in Ukraine, does not fear the conventional \"superiority\" of Russia."
+    },
+    {
+     "id": "img32hm",
+     "author": "N7_Destroyer",
+     "text": ">I assure you that NATO after seeing how well Russia has done in Ukraine, does not fear the conventional \"superiority\" of Russia.\n\nThe devil is in the details.\n\nNukes, nukes are part of Russia's power."
+    }
+   ],
+   "author": "TheTheoristHasSpoken",
+   "text": "OK, nukes are part of other countries' power, too. So what? If the implication is that we all need to fear Russia and shake in our boots... -then you seriously don't understand The West & The Rest. An all-out nuclear war has no winners. Only lovers. A limited exchange might, but The West isn't too worried about being on the losing end of a limited nuclear exchange. Honestly, as bad as Russia has maintained their equipment and as bad as corruption in the Russian government is, their nukes might not even work too well -if at all.",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1661902784,
+   "period": "after",
+   "group": "Marcel",
+   "order": 74
+  },
+  {
+   "comment_id": "ib25kg3",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "v3zngm",
+   "post_title": "Russia with a clear message to the west: your weapons make it worse | TV2 Denmark",
+   "post_text": null,
+   "post_media": {
+    "url": "https://nyheder.tv2.dk/udland/2022-06-03-rusland-med-klar-besked-til-vesten-jeres-vaaben-goer-det-vaerre",
+    "domain": "nyheder.tv2.dk",
+    "image": null,
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/YwnGtSTDmRkoeLRPtX797wlic0zvJI0LLzrbq0CeTS0.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_ib25585",
+   "context": [
+    {
+     "id": "ib25585",
+     "author": "Iamthesexiestalive",
+     "text": "I cannot stress enough that Russia must not be permitted to exist in any form similar to what we know. Dismember into 4-7 new states, forced democracy like with Japan/Germany after 1945, and clear out all nukes"
+    }
+   ],
+   "author": "Iamthesexiestalive",
+   "text": "This is very achievable. Support separatist movements among the various cultures. If every new state has the arms and ability to repel the Kremlin, which will be crippled later this year, this can happen with very little bloodshed.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1654277148,
+   "period": "after",
+   "group": "Antonio",
+   "order": 75
   },
   {
    "comment_id": "hxz0x6b",
@@ -2460,8 +3349,8 @@
    "controversiality": 0,
    "created": 1645543385,
    "period": "before",
-   "group": "shared",
-   "order": 55
+   "group": "Marcel",
+   "order": 76
   },
   {
    "comment_id": "ioqrfw6",
@@ -2486,8 +3375,8 @@
    "controversiality": 0,
    "created": 1663378228,
    "period": "after",
-   "group": "shared",
-   "order": 56
+   "group": "Antonio",
+   "order": 77
   },
   {
    "comment_id": "hz7grir",
@@ -2518,8 +3407,40 @@
    "controversiality": 0,
    "created": 1646328631,
    "period": "after",
-   "group": "shared",
-   "order": 57
+   "group": "Marcel",
+   "order": 78
+  },
+  {
+   "comment_id": "isk8uia",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "y5khpf",
+   "post_title": "Most diplomatic Russian officer",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/ifdc3bmmx6u91.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/ifdc3bmmx6u91.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/oA7Ba0O4iguZq8lPrBVZ4FCPDqP94PACBHZH9Pw4Ago.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_isk62px",
+   "context": [
+    {
+     "id": "isk62px",
+     "author": "Prematurid",
+     "text": "Calling it a holy war when you are talking to Christians is one thing. Not a good idea for you as a Christian to dictate that the war a muslim is fighting is a holy war.\n\nEdit: Protip: Don't call Allah a coward infront of heavily armed and trained men who are deeply religious."
+    }
+   ],
+   "author": "RaioNoTerasu",
+   "text": "its still pretty stupid when you're the biggest christian orthodox nation and invade the 2nd biggest orthodox nation. But then again, some people still believe the \"Russia is the protector of all Slavs\"-propaganda from the 19th century",
+   "score": 653,
+   "controversiality": 0,
+   "created": 1665939020,
+   "period": "after",
+   "group": "Antonio",
+   "order": 79
   },
   {
    "comment_id": "h5z466l",
@@ -2544,8 +3465,8 @@
    "controversiality": 0,
    "created": 1626851457,
    "period": "before",
-   "group": "shared",
-   "order": 58
+   "group": "Marcel",
+   "order": 80
   },
   {
    "comment_id": "i1c6jua",
@@ -2570,8 +3491,71 @@
    "controversiality": 0,
    "created": 1647730635,
    "period": "after",
-   "group": "shared",
-   "order": 59
+   "group": "Antonio",
+   "order": 81
+  },
+  {
+   "comment_id": "il84mzr",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "wtwlwx",
+   "post_title": "Ru pov - a flag of the Russian Federation is hoisted at the highest point in Kherson. this symbolises that Kherson is under the control of the Russian Federation",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/q1o0xde2q1j91",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/q1o0xde2q1j91/DASH_1080.mp4?source=fallback",
+    "thumb": "https://b.thumbs.redditmedia.com/x_hG1hNADygD5uxipNlwLOsm-JX_S02sLoTGTzbZb5Q.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_il7mrfl",
+   "context": [
+    {
+     "id": "il6lnji",
+     "author": "DeathBonePrime",
+     "text": "I'm confused isn't Kherson in Russian hands for quite some time now?"
+    },
+    {
+     "id": "il7mrfl",
+     "author": "pydry",
+     "text": "Western propaganda made a big deal since HIMARs arrived about how recapture was imminent:\n\nhttps://foreignpolicy.com/2022/08/02/ukraines-battle-for-kherson-could-be-a-key-victory/"
+    }
+   ],
+   "author": "CaptainObvious_1",
+   "text": "Please quote exactly in that article where is says Kherson recapture was imminent? Because all I read was an article about how *if* Ukraine could recapture it, it would be an important and strategic victory.",
+   "score": 3,
+   "controversiality": 0,
+   "created": 1661108019,
+   "period": "after",
+   "group": "Marcel",
+   "order": 82
+  },
+  {
+   "comment_id": "ioqwsnx",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "xg305j",
+   "post_title": "Von der Leyen: Supporting Ukraine is costly, but freedom is priceless",
+   "post_text": null,
+   "post_media": {
+    "url": "https://www.reuters.com/world/europe/von-der-leyen-supporting-ukraine-is-costly-freedom-is-priceless-2022-09-15/",
+    "domain": "reuters.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/NhwJp77mz9QewmLA1CCL0ZTItGGREwxu5yLRLoTYMJI.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t3_xg305j",
+   "context": [],
+   "author": "inthearena",
+   "text": "This is virtue signaling at best for the moment. \n\nIt’s costly to the Ukrainians first and foremost, both in life and treasure. Then the United States and the UK  and in far distance behind these two, the various nations of the EU (35 billion by the us, 4 billion by the UK, and all other states below 1.5 billion..\n\nhttps://www.ifw-kiel.de/fileadmin/_processed_/a/b/csm_Coverbild_Datensatz_Ukraine_Support_Tracker_hoch_1fd248731d.pnghttps://i.imgur.com/p56ki67.jpg\n\nThis number does not include a further 20 -40 billion that Biden recently asked for. \n\nThe primary damage to the EU has been in creditability as it reveals them to be Chamberlain v2.0.. \n\nIt may become costly over the winter, but it isn’t now - unless you count the loss of face",
+   "score": -2,
+   "controversiality": 1,
+   "created": 1663380839,
+   "period": "after",
+   "group": "Antonio",
+   "order": 83
   },
   {
    "comment_id": "j2dk9wf",
@@ -2607,8 +3591,8 @@
    "controversiality": 0,
    "created": 1672493830,
    "period": "after",
-   "group": "shared",
-   "order": 60
+   "group": "Marcel",
+   "order": 84
   },
   {
    "comment_id": "iwjex40",
@@ -2639,8 +3623,8 @@
    "controversiality": 0,
    "created": 1668563628,
    "period": "after",
-   "group": "shared",
-   "order": 61
+   "group": "Antonio",
+   "order": 85
   },
   {
    "comment_id": "gx15ypc",
@@ -2696,8 +3680,34 @@
    "controversiality": 0,
    "created": 1620226204,
    "period": "before",
-   "group": "shared",
-   "order": 62
+   "group": "Marcel",
+   "order": 86
+  },
+  {
+   "comment_id": "ifxf6x1",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "vxo4qc",
+   "post_title": "BASED BASED BASED BASED BASED BASED",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/aaai7fekd9b91",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/aaai7fekd9b91/DASH_1080.mp4?source=fallback",
+    "thumb": "https://b.thumbs.redditmedia.com/rQ2oKavqavZORKWdcgvDsKWtE2LW5iIj4ip9FupFrQw.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t3_vxo4qc",
+   "context": [],
+   "author": "Zopherinae",
+   "text": "Feel bad for the front teeth that pipe is currently drilling through. Though I guess dental care is an afterthought in the face of nuclear annihilation",
+   "score": 85,
+   "controversiality": 0,
+   "created": 1657671392,
+   "period": "after",
+   "group": "Antonio",
+   "order": 87
   },
   {
    "comment_id": "iueya6w",
@@ -2733,8 +3743,8 @@
    "controversiality": 0,
    "created": 1667161945,
    "period": "after",
-   "group": "shared",
-   "order": 63
+   "group": "Marcel",
+   "order": 88
   },
   {
    "comment_id": "hwn4uk0",
@@ -2845,8 +3855,91 @@
    "controversiality": 0,
    "created": 1644672142,
    "period": "before",
-   "group": "shared",
-   "order": 64
+   "group": "Antonio",
+   "order": 89
+  },
+  {
+   "comment_id": "j8xausb",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "114lag9",
+   "post_title": "UA POV - Ukraine aid support softens in the US: AP-NORC Poll - Associated Press",
+   "post_text": null,
+   "post_media": {
+    "url": "",
+    "domain": "",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t3_114lag9",
+   "context": [],
+   "author": "Zealousideal-One-818",
+   "text": "Time to drop the nation of ukraien and the illegal coup regime like a bad habit.\n\nI’m sure the Russians will not be as nice as they would have been early in the war",
+   "score": 1,
+   "controversiality": 1,
+   "created": 1676652429,
+   "period": "after",
+   "group": "Marcel",
+   "order": 90
+  },
+  {
+   "comment_id": "ihnm41t",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "w824nd",
+   "post_title": "Gazprom: Nord Stream 1 supply to EU to be cut further",
+   "post_text": null,
+   "post_media": {
+    "url": "https://www.bbc.co.uk/news/business-62291458",
+    "domain": "bbc.co.uk",
+    "image": null,
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/ehdk9vkLUZHzj7dYs1LQQVJZetHBVmheQMsjaQ5v0I0.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_ihnl6sn",
+   "context": [
+    {
+     "id": "ihn5vaf",
+     "author": "karliv7",
+     "text": "Dr. Stephen Leeb:  A more hawkish Fed and rising U.S. interest rates have been front page financial news. The E.U. recently has joined in with tougher monetary policy as it tries to choke off multi-decade highs in inflation. Meanwhile, a week ago Russia announced a large decline in its key lending rate as inflation in Russia dropped to pre-Ukraine war levels. And the ruble remains the world’s strongest currency. 😱😱😱"
+    },
+    {
+     "id": "ihnfv2r",
+     "author": "---77---",
+     "text": "Ruble is artificially inflated due to capital controls."
+    },
+    {
+     "id": "ihngcut",
+     "author": "karliv7",
+     "text": "The one that is artificially inflated is the dollar due to 24/7 printing machine - isn't it?"
+    },
+    {
+     "id": "ihnh93b",
+     "author": "humanlikecorvus",
+     "text": "You are using \"inflated\" in different ways.\n\nThe ruble is \"inflated\", like pumped up, by capital controls. \n\nPrinting US dollars - which works fine in the US global system, because they can export dollars, which mostly don't come back, would not \"inflate\" the currency, but lead to an inflation - meaning it would lose value."
+    },
+    {
+     "id": "ihnhxe6",
+     "author": "karliv7",
+     "text": "which is the worst of the 2 currencies - the one subject to controls - rouble - or the one that causes inflation - dollar - and loss of purchasing power."
+    },
+    {
+     "id": "ihnl6sn",
+     "author": "humanlikecorvus",
+     "text": "Idk. - that depends on the criteria.\n\nBut well, the US business model of exporting dollars (mostly not as actually printed paper, but e.g. also as debt) and getting goods and an increase in the standard of living in exchange for that, works well for decades and it is profitable for US citizens. (and sure, there are many indirect costs for that, including those for the military budget). \n\nIf you just take what the world thinks about the currencies - well then - the US can \"print\" so many dollars, because people trust that currency and want to have it - ~~because~~ there is a high demand for it. Only because of that the US monetary policy does not cause a permanent hyperinflation, but the currency is more or less stable.\n\nFor the ruble that can't be said..."
+    }
+   ],
+   "author": "karliv7",
+   "text": "I agree with your statement and it has been very convenient for almost 80 years - but are you aware that a very significant part of the world has tired of that system and is coming to an end?",
+   "score": 0,
+   "controversiality": 0,
+   "created": 1658797528,
+   "period": "after",
+   "group": "Antonio",
+   "order": 91
   },
   {
    "comment_id": "gprcs9y",
@@ -2882,8 +3975,8 @@
    "controversiality": 0,
    "created": 1614940124,
    "period": "before",
-   "group": "shared",
-   "order": 65
+   "group": "Marcel",
+   "order": 92
   },
   {
    "comment_id": "hwoe0pl",
@@ -2924,8 +4017,8 @@
    "controversiality": 0,
    "created": 1644691504,
    "period": "before",
-   "group": "shared",
-   "order": 66
+   "group": "Antonio",
+   "order": 93
   },
   {
    "comment_id": "ialc127",
@@ -2956,8 +4049,50 @@
    "controversiality": 0,
    "created": 1653947453,
    "period": "after",
-   "group": "shared",
-   "order": 67
+   "group": "Marcel",
+   "order": 94
+  },
+  {
+   "comment_id": "htpjzyp",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "s9qnrr",
+   "post_title": "“P-please don’t gas c-cuck me, Daddy Putin! I’ll do w-whatever you want!” Absolute fucking beta energy from Germany",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/oo2jy9vn65d81.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/oo2jy9vn65d81.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/evs25aqQ0r6x9o8J1aOdp8uaIE0RJVoSy0apKDCbmIE.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_htpem1u",
+   "context": [
+    {
+     "id": "htpa0a2",
+     "author": "Sahaquiel97",
+     "text": "the abandonment of nuclear power plants and it's consequences have been a disaster for the human race\n\n​\n\nGermany drank the anti-nuclear Greenpeace Koolaid and shut down all it's nuclear powers in favor of \"nicer renewables\" and guess what, they are nowhere near enough, so now Germany has a crippling dependence on Russian natural gas"
+    },
+    {
+     "id": "htpdct3",
+     "author": "yeeeter1",
+     "text": "step one for free Ukraine. set up about a hundred thousand lbs of bombs around the Chernobyl plant. step 2 message Russia. \"I'll fuckin do it if you don't fuck off.\""
+    },
+    {
+     "id": "htpem1u",
+     "author": "Sahaquiel97",
+     "text": "no I was talking about how Germany drank the anti-nuclear Greenpeace Koolaid and shut down all it's nuclear powers in favor of  \"nicer renewables\" and guess what, they are nowhere near enough, so now Germany has a crippling dependence on Russian natural gas"
+    }
+   ],
+   "author": "laggy_rafa",
+   "text": "I don't understand, are you talking about how Germany drank the anti-nuclear Greenpeace Koolaid and shut down all it's nuclear powers in favor of \"nicer renewables\" and guess what, they are nowhere near enough, so now Germany has a crippling dependence on Russian natural gas?",
+   "score": 81,
+   "controversiality": 0,
+   "created": 1642831266,
+   "period": "before",
+   "group": "Antonio",
+   "order": 95
   },
   {
    "comment_id": "i3cp8gj",
@@ -2982,8 +4117,8 @@
    "controversiality": 0,
    "created": 1649080522,
    "period": "after",
-   "group": "shared",
-   "order": 68
+   "group": "Marcel",
+   "order": 96
   },
   {
    "comment_id": "hhjv625",
@@ -3019,8 +4154,107 @@
    "controversiality": 0,
    "created": 1634857223,
    "period": "before",
-   "group": "shared",
-   "order": 69
+   "group": "Antonio",
+   "order": 97
+  },
+  {
+   "comment_id": "iwdo41p",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "yv0bg6",
+   "post_title": "RU pov: Pilot Sergey Homik died on november 11th on a combat mission. He was piloting a Mi-8 helicopter that was allegedly shot down by a RU anti-air missile.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/itlsvicr9xz91.png",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/itlsvicr9xz91.png",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/fxoVucHW9I2Or7YVj8y7_BsGZLaCkaKeVdNY5tt6RaM.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_iwdf6om",
+   "context": [
+    {
+     "id": "iwc02g7",
+     "author": "KhersonKat",
+     "text": "I would like to take this moment to thank all pro-russians on the sub for posting and maintaining the memory of our heros.   \n\n\n'Forever'\\* will they be ingrained on this sub so we can remember their invaluable contribution in removing all Russians from the sovereign country of Ukraine. Special shout out to 'tenpctforbrndn' on this front and his tireless contribution on remembering our warriors.  \n\n\n\\*When I say 'forever', I mean 'forever'. Not the Russian Kherson 'Here to stay Forever' type of 'forever'."
+    },
+    {
+     "id": "iwcf2fq",
+     "author": "SavingsNotShavings",
+     "text": "Reason they post it is to show Ukrainians dying like flies, not to \"remember\" anyone. \n\nI can't remember one single Ukrainian name."
+    },
+    {
+     "id": "iwd530o",
+     "author": "Kivikallo",
+     "text": "”Like flies”\n\nPosts individual deaths every few days"
+    },
+    {
+     "id": "iwdezib",
+     "author": "Alter222",
+     "text": "according to the americans the casualties are roughly 100k on both sides with 50k dead and the rest wounded on the russian side. \n\nBoth sides are dying like flies. This is the most lethal war we've had in modern history."
+    },
+    {
+     "id": "iwdf6om",
+     "author": "Kivikallo",
+     "text": "Yes it is. And my point is that these posts do not show ukrainians dying like flies, since these are posts of singular people dying."
+    }
+   ],
+   "author": "Alter222",
+   "text": "Of course but thats just a truism that goes for any and all media from both sides imo. They naturally only show a tiny part of what is overall happening.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1668461823,
+   "period": "after",
+   "group": "Marcel",
+   "order": 98
+  },
+  {
+   "comment_id": "ho3x3uo",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "rdadz7",
+   "post_title": "Is it possible to join the ukrainian army as a foreign person?",
+   "post_text": "As a European I would so much like to join in the Ukrainian army, I'm from Italy and I served 2 years in the Italian Army , I’ve heard about some Italians fighting for the pro-Russian separatists and I was asking myself if there is some foreign volunteer force in the Ukrainian side. \nI don't know both Russian and Ukrainian language, my English is decent and understandable. \nI don't want to fight for money, I Just want to help the Ukrainian Army in these hard times (if it is possible of course).\nI don't know if this is the right place to ask this question and I would like to apologize in advance if this is the case.\n\nThank you for the attention",
+   "post_media": {
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/rdadz7/is_it_possible_to_join_the_ukrainian_army_as_a/",
+    "domain": "self.UkrainianConflict",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_ho2u69i",
+   "context": [
+    {
+     "id": "ho15w3b",
+     "author": "[deleted]",
+     "text": "You can always join Azov battalion"
+    },
+    {
+     "id": "ho16sqn",
+     "author": "durloboy",
+     "text": "Is it still in service? I've also heard that is a far-right militia, is it true?"
+    },
+    {
+     "id": "ho1x95j",
+     "author": "johnbrooder3006",
+     "text": "I’d avoid Azov if you don’t want to be arrested when you return to Italy."
+    },
+    {
+     "id": "ho2u69i",
+     "author": "ntm13100",
+     "text": "Do European governments actually arrest you for joining Azov?"
+    }
+   ],
+   "author": "johnbrooder3006",
+   "text": "I have no tangible evidence of this, but I think it’s a reasonable assumption if war breaks out, you fly to Ukraine and don’t return that’ll put you on the radar. If/when return home after they’re going to want to know why you were in a warzone and who you were fighting with. So that’ll entail some form of detainment and interrogation - I’m unsure if that will amount to anything criminal though. If he goes I’m sure there’s other foreign battalions without the controversy.",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1639220860,
+   "period": "before",
+   "group": "Antonio",
+   "order": 99
   },
   {
    "comment_id": "h7gryxg",
@@ -3052,7 +4286,7 @@
    "created": 1627933361,
    "period": "before",
    "group": "Marcel",
-   "order": 70
+   "order": 100
   },
   {
    "comment_id": "hvvi6i9",
@@ -3089,7 +4323,7 @@
    "created": 1644190012,
    "period": "before",
    "group": "Antonio",
-   "order": 71
+   "order": 101
   },
   {
    "comment_id": "gvlkks8",
@@ -3131,7 +4365,49 @@
    "created": 1619204513,
    "period": "before",
    "group": "Marcel",
-   "order": 72
+   "order": 102
+  },
+  {
+   "comment_id": "hpngc4p",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "rlr1zi",
+   "post_title": "Lol",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/3mz9iti6cz681.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/3mz9iti6cz681.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/yD6WBILTTzSs6tOuCTL96nqlXkc7g_xcEYP4vzdW3Eo.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hpneroe",
+   "context": [
+    {
+     "id": "hphzm63",
+     "author": "Unlikely-Pilot-6015",
+     "text": "Can’t even put the luftwaffe emblem, they just slapped some Nazi flags and said “yeah that will do”"
+    },
+    {
+     "id": "hpj6sku",
+     "author": "ResidentNarwhal",
+     "text": "Yeah the wikipedia page for this book is wild. Blatantly rips of the plot concept from an 80s movie about modern naval ships being time warped to WWII. Oh also we name an aircraft carrier after Hillary Clinton for some reason. Which has A4 Skyhawks in the air wing?\n\nI nominated it for the subreddit book club."
+    },
+    {
+     "id": "hpneroe",
+     "author": "Kamiyoda",
+     "text": "*Clears throat*\n\nEveryone should at least look st the TV Tropes page for Victoria\n\nhttps://tvtropes.org/pmwiki/pmwiki.php/Literature/Victoria\n\nIt is a NCD goldmine"
+    }
+   ],
+   "author": "ResidentNarwhal",
+   "text": "Holy dog-whistling fuck, I can’t tell if this is parody or not.\n\n>Written by William Lind\n\nSweet tap dancing jesus it isn’t. Side note: why is all Paleocon writing and “alt” fiction so god awful self-fucking-maturbatory? Like….did Ayn Rand and Heinlien suck up anything resembling talent and there‘s never been enough to go around the rest of the right wing since? (And for the record, I can’t stand Rand and *barely* tolerate Heinlien).",
+   "score": 5,
+   "controversiality": 0,
+   "created": 1640238406,
+   "period": "before",
+   "group": "Antonio",
+   "order": 103
   },
   {
    "comment_id": "hsdp36w",
@@ -3202,8 +4478,8 @@
    "controversiality": 0,
    "created": 1642012196,
    "period": "before",
-   "group": "Antonio",
-   "order": 73
+   "group": "Marcel",
+   "order": 104
   },
   {
    "comment_id": "hzw3vip",
@@ -3234,8 +4510,71 @@
    "controversiality": 0,
    "created": 1646775339,
    "period": "after",
+   "group": "Antonio",
+   "order": 105
+  },
+  {
+   "comment_id": "j1swqmk",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "zvz29a",
+   "post_title": "ua pov Ukrainian tank follows a group of retreating Russians in Soledar and shells them at close range. They move place to place while being targeted, with one hit directly on their position inside a demolished structure",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/haulnc4dlb8a1",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/haulnc4dlb8a1/DASH_480.mp4?source=fallback",
+    "thumb": "https://b.thumbs.redditmedia.com/PEUe18kaMNLmMIVMHFiuICh7Ekr7l2x5JL5ZJ6tYKsU.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t3_zvz29a",
+   "context": [],
+   "author": "Its_apparent",
+   "text": "If it wasn't for the foliage, this could be mistaken for Syria footage. Doesn't mean much, just that the state of modern warfare is still roughly the same. They were already using drones and armor in similar ways.",
+   "score": 6,
+   "controversiality": 0,
+   "created": 1672111521,
+   "period": "after",
    "group": "Marcel",
-   "order": 74
+   "order": 106
+  },
+  {
+   "comment_id": "hte0wz6",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "s81fqm",
+   "post_title": "Biden says \"It's one thing if it's a minor incursion... but if they actually do what they're capable of doing... it is going to be a disaster for Russia, if they invade Ukraine.\" Promises \"heavy\" and \"real\" penalties.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://twitter.com/DefenseBaron/status/1483915239624216580",
+    "domain": "twitter.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/eQjwBplPI2_or1bdHnh9Dl7JZoseogZTpAfh3vFImxE.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_htdyx1c",
+   "context": [
+    {
+     "id": "htdygma",
+     "author": "narrative_device",
+     "text": "https://twitter.com/emilyhorne46/status/1483934454238351362?cxt=HHwWhMC47cOh_5cpAAAA\n\n\"@POTUS clarified this. He was referring to the difference between military and non-military/para-military/cyber action by the Russians. Such actions would be met by a reciprocal response, in coordination with Allies and partners.\""
+    },
+    {
+     "id": "htdyx1c",
+     "author": "[deleted]",
+     "text": "[deleted]"
+    }
+   ],
+   "author": "deadjawa",
+   "text": "I dunno.  It’s not that bad.  And who gives a f what Pro Russia propaganda says?  The people that listen to that shit are a lost cause anyway.",
+   "score": 6,
+   "controversiality": 0,
+   "created": 1642636405,
+   "period": "before",
+   "group": "Antonio",
+   "order": 107
   },
   {
    "comment_id": "ixd8i5r",
@@ -3361,8 +4700,8 @@
    "controversiality": 0,
    "created": 1669132591,
    "period": "after",
-   "group": "Antonio",
-   "order": 75
+   "group": "Marcel",
+   "order": 108
   },
   {
    "comment_id": "gph2zfq",
@@ -3398,8 +4737,8 @@
    "controversiality": 0,
    "created": 1614728231,
    "period": "before",
-   "group": "Marcel",
-   "order": 76
+   "group": "Antonio",
+   "order": 109
   },
   {
    "comment_id": "hu6982c",
@@ -3424,8 +4763,34 @@
    "controversiality": 0,
    "created": 1643129849,
    "period": "before",
+   "group": "Marcel",
+   "order": 110
+  },
+  {
+   "comment_id": "h742y2m",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "oupf5x",
+   "post_title": "Don't look at me like that, Warthog Chan.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/gx10qaha0ee71.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/gx10qaha0ee71.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/cGSI3FAx9Yv23IPrGO3auhmd3PtFljl9U0pdekGvI2c.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t3_oupf5x",
+   "context": [],
+   "author": "5t3v0esque",
+   "text": "Considering the community agreed moratorium on the ussy memes I have arrived at the conclusion that we are devolving into degeneracy at a rate we can no longer stop.\n\nSo let's keep going.",
+   "score": 105,
+   "controversiality": 0,
+   "created": 1627669982,
+   "period": "before",
    "group": "Antonio",
-   "order": 77
+   "order": 111
   },
   {
    "comment_id": "hx96ral",
@@ -3451,7 +4816,7 @@
    "created": 1645063166,
    "period": "before",
    "group": "Marcel",
-   "order": 78
+   "order": 112
   },
   {
    "comment_id": "i1eeicc",
@@ -3493,7 +4858,86 @@
    "created": 1647782081,
    "period": "after",
    "group": "Antonio",
-   "order": 79
+   "order": 113
+  },
+  {
+   "comment_id": "j7g3l4a",
+   "subreddit": "UkraineRussiaReport",
+   "source_file": "UkraineRussiaReport_comments.zst",
+   "link_id": "10v822o",
+   "post_title": "Ru pov: Unwilling male and his family resists conscription drive in Ukraine.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/48tq4dq4xkga1",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/48tq4dq4xkga1/DASH_1080.mp4?source=fallback",
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t1_j7g1bnf",
+   "context": [
+    {
+     "id": "j7fwi4w",
+     "author": "chris-za",
+     "text": "The reason I have a problem with believing this kind of video: Why would anyone thing that it could be a good thing to give some one who is acting like that a weapon?\n\nNot saying he isn't being taken in. But for conscription to bear arms?"
+    },
+    {
+     "id": "j7fyjuq",
+     "author": "canastataa",
+     "text": "His only chance of coming back to his family is to fight and survive. They know it the first night that they are away. Killing a bunch of your own for sure is death sentence.\n\nYeah a few people would make a case and go all out, but those have nothing to comeback to and you wont hear about the damage they caused anyway. \n\nJust giving a possible perspective."
+    },
+    {
+     "id": "j7g0s00",
+     "author": "chris-za",
+     "text": ">His only chance of coming back to his family is to fight and survive. They know it the first night that they are away.\n\nI belive Russia has been trying to invade for over 11 months now. It is unlikely that any one who would resist conscription hasn't had a plan B since early March 2022. It's basically impossible to surprise any one with conscription at this stage.\n\nThat said and if he had to stay in Ukraine for family or work reasons, know he's refuse conscription, his plan B of coming back to his family would probably include a plan to reunite some place else in the EU and to leave the country long before he gets to the front.\n\nRemember those Russian that evaded conscription? That's the real world way of doing to. Doing it before some one comes and picks you up. (because you'd normally get papers in the mail before it happens anyway. giving you more than enough time to avoid a scene like this)."
+    },
+    {
+     "id": "j7g1bnf",
+     "author": "canastataa",
+     "text": "Since the start of the war in Ukraine, it is forbidden for males to leave. This was not the case in Russia when those people escaped. I think Russia changed its permits for leaving quite lately."
+    }
+   ],
+   "author": "chris-za",
+   "text": "The border to the EU isn't the Berlin Wall. It covers a lot of forrest and mountains. It'S probably easier than leaving Russia. Especially as the countries on the other side are a lot more welcoming. If you really want to leave, you'll find a way. Also, civilians have been moving between the occupied and free areas of Ukraine for most of the war in areas with no fighting. So if that was his \"flavour\", he could probably have made his way to Russia as well.\n\nThere are many young men amongst the Ukrainian refugees in the EU.\n\nAddition: The only problem for the men that have left Ukraine illegally will probably be returning after the war. But should it manage to retake occupied territories, chances are, that there will be an amnesty for these kinds of war time crimes. After all, trying to criminalise most of the men in the occupied territory isn't going to help reconciliation and reunification. Some kind of amnesty and Truth and Reconciliation Committee are extremely likely.",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1675697642,
+   "period": "after",
+   "group": "Marcel",
+   "order": 114
+  },
+  {
+   "comment_id": "iht5qzw",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "w93r6y",
+   "post_title": "Wagner—dressed in Ukrainian military uniforms—seize control of Vuglehirskaya/Uglegorsk Thermal Power Plant, Donetsk Ob. The Armed Forces had held since May 22.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://glavcom-ua.translate.goog/country/incidents/vagnerivci-u-formi-zsu-zahopili-vuglegirsku-tes-video-863443.html?_x_tr_sl=uk&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp",
+    "domain": "glavcom-ua.translate.goog",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/fojtmsvYOrLpc-GW93w7T73syAY0U4VDkoZ6BKzN1xo.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_iht4ntf",
+   "context": [
+    {
+     "id": "iht4ntf",
+     "author": "DryHoney9809",
+     "text": "That is a war crime punishable by death..ask the Germans at the battle of the bulge"
+    }
+   ],
+   "author": "Nvnv_man",
+   "text": "Under Russian military code?\n\nBc ICC forbids, if kill with uniform on, but I don’t see that the punishment is capital punishment . . ?",
+   "score": -21,
+   "controversiality": 0,
+   "created": 1658894452,
+   "period": "after",
+   "group": "Antonio",
+   "order": 115
   },
   {
    "comment_id": "hyg8vfr",
@@ -3525,7 +4969,7 @@
    "created": 1645834019,
    "period": "after",
    "group": "Marcel",
-   "order": 80
+   "order": 116
   },
   {
    "comment_id": "hy2011x",
@@ -3562,7 +5006,7 @@
    "created": 1645586831,
    "period": "before",
    "group": "Antonio",
-   "order": 81
+   "order": 117
   },
   {
    "comment_id": "h4y46ur",
@@ -3609,7 +5053,44 @@
    "created": 1626113674,
    "period": "before",
    "group": "Marcel",
-   "order": 82
+   "order": 118
+  },
+  {
+   "comment_id": "j3mmy8p",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "1077ezk",
+   "post_title": "Russian propaganda is wild. Be strong, don't simp bros (unless its for NATO-chan)",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/qxrz4aqatyaa1.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/qxrz4aqatyaa1.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/Bzqwa2mgohCFSRVC0n0PP7x2PaabZeGP4cbegBRN_5Y.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_j3mjsdi",
+   "context": [
+    {
+     "id": "j3l0ns5",
+     "author": "Easy-Entrepreneur746",
+     "text": "Man, Putin and the Kremlin must be desperate. Now they're dusting off all Uncle Vova's old KGB tricks and honey-potting Russian men. Unfortunately due to cut backs, there are no women and pride is the last thing Ivan will be feeling as he wipes himself with stale bread slices after defecating through a hole in the floor of his 'Great Purge'-era battle wagon just inside HIMARS range."
+    },
+    {
+     "id": "j3mjsdi",
+     "author": "[deleted]",
+     "text": "[deleted]"
+    }
+   ],
+   "author": "Easy-Entrepreneur746",
+   "text": "Anyone waking up and questioning their manhood over suggestions from the Kremlin's third-rate propaganda effort would likely fail in differentiating between Russians and Ukrainians. That's how one confuses military substance for Red Square idiot parades and Putin's cast of steroid-fueled circus performers backflipping through flaming rings with throwing axes.\n\nRussian military 'prowess' only excels in *dedovshchina*, drunken military bumbling and non-existent logistics. The World watches by the hour and minute as Russian 'men' routinely question their existence in an excrement filled Russian trench, using dead, frozen Russian 'troops' as sandbags and stale bread as both food and toilet paper.",
+   "score": 18,
+   "controversiality": 0,
+   "created": 1673283613,
+   "period": "after",
+   "group": "Antonio",
+   "order": 119
   },
   {
    "comment_id": "hqpd49a",
@@ -3645,8 +5126,8 @@
    "controversiality": 0,
    "created": 1640972051,
    "period": "before",
-   "group": "Antonio",
-   "order": 83
+   "group": "Marcel",
+   "order": 120
   },
   {
    "comment_id": "hfw2qbw",
@@ -3687,8 +5168,40 @@
    "controversiality": 1,
    "created": 1633721179,
    "period": "before",
+   "group": "Antonio",
+   "order": 121
+  },
+  {
+   "comment_id": "httuf3e",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "sagmul",
+   "post_title": "Should Russian invasion happen and succede, what do you think is Putins plan for Ukraine?",
+   "post_text": "Is he going to just occupy rest of Donbass, or is he aiming to install a pro-russian leader or outright annexing ukraine to Russian Federation? What will happen to Transinistria? Will Baltic states, Georgia or eaven Poland be threatened?",
+   "post_media": {
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/sagmul/should_russian_invasion_happen_and_succede_what/",
+    "domain": "self.UkrainianConflict",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_httmvhy",
+   "context": [
+    {
+     "id": "httmvhy",
+     "author": "p3t3y5",
+     "text": "This is just my opinion, and not really an educated one, so take what I say with that in mind.\n\nIf he does go in I think he will go all in.  Install a puppet then withdraw to the east of the river.  Read somewhere that they see this as easier to defend than the whole country.  If Ukraine becomes more aligned with Russia they may withdraw but I don't think they will ever fully leave again.  He then has Belarus to the north which he is happy with.  The only real land borders are with Estonia, Latvia, Finland and Norway.  Finland and Norway are not in NATO (I think) but don't see him invading them as the borders are somewhat more defensible.  Estonia and Latvia must be very glad of joining NATO now or they would have been next!"
+    }
+   ],
+   "author": "ThatOneDutchGuy",
+   "text": "Norway is in NATO, Finland isn't. Finland however has a recent history with defeating Russia militarily, and I'm certain they'd do it again. \n\nThere's also Gotland which is a good strategic position for controlling the Baltic. If Finland were to join NATO but Sweden for some reason abstains (probably will), I can imagine Russia clamoring to seize Gotland as a strategic position in an AO surrounded by hostile (to them) forces.",
+   "score": 3,
+   "controversiality": 0,
+   "created": 1642905802,
+   "period": "before",
    "group": "Marcel",
-   "order": 84
+   "order": 122
   },
   {
    "comment_id": "h26uufp",
@@ -3714,7 +5227,7 @@
    "created": 1624006733,
    "period": "before",
    "group": "Antonio",
-   "order": 85
+   "order": 123
   },
   {
    "comment_id": "j2wsf0z",
@@ -3751,7 +5264,7 @@
    "created": 1672842321,
    "period": "after",
    "group": "Marcel",
-   "order": 86
+   "order": 124
   },
   {
    "comment_id": "hpw7txx",
@@ -3793,7 +5306,69 @@
    "created": 1640415386,
    "period": "before",
    "group": "Antonio",
-   "order": 87
+   "order": 125
+  },
+  {
+   "comment_id": "hcl0s82",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "pmnka9",
+   "post_title": "Is bringing up the A-10’s friendly fire rate against brits really an insult to the A-10?",
+   "post_text": "I mean fragging some shitty British apcs and ifvs is honestly pretty based. The A-10 should be our spirit animal because the one thing the A-10 and this sub have in common is the shared hatred of British armor",
+   "post_media": {
+    "url": "https://www.reddit.com/r/NonCredibleDefense/comments/pmnka9/is_bringing_up_the_a10s_friendly_fire_rate/",
+    "domain": "self.NonCredibleDefense",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_hckzoit",
+   "context": [
+    {
+     "id": "hckfmu4",
+     "author": "arcang3l",
+     "text": "The UK is a decent country that makes a lot of goofy procurement decisions out of some sort of need to be accepted into a club consisting mostly of countries that lost the last major war they were seriously involved in (spoiler alert: it'll never happen).\n\nWe rag on the brits because we know they can do better, not because we want them to get turned into pink mist."
+    },
+    {
+     "id": "hckhu72",
+     "author": "bob_fossill",
+     "text": "Britain's elites are all inbred aristocrats or private school nonces who's primary concern is money, and noncing of course, hence all the extremely retarded decisions they constantly make"
+    },
+    {
+     "id": "hckma2t",
+     "author": "[deleted]",
+     "text": "[deleted]"
+    },
+    {
+     "id": "hckp8yq",
+     "author": "bob_fossill",
+     "text": "True but I guess the difference is that Britain is decrepit and, relatively, poor so the wasting of money and constant flip flopping on strategic priorities is far more damaging\n\nIf the country were run by sane people they would have scraped trident by now, for example. A ludicrously expensive nuclear programme with no perceptible benefit other than to say you're one of the big boys with big boy pants"
+    },
+    {
+     "id": "hckvwi2",
+     "author": "[deleted]",
+     "text": "[deleted]"
+    },
+    {
+     "id": "hckyadm",
+     "author": "bob_fossill",
+     "text": "Trident is dumb and is purely of benefit to, as you mention, other NATO members and is therefore a waste of money to the British taxpayer\n\nThe United Kingdom has absolutely no way of having equal deterrence so pursuing a MAD strategy makes no sense. Britain would be better off taking a Minimum Deterrence strategy, one far more in line with both Britain's budget and capabilities"
+    },
+    {
+     "id": "hckzoit",
+     "author": "[deleted]",
+     "text": "[deleted]"
+    }
+   ],
+   "author": "bob_fossill",
+   "text": "NATO projects and protects America's interests around the world. As _the_ superpower it is of great benefit to them to have their interests protected by a larger network of alliance\n\nThe benefit to NATO members are the pooled resources for defence.\n\nThe benefit to a medium power like Britain is basically to do what America says and they'll pretend Britain is an equal partner. The cons are that pretending to be one of the big boys means paying for wildly expensive programmes that really are above your military budget - carrier strike groups and trident nukes primarily.\n\nStrikes me as pretty fucking mental to pay for these whilst having debates about scrapping tanks altogether and cutting your number of gen 5 aircraft",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1631466717,
+   "period": "before",
+   "group": "Marcel",
+   "order": 126
   },
   {
    "comment_id": "i0izffc",
@@ -3818,8 +5393,8 @@
    "controversiality": 0,
    "created": 1647199797,
    "period": "after",
-   "group": "Marcel",
-   "order": 88
+   "group": "Antonio",
+   "order": 127
   },
   {
    "comment_id": "gw0olwp",
@@ -3844,8 +5419,45 @@
    "controversiality": 0,
    "created": 1619500694,
    "period": "before",
+   "group": "Marcel",
+   "order": 128
+  },
+  {
+   "comment_id": "htylo6m",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "sb888t",
+   "post_title": "Biden Weighs Deploying Thousands of Troops to Eastern Europe and Baltics",
+   "post_text": null,
+   "post_media": {
+    "url": "https://www.nytimes.com/2022/01/23/us/politics/biden-troops-nato-ukraine.html?referringSource=articleShare",
+    "domain": "nytimes.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/K55wFsPw-pTZIKRO5cjnKYqTIJv0OG4zSoGtqLaVc8k.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_htyh3zg",
+   "context": [
+    {
+     "id": "htye3qu",
+     "author": "bWoofles",
+     "text": "Every Russian they can pull off the border is one less Ukraine has to deal with."
+    },
+    {
+     "id": "htyh3zg",
+     "author": "fallszero_5",
+     "text": "Ok but that isn't going to happen. The point is to show Putin if he steps foot into the Baltics he'll be blown to smithereens."
+    }
+   ],
+   "author": "FunnyElegance21",
+   "text": "Throw missiles at putin headquarters, not the naive men.\n\nLike have a super stealth plane sneak and just shoot a kinetic energy rod from near space",
+   "score": 0,
+   "controversiality": 1,
+   "created": 1642988366,
+   "period": "before",
    "group": "Antonio",
-   "order": 89
+   "order": 129
   },
   {
    "comment_id": "gsxb5cr",
@@ -3892,7 +5504,7 @@
    "created": 1617205113,
    "period": "before",
    "group": "Marcel",
-   "order": 90
+   "order": 130
   },
   {
    "comment_id": "gpzfj62",
@@ -3979,7 +5591,7 @@
    "created": 1615050265,
    "period": "before",
    "group": "Antonio",
-   "order": 91
+   "order": 131
   },
   {
    "comment_id": "ijn58s0",
@@ -4036,7 +5648,39 @@
    "created": 1660084467,
    "period": "after",
    "group": "Marcel",
-   "order": 92
+   "order": 132
+  },
+  {
+   "comment_id": "is9ezdw",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "y3jw1b",
+   "post_title": "Arcturus Zelensky",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/nwtqd00m7pt91.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/nwtqd00m7pt91.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/xyJg_MUidUmkUdxm7_XKL0gKHqdxuBZAI3759e0hKYI.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_is92y8x",
+   "context": [
+    {
+     "id": "is92y8x",
+     "author": "The_Rocktopus",
+     "text": "Mensk seemed so reasonable up until he wasn't."
+    }
+   ],
+   "author": "PaxEthenica",
+   "text": "Mengsk was counting on the Protoss to burn Tarsonis, not land troops. Using one alien menace to destroy the other, & cover up his long planned for atrocity. When the Protoss didn't just set fire to Tarsonis, he went with his backup plan, though it'd mean Kerrigan's assured demise.\n\nBetraying Kerrigan broke him a little, I think. Those two were canonically very close, almost like father & daughter. The activation of the psi-emitter array, tuned to Kerrigan's brain waves, had made escape impossible, as it drew the Swarm in almost its entirety at that point down upon Tarsonis.\n\nYou can imagine his shock & rage to see her infested & a flesh puppet of the Zerg. Only later realizing the true depth of just how effed he was when Kerrigan revealed that she had a need for revenge, becoming bitter & paranoid.",
+   "score": 4,
+   "controversiality": 0,
+   "created": 1665731774,
+   "period": "after",
+   "group": "Antonio",
+   "order": 133
   },
   {
    "comment_id": "isc6oen",
@@ -4061,8 +5705,8 @@
    "controversiality": 1,
    "created": 1665781338,
    "period": "after",
-   "group": "Antonio",
-   "order": 93
+   "group": "Marcel",
+   "order": 134
   },
   {
    "comment_id": "hwolupc",
@@ -4098,8 +5742,70 @@
    "controversiality": 0,
    "created": 1644694728,
    "period": "before",
+   "group": "Antonio",
+   "order": 135
+  },
+  {
+   "comment_id": "hxkwkpr",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "sv94y6",
+   "post_title": "Do you guys think this ends with Ukraine?",
+   "post_text": "It’s been an extremely annoying few weeks seeing Russia in the news all the time for all the wrong reasons. The media is also being annoying by constantly changing stories or slightly altering them to get another view. \n\nThat being said, hopefully nothing does come from this and Russia backs down peacefully. However if they did in theory invade Ukraine, would it stop there? I’ve heard some crazy talk about them considering an invasion into Poland. I guess a lot of people think history rhymes when comparing Russia potentially taking over Ukraine to when Hitler took Poland and continued his campaign after. \n\nGod bless Ukraine",
+   "post_media": {
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/sv94y6/do_you_guys_think_this_ends_with_ukraine/",
+    "domain": "self.UkrainianConflict",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_hxk4uah",
+   "context": [
+    {
+     "id": "hxfg3m1",
+     "author": "UltraContrarian",
+     "text": "Why would Russia invade? They gain nothing and lose everything. The idea is an American invention.   \n\n\nWould Ukraine be willing to recognize the independence of Novorossiya and Crimea to stop the bloodshed caused when they besieged rebel positions and overthrow the legitimate government in Ukraine?  \n\n\nWould they allow freedom?"
+    },
+    {
+     "id": "hxg1aas",
+     "author": "RedEyeView",
+     "text": "Does this work pay well?"
+    },
+    {
+     "id": "hxh91wv",
+     "author": "UltraContrarian",
+     "text": "Lol thanks. If it's so obvious why can't you dumbasses answer with sources?"
+    },
+    {
+     "id": "hxh9g6i",
+     "author": "RedEyeView",
+     "text": "Let's see yours.\n\nYou're the one making claims.\n\nI'm just saying you're an obvious plant."
+    },
+    {
+     "id": "hxhbolj",
+     "author": "UltraContrarian",
+     "text": "I asked a question, idiot. What am I going to source?\n\nYou've dodged the question 3 times now. \n\n\"Would Ukraine be willing to recognize the independence of Novorossiya and Crimea to stop the bloodshed caused when they besieged rebel positions and overthrow the legitimate government in Ukraine?\"\n\nIf I am a troll and a shill, why is it impossible for you to answer a simple question?"
+    },
+    {
+     "id": "hxhhz1d",
+     "author": "Cookielicous",
+     "text": "Because all you have are bad faith actions and leading questions."
+    },
+    {
+     "id": "hxk4uah",
+     "author": "UltraContrarian",
+     "text": "This entire sub is in bad faith lol\n\nWhy can't you answer simple questions. 2 + 2 = 4. If you said it was 3, I could prove to you are wrong. \n\nIf think I am saying 2 + 2 = 3 then why can't you easily disprove it?\n\n4th time is the charm\n\nWould Ukraine be willing to recognize the independence of Novorossiya and Crimea to stop the bloodshed caused when they besieged rebel positions and overthrow the legitimate government in Ukraine?"
+    }
+   ],
+   "author": "Cookielicous",
+   "text": ">^(Would Ukraine be willing to recognize the independence of Novorossiyaand Crimea to stop the bloodshed caused when they besieged rebelpositions and overthrow the legitimate government in Ukraine?)\n\nWhat a contradictory argument, the legitimate government of Ukraine is the legitimate government of those regions, that's what international law says until Russia took these regions from them by force. I'm doing 2 +2= 4, you're doing 2 + 2 = stupid.",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1645281116,
+   "period": "before",
    "group": "Marcel",
-   "order": 94
+   "order": 136
   },
   {
    "comment_id": "ima6dd6",
@@ -4146,7 +5852,7 @@
    "created": 1661794916,
    "period": "after",
    "group": "Antonio",
-   "order": 95
+   "order": 137
   },
   {
    "comment_id": "h3mtn7d",
@@ -4188,7 +5894,7 @@
    "created": 1625104625,
    "period": "before",
    "group": "Marcel",
-   "order": 96
+   "order": 138
   },
   {
    "comment_id": "gtbdv9r",
@@ -4220,7 +5926,54 @@
    "created": 1617509321,
    "period": "before",
    "group": "Antonio",
-   "order": 97
+   "order": 139
+  },
+  {
+   "comment_id": "hq7dk53",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "rpq97h",
+   "post_title": "Allright lads, we all know that the Zumwalts are kind of a dumpster fire. So here's my proposal for a conversion. Anyways yeah basically I'll be working in the pentagon soon",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/yr3a6m9xv3881.png",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/yr3a6m9xv3881.png",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/fvubq1HUEJDSOPLtdCSvScXoGREpEuqqJ4il6w8hVto.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hq7b7lk",
+   "context": [
+    {
+     "id": "hq62q5f",
+     "author": "Comberth",
+     "text": "What's so bad about them? One could assume the pricetag is colossal but idk anything else"
+    },
+    {
+     "id": "hq63ahu",
+     "author": "Purple_Calico",
+     "text": "No gun, no CWIS, and with amphibious assualts being dropped by the marine corp... the mission it was built for no longer exists."
+    },
+    {
+     "id": "hq79vs0",
+     "author": "Commando2352",
+     "text": "What? Amphibious assaults have definitely not been dropped by the Marine Corps. AAVs are getting pulled from deployments and retired. ACVs are still present and the mission is very much something the Corps is focusing on."
+    },
+    {
+     "id": "hq7b7lk",
+     "author": "Purple_Calico",
+     "text": "\"Even if there were a strong and credible requirement for large-scale forcible entry operations, such operations could not be carried out in the face of an adversary that has integrated the technologies and disciplines of the mature precision strike regime. As I noted in my Planning Guidance, the days of massed naval armadas nine miles offshore from some contested feature are long over.\" - General Berger, Commandant of the USMC."
+    }
+   ],
+   "author": "Commando2352",
+   "text": "He’s saying large scale landings like at Normandy or Okinawa aren’t going to happen, which is correct. Amphibious assaults aren’t defined by a specific size and besides assaults there are three other types of amphibious operations. They aren’t going away.",
+   "score": 10,
+   "controversiality": 0,
+   "created": 1640645519,
+   "period": "before",
+   "group": "Marcel",
+   "order": 140
   },
   {
    "comment_id": "hj6nfkq",
@@ -4251,8 +6004,8 @@
    "controversiality": 0,
    "created": 1635965865,
    "period": "before",
-   "group": "Marcel",
-   "order": 98
+   "group": "Antonio",
+   "order": 141
   },
   {
    "comment_id": "hzrhm4q",
@@ -4283,8 +6036,45 @@
    "controversiality": 0,
    "created": 1646692408,
    "period": "after",
+   "group": "Marcel",
+   "order": 142
+  },
+  {
+   "comment_id": "i8y5813",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "ur04gv",
+   "post_title": "Finnish brewery launches Nato branded beer",
+   "post_text": null,
+   "post_media": {
+    "url": "https://yle.fi/news/3-12447932",
+    "domain": "yle.fi",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/eOMpzJjwYo8zYQukuacGz0tkfz0MexmdCw6RgOM4D0M.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_i8xq7y4",
+   "context": [
+    {
+     "id": "i8u6mxl",
+     "author": "Graymatter_Repairman",
+     "text": "It's official. Welcome home Finland."
+    },
+    {
+     "id": "i8xq7y4",
+     "author": "ImpossibleAd6628",
+     "text": "Turkey’s going to veto the application and that’s the end of it."
+    }
+   ],
+   "author": "Graymatter_Repairman",
+   "text": "I don't think so.  I think Erdogan will kick up a fuss like a petulant child, gain some concessions from the US and/or symbolic concessions from Finland and Sweden and then step aside.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1652796808,
+   "period": "after",
    "group": "Antonio",
-   "order": 99
+   "order": 143
   },
   {
    "comment_id": "ith4j4p",
@@ -4316,7 +6106,7 @@
    "created": 1666543445,
    "period": "after",
    "group": "Marcel",
-   "order": 100
+   "order": 144
   },
   {
    "comment_id": "htbx012",
@@ -4363,7 +6153,7 @@
    "created": 1642607677,
    "period": "before",
    "group": "Antonio",
-   "order": 101
+   "order": 145
   },
   {
    "comment_id": "h0rp8g6",
@@ -4400,7 +6190,39 @@
    "created": 1622960424,
    "period": "before",
    "group": "Marcel",
-   "order": 102
+   "order": 146
+  },
+  {
+   "comment_id": "hvpa83f",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "sl06hx",
+   "post_title": "If there watching gulf war documentaries, it's already too late.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/iq9g1494kyf81.gif",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/iq9g1494kyf81.gif",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/NgMyVAdwEOYL3bsbRuQvuLX183SPtgD-z-De8DWz40U.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hvp6zx6",
+   "context": [
+    {
+     "id": "hvp6zx6",
+     "author": "Longsheep",
+     "text": "Mercenaries 2: World in Flames is my main inspiration."
+    }
+   ],
+   "author": "Commander_Harrington",
+   "text": "I thought I was the only one.\n\nDude the world of Mercenaries is so much cooler than ours. China isn’t filled with facist assholes, the United Nations is called the Allied Nations (much better name) and it actually does cool shit like stop North Korea after it gets taken over by a rogue general and ~~secure Venezuelan Oil~~ Free the people of Venezuela from a tyrant!\n\nAnd don’t get me started on the Mercenaries themselves...",
+   "score": 7,
+   "controversiality": 0,
+   "created": 1644072098,
+   "period": "before",
+   "group": "Antonio",
+   "order": 147
   },
   {
    "comment_id": "hve9zwl",
@@ -4431,8 +6253,8 @@
    "controversiality": 0,
    "created": 1643876701,
    "period": "before",
-   "group": "Antonio",
-   "order": 103
+   "group": "Marcel",
+   "order": 148
   },
   {
    "comment_id": "hzuto4h",
@@ -4457,8 +6279,65 @@
    "controversiality": 0,
    "created": 1646757967,
    "period": "after",
+   "group": "Antonio",
+   "order": 149
+  },
+  {
+   "comment_id": "i0l8h1p",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "tdlhoa",
+   "post_title": "This is significant - A large concentration of Russian troops and equipment near Melitopol was destroyed by Ukrainian artillery. Around 9 pm local time, Ukrainian defenders targeted and eliminated some 200 tanks and armoured vehicles. A Russian mobile command and control post was also blown up",
+   "post_text": null,
+   "post_media": {
+    "url": "https://twitter.com/mhmck/status/1503138399192027142?s=20&amp;t=Mv7AMnN5p1Jxa-730hhf1g",
+    "domain": "twitter.com",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t1_i0l773k",
+   "context": [
+    {
+     "id": "i0k9ale",
+     "author": "anotveryseriousman",
+     "text": "Wow if true."
+    },
+    {
+     "id": "i0kehsi",
+     "author": "Putin_YoMama",
+     "text": "200 tanks destroyed by one large artillery barrage is almost certainly false.\n\nHowever, there's some translation issues so that 200 number might be right.\n\nEither way, they probably smacked a pretty large armoured element and had a good win. \n\nSo that's pretty sweet! We'll have to wait for details. They usually film their BDA's. Slava Ukraini and liberty."
+    },
+    {
+     "id": "i0kfbyb",
+     "author": "blueingreen85",
+     "text": "200 vehicles, not 200 tanks.  There is probably at least 3-4 trucks for every tank/bmp."
+    },
+    {
+     "id": "i0khbz9",
+     "author": "[deleted]",
+     "text": "[deleted]"
+    },
+    {
+     "id": "i0kt0p8",
+     "author": "Typical-Machine154",
+     "text": "More likely 20ish tanks, twice or thrice that many armored vehicles, and the rest was unarmored trucks. Russia is running low on armored vehicles at this point i think."
+    },
+    {
+     "id": "i0l773k",
+     "author": "Cpt_sneakmouse",
+     "text": "Most likely not. I realize all of these numbers coming out sound quite high but Russia currently has 2000 t-72s in service. Based on the way most militaries operate that means about 1000 combat capable t-72s. These represent a fraction of the total number of different models they have in service, and that's just accounting for tanks. If we start lumping all armored vehicles into the mix the numbers become a bit mind boggling."
+    }
+   ],
+   "author": "QueasyProgrammer4",
+   "text": "Working armored vehicles and broken downed vehicles that have been neglected for over 30 years are two different things...\n\nThen Russia has to get fuel and food logistics for those new vehicles when Russia barely even now cant support the current force.\n\nMore troops and vehicles will only compound the logistic problem for the Russian army and not make it any better.",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1647240714,
+   "period": "after",
    "group": "Marcel",
-   "order": 104
+   "order": 150
   },
   {
    "comment_id": "h26tseq",
@@ -4484,7 +6363,7 @@
    "created": 1624005724,
    "period": "before",
    "group": "Antonio",
-   "order": 105
+   "order": 151
   },
   {
    "comment_id": "j8xjlrq",
@@ -4516,7 +6395,7 @@
    "created": 1676655732,
    "period": "after",
    "group": "Marcel",
-   "order": 106
+   "order": 152
   },
   {
    "comment_id": "h0mtt6h",
@@ -4542,7 +6421,39 @@
    "created": 1622853770,
    "period": "before",
    "group": "Antonio",
-   "order": 107
+   "order": 153
+  },
+  {
+   "comment_id": "h84ixoe",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "ozx6qm",
+   "post_title": "I can’t actually confirm this but I want to believe",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/3xrb5lalxyf71.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/3xrb5lalxyf71.jpg",
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/xR_06c3rnKNrfn6ccHub9EjReu36xr8mRMR9ajZwcN0.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_h846exi",
+   "context": [
+    {
+     "id": "h846exi",
+     "author": "bageltre",
+     "text": "I found [this post](https://www.reddit.com/r/acecombat/comments/ka4t0e/fighter_pilots_truly_are_men_of_culture/), they never did find a source"
+    }
+   ],
+   "author": "hoe-bama",
+   "text": "Lmfao I know the guy who made that post, he got me into making memes on the ace combat subreddit on my old account. Glad to see you’ve joined us at NCD u/AWACS_bandog",
+   "score": 17,
+   "controversiality": 0,
+   "created": 1628389333,
+   "period": "before",
+   "group": "Marcel",
+   "order": 154
   },
   {
    "comment_id": "hlo15nj",
@@ -4588,8 +6499,8 @@
    "controversiality": 0,
    "created": 1637605265,
    "period": "before",
-   "group": "Marcel",
-   "order": 108
+   "group": "Antonio",
+   "order": 155
   },
   {
    "comment_id": "huu2zyh",
@@ -4620,8 +6531,40 @@
    "controversiality": 0,
    "created": 1643536309,
    "period": "before",
+   "group": "Marcel",
+   "order": 156
+  },
+  {
+   "comment_id": "hxv2ewb",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "sy0k41",
+   "post_title": "In Russian stock markets, the biggest downfall since 2008",
+   "post_text": null,
+   "post_media": {
+    "url": "https://twitter.com/iaponomarenko/status/1495826848302997518?s=21",
+    "domain": "twitter.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/hTR7gADIFN2RDORQS6AQTtQm5MEUttbpo9gFk9Fd6R0.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hxv13g1",
+   "context": [
+    {
+     "id": "hxv13g1",
+     "author": "letdogsvote",
+     "text": "Well, those are rookie numbers.  We gotta pump that up.  Just wait until the west imposes sanctions."
+    }
+   ],
+   "author": "reimuyoukaislay3r",
+   "text": "The west literally wont impose any major sanctions. Its pretty obvious why. First off the west needs gas. They just do, furthermore, Russia produces 41% of the worlds grain and they send that to Europe. Food stuff prices have skyrocketed through the roof because of gas prices that affect every single aspect of society. Here in Sweden a loaf of bread is 3.5 dollars and Milk is 1.6 dollars. \n\nThis is why Europe backpedaled from  cutting off Russia from SWIFT and scrapping nordstream, Austria and germany refused.\n\nSo unless your suggestion is importing grain and fuel from China or the US then i dont see how these \"crippling\" sanctions will work considering practically *no* European nation is food and fuel independent.\n\nHell Turkey imported 20 billion dollars worth of food stuff from Russia last year",
+   "score": -7,
+   "controversiality": 0,
+   "created": 1645468621,
+   "period": "before",
    "group": "Antonio",
-   "order": 109
+   "order": 157
   },
   {
    "comment_id": "hzadl72",
@@ -4668,7 +6611,7 @@
    "created": 1646376330,
    "period": "after",
    "group": "Marcel",
-   "order": 110
+   "order": 158
   },
   {
    "comment_id": "ir1n4n5",
@@ -4705,7 +6648,7 @@
    "created": 1664906371,
    "period": "after",
    "group": "Antonio",
-   "order": 111
+   "order": 159
   },
   {
    "comment_id": "i0ea5v0",
@@ -4752,7 +6695,39 @@
    "created": 1647109020,
    "period": "after",
    "group": "Marcel",
-   "order": 112
+   "order": 160
+  },
+  {
+   "comment_id": "h1da0di",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "nx2n2l",
+   "post_title": "Couldn't any fighter with a thrust to weight ratio greater than one defy gravity and take off vertically?",
+   "post_text": "Just point it upwards, tell my why it wouldn't work.\n\nAlso, weak ass A-10 would never be able to do this.",
+   "post_media": {
+    "url": "https://www.reddit.com/r/NonCredibleDefense/comments/nx2n2l/couldnt_any_fighter_with_a_thrust_to_weight_ratio/",
+    "domain": "self.NonCredibleDefense",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_h1ct1ax",
+   "context": [
+    {
+     "id": "h1ct1ax",
+     "author": "nimoto",
+     "text": "[ZERO](https://i.imgur.com/uA2qPm8.jpg)\n\n[LENGTH](https://i.imgur.com/Vhi8OeQ.jpg)\n\n[LAUNCH](https://youtu.be/oQXI4ZC_7NA?t=61)"
+    }
+   ],
+   "author": "71hourAchmed",
+   "text": "The balls it took to do that in '58. Man, the Jet Age was the wild west. A fascinating mix of scientific precision and \"we don't really under this region of aerodynamics, so I'm going to strap on this rocket and see what happens.\"",
+   "score": 35,
+   "controversiality": 0,
+   "created": 1623386855,
+   "period": "before",
+   "group": "Antonio",
+   "order": 161
   },
   {
    "comment_id": "imfbx3r",
@@ -4788,8 +6763,8 @@
    "controversiality": 0,
    "created": 1661887382,
    "period": "after",
-   "group": "Antonio",
-   "order": 113
+   "group": "Marcel",
+   "order": 162
   },
   {
    "comment_id": "hy1r22r",
@@ -4814,8 +6789,40 @@
    "controversiality": 0,
    "created": 1645582727,
    "period": "before",
+   "group": "Antonio",
+   "order": 163
+  },
+  {
+   "comment_id": "hwvt5f1",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "srt32h",
+   "post_title": "Absolute failure of the US, EU and NATO",
+   "post_text": "If things happen the next week, this is a huge historical failure of the western world. Spearheaded by a demented man with no leadership, the entire bunch of big powers chose to sleep and not move a muscle while an ex-KGB madman gets his fantasy realized.\n\nIt's so freaking idiotic when you think of it, when you realize how little it would take from the many european countries, not to mention the US, to be a really damn effective deterrent in Ukraine, instead of making it publicly known that everyone's just going to close their eyes and get out.\n\n​\n\nAppeasement doesn't work.\n\nMy condolences to the Ukrainian people for what they are unfortunately going to be subjected to. Stay strong and stay safe.",
+   "post_media": {
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/srt32h/absolute_failure_of_the_us_eu_and_nato/",
+    "domain": "self.UkrainianConflict",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_hwttf7f",
+   "context": [
+    {
+     "id": "hwttf7f",
+     "author": "cito",
+     "text": "He is not just \"an ex-KGB madman wants his fantasy realized\", but also a man in control of a button for approximately 6,400 nuclear warheads.\n\nDoes that help as explanation why US, EU and NATO are not eager to risk a direct confrontation?"
+    }
+   ],
+   "author": "AsdefGhjkl",
+   "text": "That's a dumb argument. Russia would not invade a country with strong defense and mutual assurance. Nuclear weapons don't come into play, as they didn't in any other proxy conflicts over the cold war, even though there was direct involvement of both sides.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1644822588,
+   "period": "before",
    "group": "Marcel",
-   "order": 114
+   "order": 164
   },
   {
    "comment_id": "iqlltje",
@@ -4857,7 +6864,7 @@
    "created": 1664609393,
    "period": "after",
    "group": "Antonio",
-   "order": 115
+   "order": 165
   },
   {
    "comment_id": "i1okq0d",
@@ -4889,7 +6896,7 @@
    "created": 1647968283,
    "period": "after",
    "group": "Marcel",
-   "order": 116
+   "order": 166
   },
   {
    "comment_id": "iwusos6",
@@ -4936,7 +6943,44 @@
    "created": 1668782933,
    "period": "after",
    "group": "Antonio",
-   "order": 117
+   "order": 167
+  },
+  {
+   "comment_id": "j5vsd76",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "10k8n1l",
+   "post_title": "The Gun that has seen it ALL.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/whv8fhmuj0ea1.png",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/whv8fhmuj0ea1.png",
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/QQCRXMmr0zBg2nKjREkYpLN-qGwSLi86dTFFjgJYx08.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_j5pbvb6",
+   "context": [
+    {
+     "id": "j5p1prl",
+     "author": "addsomepesto",
+     "text": "The burden of defending democracy is heavy,\n\nThe Somme was in 1916 and I am not American. So forgive me for Nebraska."
+    },
+    {
+     "id": "j5pbvb6",
+     "author": "LethalDosageTF",
+     "text": "We haven't forgiven Nebraska for Nebraska yet. Why would we forgive you?"
+    }
+   ],
+   "author": "TheAlmightyGAY",
+   "text": "I'd say this is a valid point, but half of y'all confuse us for Alaska ffs. You got no room to bitch about us; not when Iowa exists.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1674685187,
+   "period": "after",
+   "group": "Marcel",
+   "order": 168
   },
   {
    "comment_id": "ht36oe8",
@@ -4977,8 +7021,8 @@
    "controversiality": 0,
    "created": 1642453851,
    "period": "before",
-   "group": "Marcel",
-   "order": 118
+   "group": "Antonio",
+   "order": 169
   },
   {
    "comment_id": "hyd8t7k",
@@ -5009,8 +7053,50 @@
    "controversiality": 0,
    "created": 1645787674,
    "period": "after",
+   "group": "Marcel",
+   "order": 170
+  },
+  {
+   "comment_id": "hu4cpu5",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "sc2qqk",
+   "post_title": "Does Putin have a legitimate reason to be upset?",
+   "post_text": "I am not a Russian bot or pro-Russia but just trying to understand the other side of this conflict. Yes, Putin is an ex KGB officer who yearns for the days when the USSR was united, and I believe if he could push a button to reunify the republics, he would do so. However, in this instance NATO apparently provided prior guarantees that it would not move further east in accepting member states. NATO was formed as a pact against Russia, there is no secret what the organization stands for. \n\nSo you’re the Russian president. There is a country on your border that has made plans to join an organization that’s sole existence is a military alliance directly aimed against your country…and the United States and NATO nations have broken a prior promise that they have gone as Far East as they intend to go. What is Putin supposed to do? Complaining isn’t going to do anything. Wouldn’t you send your army to the border until NATO held up its promise? \n\nIf Mexico joined a military alliance aimed at thwarting the United States, when the aforementioned military alliance promised to never get that close…what would the United States do? Just shut up and ignore it?\n\nSomeone please explain why this conflict is being reported as a Putin power grab rather than act of self defense?",
+   "post_media": {
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/sc2qqk/does_putin_have_a_legitimate_reason_to_be_upset/",
+    "domain": "self.UkrainianConflict",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_hu420lo",
+   "context": [
+    {
+     "id": "hu3payc",
+     "author": "trustych0rds",
+     "text": "From what I understand there are no current plans underway to add Ukraine to NATO. \n\nThe question I would ask is what happens if everyone agrees no NATO for Ukraine... do the troops on the border pack it up and go home?"
+    },
+    {
+     "id": "hu40i0m",
+     "author": "PvtZeli",
+     "text": "As long as it's been signed off, I believe so."
+    },
+    {
+     "id": "hu420lo",
+     "author": "MurkyCress521",
+     "text": "Why? Ukraine is even weaker now and less about to resist Russia. Everything suggests that Russia would just see this as weakness and exploit that weakness."
+    }
+   ],
+   "author": "PvtZeli",
+   "text": "I don't think it's in Russias interest to take Ukraine. They just want to make sure they don't join NATO. NATO was created to provide security to Europe against the Soviet Union, in this case, Russia. Putin won't allow a bordering country to be part of NATO. \n\nI believe that's all that Putin wants - I could be wrong though.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1643090489,
+   "period": "before",
    "group": "Antonio",
-   "order": 119
+   "order": 171
   },
   {
    "comment_id": "htpx06j",
@@ -5137,7 +7223,7 @@
    "created": 1642839499,
    "period": "before",
    "group": "Marcel",
-   "order": 120
+   "order": 172
   },
   {
    "comment_id": "hzz4b2x",
@@ -5259,7 +7345,7 @@
    "created": 1646836167,
    "period": "after",
    "group": "Antonio",
-   "order": 121
+   "order": 173
   },
   {
    "comment_id": "ieywf86",
@@ -5311,7 +7397,54 @@
    "created": 1657043324,
    "period": "after",
    "group": "Marcel",
-   "order": 122
+   "order": 174
+  },
+  {
+   "comment_id": "i6yi4wu",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "ug5r1x",
+   "post_title": "The Ukranian Drone Golfing champion",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/5eqejwj1oww81",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/5eqejwj1oww81/DASH_1080.mp4?source=fallback",
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t1_i6y6m1d",
+   "context": [
+    {
+     "id": "i6xm4hg",
+     "author": "ChimpskyBRC",
+     "text": "I know I shouldn’t be this happy at seeing people die, but holy shit that is such an improbable shot that it’s just satisfying"
+    },
+    {
+     "id": "i6xpptd",
+     "author": "Martindale222",
+     "text": "I think people is a bit of a stretch here.  But either way, I feel like this is a massive flex over the US military's \"we can fly a missile through the front door without hitting the sides\""
+    },
+    {
+     "id": "i6y4km9",
+     "author": "Yiao-Ming",
+     "text": "How is it a stretch?"
+    },
+    {
+     "id": "i6y6m1d",
+     "author": "Martindale222",
+     "text": "Personally, it's hard to apply the term people who act like such monsters and commit war crimes like they're going out of style.  \n\n\nI'll be the first to acknowledge that not only do war crimes happen (and some war crimes at the least egregious end are effectively acknowledged accidents more than anything else) but that isn't what seems to be going on here."
+    }
+   ],
+   "author": "GuhGuhGuh55",
+   "text": "The majority of Russians are just conscripts who joined because \"big manly\" and due to the lack of proper leadership, they never learned any better.\n#\nOrcs aren't born, they're made.",
+   "score": 10,
+   "controversiality": 0,
+   "created": 1651443537,
+   "period": "after",
+   "group": "Antonio",
+   "order": 175
   },
   {
    "comment_id": "igd3cni",
@@ -5336,8 +7469,8 @@
    "controversiality": 0,
    "created": 1657951622,
    "period": "after",
-   "group": "Antonio",
-   "order": 123
+   "group": "Marcel",
+   "order": 176
   },
   {
    "comment_id": "hxhxsx8",
@@ -5383,8 +7516,40 @@
    "controversiality": 0,
    "created": 1645219408,
    "period": "before",
+   "group": "Antonio",
+   "order": 177
+  },
+  {
+   "comment_id": "iqy2n79",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "xuta9z",
+   "post_title": "A Russian channel is saying that Ukraine has taken Dudchany, Kherson Oblast.",
+   "post_text": null,
+   "post_media": {
+    "url": "http://twitter.com/RALee85/status/1577020030260514816",
+    "domain": "twitter.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/riUf8dKi48GdDf3G30-cG3wkTKHlf7iLCOs2-aM5VlU.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_iqxcry5",
+   "context": [
+    {
+     "id": "iqxcry5",
+     "author": "ZaxiaDarkwill",
+     "text": "Kherson AO is collapsing faster than expected. If UAF continues the rapid pace of their breakthrough, most of the russian frontline will be forced to withdraw as it has been shown they are unable to allocate additional resource to halt the UAF progress. This is also likely giving UAF Command confidence as recent strikes in the Zaporizhzhia AO may indicate setting conditions for a third offensive operation."
+    }
+   ],
+   "author": "Kuklachev",
+   "text": "This is how a starved frontline crumbles. They had no meaningful resupply since the shelling of the bridges began. Ukraine has a thousand roadways to supply every direction.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1664837675,
+   "period": "after",
    "group": "Marcel",
-   "order": 124
+   "order": 178
   },
   {
    "comment_id": "i6voifo",
@@ -5410,7 +7575,7 @@
    "created": 1651388010,
    "period": "after",
    "group": "Antonio",
-   "order": 125
+   "order": 179
   },
   {
    "comment_id": "h9rsifc",
@@ -5447,7 +7612,7 @@
    "created": 1629538640,
    "period": "before",
    "group": "Marcel",
-   "order": 126
+   "order": 180
   },
   {
    "comment_id": "i0ij83f",
@@ -5484,7 +7649,44 @@
    "created": 1647193020,
    "period": "after",
    "group": "Antonio",
-   "order": 127
+   "order": 181
+  },
+  {
+   "comment_id": "hxrs8k0",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "swtrkj",
+   "post_title": "Now This is Where the Fun Begins",
+   "post_text": null,
+   "post_media": {
+    "url": "https://i.redd.it/m0hc2c1sbxi81.jpg",
+    "domain": "i.redd.it",
+    "image": "https://i.redd.it/m0hc2c1sbxi81.jpg",
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/4r-hyVRJaqMPPCAMTiY-ccaPOoueN0wmiA1wKrnEXqc.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hxrlas3",
+   "context": [
+    {
+     "id": "hxplbw5",
+     "author": "EatenOrpheus34",
+     "text": "Ironically, for every A-10 destroyed by an enemy, the effectiveness of the USAF increases by 1%"
+    },
+    {
+     "id": "hxrlas3",
+     "author": "Present-Green",
+     "text": "The moment war between peers happened send all A-10s crewed by robots and send them to everywhere so we can retire already for the A-29 Super Tucano.\n\nWe don't need the congress in this one\n\n(Wtf did I just think)"
+    }
+   ],
+   "author": "EatenOrpheus34",
+   "text": "Another idea: send them all to china or whatever desert shithole we freedom next so that their Air Force is compromised. Shed the dead weight and drop it on someone else",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1645403411,
+   "period": "before",
+   "group": "Marcel",
+   "order": 182
   },
   {
    "comment_id": "hggjr6m",
@@ -5525,8 +7727,8 @@
    "controversiality": 0,
    "created": 1634112020,
    "period": "before",
-   "group": "Marcel",
-   "order": 128
+   "group": "Antonio",
+   "order": 183
   },
   {
    "comment_id": "hxzer70",
@@ -5551,8 +7753,40 @@
    "controversiality": 0,
    "created": 1645548875,
    "period": "before",
+   "group": "Marcel",
+   "order": 184
+  },
+  {
+   "comment_id": "hy526e0",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "szl5re",
+   "post_title": "The actions of the British have enriched all the languages and military textbooks of the world with the concept of \"cannon fodder\" - Russian Ministry of Defense",
+   "post_text": null,
+   "post_media": {
+    "url": "https://twitter.com/UkrReport/status/1496515728417202184",
+    "domain": "twitter.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://b.thumbs.redditmedia.com/wbXLDc9QBq1gEsv6byXm8ERDkzGOtddEVZbe6jpxWWs.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_hy48z96",
+   "context": [
+    {
+     "id": "hy48z96",
+     "author": "QQMau5trap",
+     "text": "Said the nation that lost most soldiers in WW2?"
+    }
+   ],
+   "author": "Patxi_Jamison",
+   "text": "To be fair, they were also the nation that could afford to lose the most soldiers in WW2.  And, let's not forget, it was the Soviet flag, not the Union Jack, that ended up flying over the Reichstag.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1645645517,
+   "period": "before",
    "group": "Antonio",
-   "order": 129
+   "order": 185
   },
   {
    "comment_id": "hz3vfn3",
@@ -5589,7 +7823,7 @@
    "created": 1646259439,
    "period": "after",
    "group": "Marcel",
-   "order": 130
+   "order": 186
   },
   {
    "comment_id": "hmwqvup",
@@ -5631,7 +7865,7 @@
    "created": 1638432960,
    "period": "before",
    "group": "Antonio",
-   "order": 131
+   "order": 187
   },
   {
    "comment_id": "i0eik9k",
@@ -5668,7 +7902,44 @@
    "created": 1647112488,
    "period": "after",
    "group": "Marcel",
-   "order": 132
+   "order": 188
+  },
+  {
+   "comment_id": "iabmeec",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "uzi8rd",
+   "post_title": "The Rosgvardia seem to have second thoughts regarding the special military operation",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/4zhhpzj656291",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/4zhhpzj656291/DASH_1080.mp4?source=fallback",
+    "thumb": "https://a.thumbs.redditmedia.com/qnvcHXvVW9SSObWj4sm29XPIni2w7fcITOEB28plV28.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_iaakj6b",
+   "context": [
+    {
+     "id": "iaajmo0",
+     "author": "[deleted]",
+     "text": "should we start accepting russian defectors?"
+    },
+    {
+     "id": "iaakj6b",
+     "author": "External-Option-544",
+     "text": "Ukraine has actually already established a [legion for volunteer from Russia](https://www.reddit.com/r/ukraine/comments/u3dyl7/the_freedom_of_russia_legion_in_the_ukrainian/?utm_medium=android_app&utm_source=share).\n\nAs for NCD I believe we have some russian lurkers, I even saw one commeting once (rare as unicorns thou)."
+    }
+   ],
+   "author": "Raye_Gunn",
+   "text": "There has even been a video of some of these guys capturing *other* Russian soldiers and mocking them for being brainwashed, it was wild. I had assumed they would be kept away from the fighting, in case there were like, spies or something, but nope, they are actually fighting. \n\n[https://www.reddit.com/r/ukraine/comments/uu0ba4/russoukrainian\\_battalion\\_legion\\_of\\_freedom/](https://www.reddit.com/r/ukraine/comments/uu0ba4/russoukrainian_battalion_legion_of_freedom/)\n\nThis is presumably why recently Russia made it high treason to fight for the other side, so I guess these guys are Ukrainian now, even if they were Russian going into the war, they can't go back. At least not until Putin is gone.",
+   "score": 14,
+   "controversiality": 0,
+   "created": 1653752016,
+   "period": "after",
+   "group": "Antonio",
+   "order": 189
   },
   {
    "comment_id": "ij19gub",
@@ -5704,8 +7975,8 @@
    "controversiality": 1,
    "created": 1659693751,
    "period": "after",
-   "group": "Antonio",
-   "order": 133
+   "group": "Marcel",
+   "order": 190
   },
   {
    "comment_id": "hzx5qaf",
@@ -5741,8 +8012,55 @@
    "controversiality": 0,
    "created": 1646792116,
    "period": "after",
+   "group": "Antonio",
+   "order": 191
+  },
+  {
+   "comment_id": "hxwru60",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "syaca8",
+   "post_title": "Should NATO create a false flag incident in Poland?",
+   "post_text": "This would lead to a full mobilization of NATO, clearly not something Putin is expecting.",
+   "post_media": {
+    "url": "https://www.reddit.com/r/UkrainianConflict/comments/syaca8/should_nato_create_a_false_flag_incident_in_poland/",
+    "domain": "self.UkrainianConflict",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t1_hxwqr9m",
+   "context": [
+    {
+     "id": "hxwovqk",
+     "author": "AutarchOfGoats",
+     "text": "why? nato do not want a war, do you see any nato country mobilizing, or have any desire to mobilize?  \n\n\nputin knows nato can only bark, and he acts accordingly."
+    },
+    {
+     "id": "hxwpdm5",
+     "author": "Radiant_Elevator_481",
+     "text": "We only bark to avoid a nuclear war. If it comes to it, we won’t bark, we’ll roar."
+    },
+    {
+     "id": "hxwqk9c",
+     "author": "AutarchOfGoats",
+     "text": "who? not even murica has in the spot of mobilizing for a war, france literaly ran out of munitons in libya, Nato dont realy have any real combat experience to fight together, a decent half of it never even fought together under the same comand, germany and eastern europe folds like a paper, no defensible positions  \n\n\nthe cost of all out war is higher on NATO countries because they depend on global infrastructure, the cost of war, and mobilization is too heavy."
+    },
+    {
+     "id": "hxwqr9m",
+     "author": "Radiant_Elevator_481",
+     "text": "You sound like a pro Russian boot licker"
+    }
+   ],
+   "author": "AutarchOfGoats",
+   "text": "or maybe im actually calling for war readiness for NATO, and not only for the military budget; NATO should become ready for waging wars, no, even wanting wars. Instead of working like a weapon sales platform to profit some western corporations, throwing money around, and ultra-specific weapon solutions dont win wars, NATO needs semi-sustainable full scale mobilization plans, and weight in reasearch and military industry on those designs.\n\nbut none of those work in liberalised NATO, simply too socialy and economicaly connected with the world at large, while the world can sever those ties, NATO cant. NATO, and western bloc are singing their epitaph premortem, expecting some kind of miracle, without having any plan to grasp at the initiative.",
+   "score": 2,
+   "controversiality": 0,
+   "created": 1645494345,
+   "period": "before",
    "group": "Marcel",
-   "order": 134
+   "order": 192
   },
   {
    "comment_id": "iofkl4c",
@@ -5774,7 +8092,7 @@
    "created": 1663181545,
    "period": "after",
    "group": "Antonio",
-   "order": 135
+   "order": 193
   },
   {
    "comment_id": "ibejoex",
@@ -5816,7 +8134,7 @@
    "created": 1654544776,
    "period": "after",
    "group": "Marcel",
-   "order": 136
+   "order": 194
   },
   {
    "comment_id": "h7arwq1",
@@ -5873,7 +8191,44 @@
    "created": 1627812763,
    "period": "before",
    "group": "Antonio",
-   "order": 137
+   "order": 195
+  },
+  {
+   "comment_id": "j93ql2w",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "115lv7n",
+   "post_title": "The Wehrwanking is strong with this one.",
+   "post_text": null,
+   "post_media": {
+    "url": "https://v.redd.it/gnhh02goqzia1",
+    "domain": "v.redd.it",
+    "image": null,
+    "video": "https://v.redd.it/gnhh02goqzia1/DASH_1080.mp4?source=fallback",
+    "thumb": null,
+    "is_self": 0
+   },
+   "parent_id": "t1_j9355wy",
+   "context": [
+    {
+     "id": "j92k9wt",
+     "author": "Spaciax",
+     "text": "\"operational\" is a bit of a stretch given the 10 hour engine life 💀"
+    },
+    {
+     "id": "j9355wy",
+     "author": "Preussensgeneralstab",
+     "text": "To be fair this wasn't a design or manufacturing problem but an issue with the used materials. For example, the production BMW 003 (which the funny Woodglue jet used) had a max lifespan of 25h flight hours, but it's estimated that it could've managed up to 120h if better materials had been available (which they didn't because it's 1944 Germany). Although those resources could've then still gone to non-idiotic planes like the Fw-190. \n\n\n\n\nStill, considering it's Germany in 1944, they managed to produce something that wasn't a fucking suicide machine despite the massive resource shortages and compromises. The end product still was lacking tho but it's still impressive."
+    }
+   ],
+   "author": "Shifty_Steel",
+   "text": "55% of all 190s and 45% of all 109s produced during the war were produced in 1944. Germany didn't have any issues building enough fighters; they lacked the skilled pilots and fuel necessary to fly them.",
+   "score": 26,
+   "controversiality": 0,
+   "created": 1676766971,
+   "period": "after",
+   "group": "Marcel",
+   "order": 196
   },
   {
    "comment_id": "i9ao5mr",
@@ -5898,8 +8253,8 @@
    "controversiality": 0,
    "created": 1653026201,
    "period": "after",
-   "group": "Marcel",
-   "order": 138
+   "group": "Antonio",
+   "order": 197
   },
   {
    "comment_id": "hyd2z4l",
@@ -5924,8 +8279,40 @@
    "controversiality": 0,
    "created": 1645783058,
    "period": "after",
+   "group": "Marcel",
+   "order": 198
+  },
+  {
+   "comment_id": "i6s365t",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "uf4g9m",
+   "post_title": "Residents Report Fire Broke Out at the GRES-2 Thermal Powerplant in Sakhalin, Russia",
+   "post_text": null,
+   "post_media": {
+    "url": "https://youtube.com/watch?v=HsRIamsEJEM&amp;feature=share",
+    "domain": "youtube.com",
+    "image": null,
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/TAwPBNbhfRBLgUC8Hy6368u5TXqvX8yILy7bxzkDGy0.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_i6rfy1m",
+   "context": [
+    {
+     "id": "i6rfy1m",
+     "author": "Hawka7",
+     "text": "Wasn't there a big Ukraninan diaspora on Sakhalin? Is it just coincidence? 😅"
+    }
+   ],
+   "author": "rishcast",
+   "text": "ton of deportees as someone pointed out, including some likely from Mariupol. \n\neither that or the Japanese *really* want their islands back, since the Ussuriysk air base fire was also on the other side of Russia from Ukraine and pretty close to Japan.",
+   "score": 3,
+   "controversiality": 0,
+   "created": 1651319079,
+   "period": "after",
    "group": "Antonio",
-   "order": 139
+   "order": 199
   },
   {
    "comment_id": "h6q8lm2",
@@ -5951,7 +8338,7 @@
    "created": 1627406357,
    "period": "before",
    "group": "Marcel",
-   "order": 140
+   "order": 200
   },
   {
    "comment_id": "iwpqs4y",
@@ -5988,7 +8375,7 @@
    "created": 1668689986,
    "period": "after",
    "group": "Antonio",
-   "order": 141
+   "order": 201
   },
   {
    "comment_id": "i73957x",
@@ -6025,7 +8412,33 @@
    "created": 1651533134,
    "period": "after",
    "group": "Marcel",
-   "order": 142
+   "order": 202
+  },
+  {
+   "comment_id": "j2dl5c1",
+   "subreddit": "NonCredibleDefense",
+   "source_file": "NonCredibleDefense_comments.zst",
+   "link_id": "zz4smk",
+   "post_title": "NCD collectively gets isekai'd to Strangereal and is now in charge of a decently-sized country. What y'all doing?",
+   "post_text": "To start, we get a decently-sized and relatively self-sufficient MIC.\n\nPersonally imma get nuclear warheads on everything, from artillery to SAMs and AAMs. What y'all doing?\n\nEdit: add making the [CL-1201](https://en.wikipedia.org/wiki/Lockheed_CL-1201) a reality, making the Darkstar, and making cobalt nukes",
+   "post_media": {
+    "url": "https://www.reddit.com/r/NonCredibleDefense/comments/zz4smk/ncd_collectively_gets_isekaid_to_strangereal_and/",
+    "domain": "self.NonCredibleDefense",
+    "image": null,
+    "video": null,
+    "thumb": null,
+    "is_self": 1
+   },
+   "parent_id": "t3_zz4smk",
+   "context": [],
+   "author": "Captain_Monttilva",
+   "text": "All of you saying: B52 this, laser gun that.\n\nAre you not thinking longterm? How are we going to replace, upgrade and fund this gigantic MIC? We need to identify what kind of economic system NCDstan is going to run off.",
+   "score": 1,
+   "controversiality": 0,
+   "created": 1672494328,
+   "period": "after",
+   "group": "Antonio",
+   "order": 203
   },
   {
    "comment_id": "hxtvvjg",
@@ -6050,8 +8463,8 @@
    "controversiality": 0,
    "created": 1645450473,
    "period": "before",
-   "group": "Antonio",
-   "order": 143
+   "group": "Marcel",
+   "order": 204
   },
   {
    "comment_id": "gwe9lyr",
@@ -6082,8 +8495,50 @@
    "controversiality": 0,
    "created": 1619764399,
    "period": "before",
+   "group": "Antonio",
+   "order": 205
+  },
+  {
+   "comment_id": "ieuez4x",
+   "subreddit": "UkrainianConflict",
+   "source_file": "UkrainianConflict_comments.zst",
+   "link_id": "vr2tuu",
+   "post_title": "Lysychansk held out for a long time, and the enemy’s losses were significant",
+   "post_text": null,
+   "post_media": {
+    "url": "https://en.socportal.info/en/news/military-expert-commented-on-the-exit-from-lisichansk/",
+    "domain": "en.socportal.info",
+    "image": null,
+    "video": null,
+    "thumb": "https://a.thumbs.redditmedia.com/X6ULSrQsmcmhL9BLt2cc5c5k9VwptF-ZW84peyDV-S8.jpg",
+    "is_self": 0
+   },
+   "parent_id": "t1_ieue1yd",
+   "context": [
+    {
+     "id": "ietmqpd",
+     "author": "i-can-sleep-for-days",
+     "text": "For Ukraine to take this land back it is going to have to go on the offensive, which will have more casualties than just being on the defensive. Ukraine also won't keep getting weapons nor does it have the money to fund purchasing of expensive weapons. How is it going to win back these territories that it lost?"
+    },
+    {
+     "id": "ieu1u8p",
+     "author": "Daotar",
+     "text": "Uhhh. Biden just announced a package with 600 tanks among much much more. Norway just announced an extra billion dollars that they’re just giving to Ukraine, same with Germany and the UK. Where do you get the idea that they’re not getting more weapons or money? Because new weapons shipments and new money get announced nearly every day and it’s only accelerating.\n\nSounds like you’re consuming a bit too much Russian propaganda for your own good. Russia won’t be able to hold the territory indefinitely. It may take a while before they lose, but their loss is inevitable. They have no ability to sustain this long term."
+    },
+    {
+     "id": "ieue1yd",
+     "author": "i-can-sleep-for-days",
+     "text": "Not consuming any Russian propaganda. In fact, haven't paid attention to the war that much but checked back in and seeing Russia making progress. No need to be so sensitive. How long can this influx of weapons keep up though? I thought the US already gave a ton of weapons and still not able to halt Russian progress. What's the reason for that?"
+    }
+   ],
+   "author": "Daotar",
+   "text": "Do you really think moving 20 kilometers in 4 months at extreme cost in an inconsequential area is \"progress\"? Again, the very idea that Russia is even making progress is a fantasy dreamed up by their propaganda machine. Sure, they gained a tiny amount of inconsequential ground, but they're losing just as much ground on other fronts and they're suffering unsustainable losses all the while. If that's progress, I can't imagine what success must look like to you.\n\n> How long can this influx of weapons keep up though? I thought the US already gave a ton of weapons and still not able to halt Russian progress.\n\nUmmm, it's only going to ramp up as production spins up in Western countries. Do you have any idea how massive the Western military industrial complex is? Again, Biden just announced a package that is literally bigger than every previous package combined, so why are you so doom and gloom? Support is increasing from the West, not decreasing. Why the pessimism when all evidence points to the contrary? You're just looking at one localized and temporary success that came at extreme cost and saying \"wow, that must mean Ukraine is losing badly and support from the West is irrelevant\".\n\nAnd remember, for the most part Russian progress has been completely halted. There's only one area of one front where they've made any progress at all. These things take time, the fact that the first small batch of weapons from the West didn't instantly turn the tide of the war is hardly evidence that the growing tide of such weapons won't do so.",
+   "score": 5,
+   "controversiality": 0,
+   "created": 1656957519,
+   "period": "after",
    "group": "Marcel",
-   "order": 144
+   "order": 206
   }
  ]
 }
