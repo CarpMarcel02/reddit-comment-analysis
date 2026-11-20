@@ -1,7 +1,7 @@
 # Project context
 
 Everything we know and have decided so far: the assignment, the data, the method, the app, and what's next.
-Last updated: 2026-11-15.
+Last updated: 2026-11-16.
 
 ---
 
@@ -76,7 +76,8 @@ Field sets differ by year (a 2016 comment has ~18 fields, a 2020 one ~45); the i
 - Drop bots, `[deleted]` / `[removed]` texts, and texts outside **25–300 words**.
 - `&gt;`, `&amp;`, `&amp;#039;` are HTML entities → `html.unescape` (twice for double-escaped text).
 - Lines starting with `>` are **quotes** of someone else (another comment, the article) → exclude them, they aren't the author's words.
-- Expect very few usable comments per thread (in one 13-comment thread only ~3–4 passed the filters), and a random sample will be mostly **Neutral** → sample from polarizing subreddits/topics and prefer `controversiality = 1` (and report the sampling strategy in the paper).
+- **English only:** comments written mostly in Cyrillic are excluded (at most 20% of the letters may be Cyrillic, so a quoted Russian word is fine). Share of mostly-Cyrillic comments in the study period: ~10% in r/AskARussian, ~8% in r/russia, ~0% elsewhere — mention it as a limitation (the Russian perspective is represented only by people who write in English).
+- Expect very few usable comments per thread (in one 13-comment thread only ~3–4 passed the filters), and a random sample will be mostly **Neutral**. We still sample **randomly** (stratified by subreddit and period), so the gold set represents the real data; report the sampling strategy in the paper.
 
 ---
 
@@ -145,6 +146,33 @@ Hypotheses (to be finalized after the pilot, before looking at model results):
 
 Report every planned comparison (confirmed or not), with statistical tests (e.g. chi-square for proportions) and a note that model-labelled proportions are estimates. Unplanned findings go in a separate, clearly marked exploratory section.
 
+How each comparison is measured (after the best model labels every comment in the period):
+
+- **Moderation (H1):** strictness from the public rules (verify and cite them) **and** from the data — the share of comments `[removed]` by moderators per subreddit. Compare with the share of non-Neutral comments.
+- **Sides (H2):** per side, the distribution of the three techniques (the "profile"), chi-square on the contingency table.
+- **Time (H3):** share of each technique per month per subreddit (plot with a line at 2022-02-24); before vs. after with chi-square.
+- **Engagement (H4):** median `score` and % `controversiality = 1` per label. Use medians (scores are very skewed) and scores **relative to the thread** (e.g. percentile within the post), because big threads get more votes regardless of content.
+- **Models (H5):** F1 per subreddit on the gold set — only 25 items per subreddit, so indicative; annotate ~50 extra from r/NonCredibleDefense to support it.
+
+### 3c. Preliminary data check: votes (2026-11-15)
+
+2,000 random comments per subreddit from the study period, read from the local indexes (no labels involved):
+
+| Subreddit | % `controversiality = 1` | Median score |
+|---|---|---|
+| r/UkraineRussiaReport | 11.4% | 1 |
+| r/geopolitics | 8.8% | 3 |
+| r/AskARussian | 4.7% | 2 |
+| r/russia | 4.6% | 1 |
+| r/CredibleDefense | 3.9% | 5 |
+| r/UkrainianConflict | 1.9% | 2 |
+| r/ukraine | 1.6% | 2 |
+| r/NonCredibleDefense | 1.1% | 5 |
+
+- Scores are final: Pushshift retrieved the comments a median of ~1–3 months after they were posted (29–108 days depending on the subreddit), long after voting settles.
+- The communities clearly differ (10× more controversial comments in r/UkraineRussiaReport than in r/NonCredibleDefense) — supports the subreddit choice and is usable in the 1 December update.
+- For H4, recompute per label on all comments once the model has labelled them.
+
 ---
 
 ## 4. Label scheme
@@ -194,9 +222,9 @@ Restart the server after changing `backend/`; refresh (Ctrl+F5) after changing `
 | Page | What it does |
 |---|---|
 | **Subreddits** (home) | "Annotations in this repository": per subreddit, who labelled how much and in which threads, plus what's missing on this computer (missing `.zst` files → download; not indexed → Index button; ✓ ready → links to the threads). Below: all local subreddits, each with an **Index…** button: options *Study period* (on by default, 2021-02-24 → 2023-02-24 — keeps only that period, small index, big files read completely) and *Keep raw JSON of comments* (off by default, ≈3× bigger index). "↻ re-index" rebuilds with other options. |
-| **Sample** | the annotation sample (see below): settings with on-by-default toggles (*No bots*, *No deleted/removed*, *25–300 words*, *Study period*, *Balance before/after the event*), sizes (per subreddit, shared, pilot), seed, annotators → **Generate sample**. Then: counts per subreddit/period, everyone's progress, and **your queue** — one comment at a time with the post title and the parent comment as context, big label buttons (keys 1–9), *unsure*, note, ← → navigation, "next unlabelled". Tabs: Pilot → Shared (Kappa) → Mine. |
+| **Sample** | the annotation sample (see below): settings with on-by-default toggles (*No bots*, *No deleted/removed*, *English only*, *25–300 words*, *Study period*, *Balance before/after the event*), sizes (per subreddit, shared, pilot), seed, annotators → **Generate sample**. Then: counts per subreddit/period, everyone's progress, and **your queue** — one comment at a time with its **full context**: the post (title, text, image/video/link), then the chain of comments above it from the top-level one down (last 4 shown, earlier ones behind a button), then the comment to label (highlighted). Big label buttons (keys 1–9), *unsure*, note, ← → navigation, "next unlabelled". Tabs: Pilot → Shared (Kappa) → Mine. |
 | **Subreddit** | posts like on Reddit: search titles, sort (most comments / top / newest / oldest), min. comments, toggles *Text posts only* and *Study period* (on), pagination |
-| **Post** | the post (text / video / image / link, raw JSON) + the comment tree (collapsible threads, OP/bot badges, word counts, "25–300 ✓" badge). Toggles: *Hide bots* and *Hide deleted* (on by default), *Highlight usable*, *Teammates' labels* (off — turn it on only **after** labelling a thread; Kappa needs independent labels). Each comment has a **🏷 Rate** dropdown with the labels (keys 1–9), an *unsure* flag and a note. |
+| **Post** | the post (text / video / image / link, raw JSON) + the comment tree (collapsible threads, OP/bot badges, word counts, "25–300 ✓" badge). Megathreads have up to ~70,000 comments, so at most ~200 are drawn at once; the rest load with "＋ Show N more replies". Toggles: *Hide bots* and *Hide deleted* (on by default), *Highlight usable*, *Teammates' labels* (off — turn it on only **after** labelling a thread; Kappa needs independent labels). Each comment has a **🏷 Rate** dropdown with the labels (keys 1–9), an *unsure* flag and a note. |
 | **Labels** | your annotator name + the shared labels (add / edit / reorder / delete; "add the proposed set") |
 | **Annotations** | class distribution, list of labelled comments (filter by annotator / label / unsure), CSV export |
 
@@ -207,11 +235,11 @@ Restart the server after changing `backend/`; refresh (Ctrl+F5) after changing `
 | `subreddits24/` | the `.zst` archives | no |
 | `cache/` | SQLite index per subreddit (rebuildable) | no |
 | `annotations/labels.json` | the labels — **shared by everyone** | yes |
-| `annotations/sample.json` | the annotation sample: settings + items (comment text, post title, parent comment, subreddit, period, group: pilot / shared / annotator) | yes |
+| `annotations/sample.json` | the annotation sample: settings + items (comment text, post title/text/media, chain of ancestor comments, subreddit, period, group: pilot / shared / annotator) | yes |
 | `annotations/annotators/<name>.jsonl` | one person's labels; each line keeps the comment text, post title and source `.zst` file | yes |
 | `annotations/annotators/<name>.md` | auto-generated summary tables (source files, per-label counts, last 30 labels) | yes |
 
-**The sample.** Per subreddit (and per half of the period), comments are pre-filtered in SQL, ordered by `hash(seed + comment id)` (same seed → same sample) and checked in Python (no bots, word range excluding quotes). Groups: *pilot* (everyone; calibrates the rules, not in the gold set), *shared* (everyone, independently → Kappa), and one part per annotator. Shared and per-annotator parts are interleaved across subreddits, so each is stratified. Because each item stores its text, a teammate can label sample items even without indexing that subreddit.
+**The sample.** Per subreddit (and per half of the period), comments are pre-filtered in SQL, ordered by `hash(seed + comment id)` (same seed → same sample) and checked in Python (no bots, word range excluding quotes, English only). Each item stores its thread context (post + up to 20 ancestor comments, each clipped to 1,500 characters). Groups: *pilot* (everyone; calibrates the rules, not in the gold set), *shared* (everyone, independently → Kappa), and one part per annotator. Shared and per-annotator parts are interleaved across subreddits, so each is stratified. Because each item stores its text, a teammate can label sample items even without indexing that subreddit.
 
 Each annotator writes only to their own files → no merge conflicts. The server reloads files changed by `git pull`. A `.jsonl` with an unresolved Git conflict is detected and the app refuses to write to it.
 
@@ -258,10 +286,12 @@ Only external frontend libraries: `marked` + `DOMPurify` from a CDN (Markdown re
 - Archive viewer + annotation tool, Git-friendly annotation storage, teammate coverage view.
 - Repository on GitHub, README, requirements.
 - Topic direction (propaganda, Russia–Ukraine war), 8 subreddits downloaded, study period, proposed hypotheses.
-- Period-based indexing and the annotation sample + queue in the app.
+- Period-based indexing and the annotation sample + queue in the app (English-only filter, full thread context with post media).
+- Preliminary vote/controversiality check per subreddit (section 3c).
+- Update sent to the teammate (subreddit choice, expected differences, setup steps, label definitions).
 
 **Next**
-1. **Index the 8 subreddits** with the study period, **generate the sample** (8 × 25 = 200 gold, 50 shared, 20 pilot), commit `annotations/sample.json`.
+1. Teammate downloads the 16 files, indexes them and sends their annotator name. **Re-index all 8 subreddits with the study period**, then **regenerate the sample** with both annotators (8 × 25 = 200 gold, 50 shared, 20 pilot) and commit `annotations/sample.json` (the one generated so far is provisional: one annotator, 5 subreddits).
 2. **Write the codebook** (definitions, examples, decision rules) for the 4 labels.
 3. **Pilot** (both annotators) → discuss disagreements → refine the rules → finalize the hypotheses (commit them).
 4. **Gold set** → Cohen's Kappa, class distribution → **1 December** update.
